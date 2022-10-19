@@ -656,7 +656,7 @@ div#resolucion > img{
 .organizacion{
   font: normal 1.7em Arial, sans-serif;/*letra*/
   line-height: 20px;/*espaciador entre lineas*/
-  margin: 10px 5px;
+  margin: 15px 10px;
 }
 .organizacion strong {
   font-size: 1.4em;
