@@ -1011,6 +1011,11 @@ font-size: 1.3em;
 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 text-align: justify;
 }
+#letra_programa li{
+font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+text-align: justify;
+}
+
 
 /*---------------------CONVENIOS----------------------------------*/
 ul .cuadrado{
