@@ -1128,7 +1128,7 @@ table {
 
 /*---------------------PROGRAMAS ENLACE------------------*/
 .programa_enlace{
-margin: 5px;
+margin: 5px 0px;
 padding: 10px;
 border-radius: 10px;
  border: 2px solid red;
