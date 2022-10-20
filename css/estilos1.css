@@ -995,7 +995,7 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
 .lista_programas{
   font-size: 1.3em;
   font-weight:lighter;
-  
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
   text-align: justify;
   background-color:white;
   color: #000;
@@ -1008,7 +1008,6 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
   font-weight: bold;
   margin-left: 2%;
   margin-right: 3%;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 /*---------------------CONVENIOS----------------------------------*/
