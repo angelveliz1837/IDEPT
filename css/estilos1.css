@@ -1,5 +1,6 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
 
 
 *{
@@ -994,7 +995,7 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
 .lista_programas{
   font-size: 1.3em;
   font-weight:lighter;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   text-align: justify;
   background-color:white;
   color: #000;
