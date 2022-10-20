@@ -1006,9 +1006,9 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
   margin-right: 3%;
 }
 
-#letra_programa{
+#letra_programa li #letra_programa h5{
 font-size: 1.3em;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
+font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 text-align: justify;
 }
 
