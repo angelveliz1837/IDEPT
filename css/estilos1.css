@@ -992,11 +992,7 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
 }
 
 /*----------------LISTA DE PROGRAMAS ---------------------------------*/
-.lista_programas{
-  font-size: 1.3em;
-  font-weight:lighter;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
-  text-align: justify;
+.lista_programas{ 
   background-color:white;
   color: #000;
   border-radius: 0.5%;
@@ -1008,6 +1004,12 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
   font-weight: bold;
   margin-left: 2%;
   margin-right: 3%;
+}
+
+#letra_programa{
+font-size: 1.3em;
+font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
+text-align: justify;
 }
 
 /*---------------------CONVENIOS----------------------------------*/
