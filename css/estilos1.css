@@ -340,6 +340,7 @@ section.awSlider > img{
 }
 #int_ger{
   background-color:pink;
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
