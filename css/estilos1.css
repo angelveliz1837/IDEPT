@@ -1144,9 +1144,8 @@ color: #973331;
 }
 
 .programa_enlace:hover{
-	background-color: #666; /*color de fondo*/
--webkit-transform: scale(1.5, 1.5);
-            -ms-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
+background-color: #666; /*color de fondo*/
+text-decoration:none;
+color:red;
 }
 
