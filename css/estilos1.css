@@ -310,6 +310,7 @@ section.awSlider > img{
 }
 #asun_med{
   background-color:aqua;
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -321,7 +322,7 @@ section.awSlider > img{
   border:2px solid #000;
 }
 #ges_doc{
-  background-color:#B8D679;
+  background-color:#B8D679; /*VERDE PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -357,8 +358,7 @@ section.awSlider > img{
   border:2px solid #000;
 }
 #psicologia{
-  background-color:mediumpurple;
-  opacity:0.6;
+  background-color:#B49FDF;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
