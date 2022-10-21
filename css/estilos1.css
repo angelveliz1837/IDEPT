@@ -321,8 +321,7 @@ section.awSlider > img{
   border:2px solid #000;
 }
 #ges_doc{
-  background-color:yellowgreen;
-  opacity:0.6;
+  background-color:#B8D679;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -359,6 +358,7 @@ section.awSlider > img{
 }
 #psicologia{
   background-color:mediumpurple;
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
