@@ -303,7 +303,7 @@ section.awSlider > img{
 }
 
 #adm_gen{
-  background-color:pink;
+  background-color:#F5CFD5; /*ROSADO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -322,6 +322,7 @@ section.awSlider > img{
 }
 #ges_doc{
   background-color:yellowgreen;
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
