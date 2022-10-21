@@ -309,14 +309,14 @@ section.awSlider > img{
   border:2px solid #000;
 }
 #asun_med{
-  background-color:aqua;
-  opacity:0.6;
+  background-color:#5BF5F5; /*celeste pastel*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
 #derecho{
   background-color:bisque;
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -329,12 +329,7 @@ section.awSlider > img{
 }
 #med_amb{
   background-color:darkkhaki;
-  color: #000;
-  font-weight: bold;
-  border:2px solid #000;
-}
-#hoteleria{
-  background-color:mediumpurple;
+	opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -353,6 +348,7 @@ section.awSlider > img{
 }
 #pro_tec{
   background-color:mediumpurple;
+	opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
