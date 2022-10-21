@@ -1149,3 +1149,10 @@ text-decoration:none;
 color:red;
 }
 
+.titulo_enlace{
+font-size:1.8em;
+	color:firebrick;
+	font-weight: bold;
+	padding-top:2%
+}
+
