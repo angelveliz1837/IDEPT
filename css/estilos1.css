@@ -315,8 +315,7 @@ section.awSlider > img{
   border:2px solid #000;
 }
 #derecho{
-  background-color:bisque;
-  opacity:0.6;
+  background-color:#F5E4D1;/*DERECHO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -342,13 +341,13 @@ section.awSlider > img{
 }
 #pro_seg{
   background-color:rgb(241, 238, 14);
+ opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
 #pro_tec{
-  background-color:mediumpurple;
-	opacity:0.6;
+  background-color:#B49FDF;/*MORADO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -361,6 +360,7 @@ section.awSlider > img{
 }
 #sec_arc{
   background-color:rgb(82, 180, 82);
+  opacity:0.6;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
