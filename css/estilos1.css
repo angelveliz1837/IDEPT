@@ -15,6 +15,10 @@ body{
     overflow-x: hidden;
 }
 
+tbody{
+align="center"
+}
+
 /*--------------------------------------------------------------------------------*/
 
 .topmenu {
@@ -1150,4 +1154,6 @@ font-size:1.8em;
 	font-weight: bold;
 	padding-top:5%;
 }
+
+
 
