@@ -287,7 +287,7 @@ section.awSlider > img{
 }
 
 .titulo { /*titulo de PROGRAMAS DE ESPECIALIZACION PROFESIONAL Y DIPLOMADOS*/
-  background-color: #973331;/*fondo para el titulo */
+  background-color: #B04445;/*fondo para el titulo */
   color: #ffffff; /*color de letra del titulo*/
   border: 1px solid #fff;/*borde de 1px solido y color blanco*/
   display: block;/*ocupa todo un bloque*/
@@ -469,7 +469,7 @@ div #item:hover i {
 
 .panel-info > .panel-heading {
   color: #FFFFFF; /* color del titulo convenios */
-  background-color: #973331;/*color de fondo del titulo*/
+  background-color: #B04445;/*color de fondo del titulo*/
   border-color: #C9302C;/*color de borde del titulo*/
   font-size: 1.3em;/*tamaño de letra del titulo (convenios y auspicios)*/
 }
