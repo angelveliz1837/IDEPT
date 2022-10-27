@@ -225,7 +225,26 @@
                                                 </tbody>
                                             </table>
                                         </li>
-                                       
+                                       <li>
+											<div id="current_date">
+											</div>	
+												<script>
+													var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre");
+													date = new Date();
+													year = date.getFullYear();
+													month = meses[date.getMonth()];
+													/*month = date.getMonth() + 1;*/
+													day = date.getDate();
+													document.getElementById("current_date").innerHTML = day + " de " + month + " del " + year;
+													document.getElementById("current_date").style.fontSize = "1.5em";
+													document.getElementById("current_date").style.fontWeight = "bold";
+													document.getElementById("current_date").style.textAlign = "center";
+													document.getElementById("current_date").style.paddingTop = "3%";
+												</script>
+											
+										</li>
+                                        <li class="news-item" id="aside_cal">
+										</li>
                                     </ul>
                                 </div>
                             </div>
