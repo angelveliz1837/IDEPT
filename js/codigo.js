@@ -65,6 +65,7 @@ function fecha(){
 
 //fecha(); //llamada a la funcion fecha
 document.body.setAttribute("onload","fecha();");
+document.getElementById("aside_cal").style.fontSize = "1em";
 
 /*--------REDES DE CONTACTANOS--------------------------*/
 function gira(e){
