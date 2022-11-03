@@ -15,11 +15,6 @@ body{
     overflow-x: hidden;
 }
 
-tbody{
-align="center"
-font-size: 1em;
-}
-
 /*--------------------------------------------------------------------------------*/
 
 .topmenu {
@@ -606,7 +601,8 @@ thead {
 }
 
 tbody{
-  font: normal 1.5em Arial, sans-serif;/*letra*/
+  font: normal 1em Arial, sans-serif;/*letra*/
+  text-align: center;
 }
 
 /*-----------MENSAJE------------------------*/
