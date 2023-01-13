@@ -1201,9 +1201,7 @@ font-size:1.8em;
 }
 
 .contorno_icono{
-display: none;
-float: left;
-/* margin-right: 2.3em;*/
+margin-right: 15em;
 }
 
 }
