@@ -21,14 +21,16 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/estilos1.css" rel="stylesheet">
 	<link href="css/contact-buttons.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 	<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
 	<script src="https://kit.fontawesome.com/33021f79a9.js" crossorigin="anonymous"></script>
-	
-	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
-	<embed src="img/musica/musica.mp3" autostarty="true" loop="true" volume="40" width="0" height="0">
+	<embed src="img/musica/musica.mp3" autostarty="true" loop="true" volume="80" width="0" height="0">
 	<div class="topmenu">
 		<div class="container">
 			<div class="row">
@@ -39,8 +41,8 @@
 							<span class="buscador"><input id="buscador" class="form-control" type="search" name="buscar"
 									placeholder="Escribe el tema o campo" autocomplete="off"></span>
 						</div>
-						<a href="html/preguntas_frecuentes.html"><button id="boton_buscar" class="btn btn-danger btn-sm" type="submit"><span
-															       class="fas fa-search"></span>&nbsp;Buscar</button></a>
+						<a href="html/preguntas_frecuentes.html"><button id="boton_buscar" class="btn btn-danger btn-sm"
+								type="submit"><span class="fas fa-search"></span>&nbsp;Buscar</button></a>
 					</form>
 				</div>
 				<div id="inscribir" class="col-md-2">
@@ -51,87 +53,95 @@
 		</div>
 	</div>
 
-	<div class="texto">
-		<div class="container">
-			<div id="encabezado" class="row">
-				<div class="col-md-4">
-					<a href="index.html"><img src="img/logos/logo_idept.png" alt="IDEPT" width="100%;"></a>
-				</div>
-				<div class="col-md-8">
-					<ul id="menu">
-						<li>
-							<a href="#">
-								<span>Sobre</span>
-								<br>
-								<span>IDEPT</span>
-							</a>
-							<ul>
-								<li><a href="html/mision.html">Mision</a></li>
-								<li><a href="html/mision.html">Vision</a></li>
-								<li><a href="html/mision.html">Quienes Somos</a></li>
-								<li><a href="html/mensaje.html">Mensaje</a></li>
-								<li><a href="html/autoridades.html">Autoridades</a></li>
-								<li><a href="html/representantes.html">Representantes</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span>Programas</span>
-								<br>
-								<span>Especializaciones</span>
-							</a>
-							<ul>
-								<li><a href="html/organizacion_programas.html">Organizacion de los Programas</a></li>
-								<li><a href="html/programas.html">Programas por Areas</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span>Metodología</span>
-								<br>
-								<span>Procesos</span>
-							</a>
-							<ul>
-								<li><a href="html/procesos.html">Procesos</a></li>
-								<li><a href="html/requisitos.html">Requisitos</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span>Convenios &amp;</span>
-								<br>
-								<span>Auspicios</span>
-							</a>
-							<ul>
-								<li><a href="html/convenio_cooperacion_academica.html">Cooperacion Academica</a></li>
-								<li><a href="html/convenio_capacitacion_interinstitucional.html">Cooperacion
-										Institucional</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="html/modelo_certificacion.html">
-								<span>Modelos de</span>
-								<br>
-								<span>Certificación</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Noticias y</span>
-								<br>
-								<span>Eventos</span>
-							</a>
-							<ul>
-								<li><a href="html/preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-								<li><a href="html/evento.html">Noticias y Eventos</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" id="encabezado">
+		<div class="container-fluid barra_celular">
+			<a class="navbar-brand" href="#">
+				<img src="img/logos/logo_idept.png" alt="Logo" width="500 em" height="100 em"
+					class="d-inline-block align-text-top logo"></a>
+			<button class="navbar-toggler contorno_icono" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse barra_item" id="navbarNavDropdown">
+				<ul class="navbar-nav" id="menu">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="true">
+							Sobre IDEPT
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="html/mision.html">Misión</a></li>
+							<li><a class="dropdown-item" href="html/mision.html">Visión</a></li>
+							<li><a class="dropdown-item" href="html/mision.html">Quienes Somos</a></li>
+							<li><a class="dropdown-item" href="html/mensaje.html">Mensaje</a></li>
+							<li><a class="dropdown-item" href="html/autoridades.html">Autoridades</a></li>
+							<li><a class="dropdown-item" href="html/representantes.html">Representantes</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Programas de Especialización
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="html/organizacion_programas.html">Organizacion de los
+									Programas</a></li>
+							<li><a class="dropdown-item" href="html/programas.html">Programas por Areas</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Metodología y Procesos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="html/procesos.html">Procesos</a></li>
+							<li><a class="dropdown-item" href="html/requisitos.html">Requisitos</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Convenios y Auspicios
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="html/convenio_cooperacion_academica.html">Cooperacion
+									Academica</a></li>
+							<li><a class="dropdown-item"
+									href="html/convenio_capacitacion_interinstitucional.html">Cooperacion
+									Institucional</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="html/modelo_certificacion.html">
+							Modelos de Certificación
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Noticias y Eventos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="html/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+							</li>
+							<li><a class="dropdown-item" href="html/evento.html">Noticias y Eventos</a></li>
+						</ul>
+					</li>
+
+
+
+
+				</ul>
 			</div>
 		</div>
+	</nav>
 
+
+	<div class="texto">
 		<!-- partial:index.partial.html -->
+
+
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -145,24 +155,16 @@
 							</ol>
 
 							<!-- Wrapper for slides -->
-							<div class="carousel-inner" role="listbox">
-								<div class="item active">
-									<img src="img/banners/imagen_banner1.jpg">
-								</div>
-								<div class="item">
-									<img src="img/banners/imagen_banner2.jpg ">
-								</div>
-								<div class="item">
-									<img src="img/banners/imagen_banner3.jpg">
-								</div>
+							<div class="banner">
+								<img id="banner__imgcab" src="img/banners/imagen_banner1.jpg" alt="">
 							</div>
 
 							<!-- Controls -->
-							<a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+							<a class="left carousel-control" href="#" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 								<span class="sr-only">Geri</span>
 							</a>
-							<a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+							<a class="right carousel-control" href="#	" role="button" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 								<span class="sr-only">İleri</span>
 							</a>
@@ -171,6 +173,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="container">
 			<div class="row"></div>
 			<div class="row">
@@ -293,8 +296,8 @@
 												<tbody>
 													<tr title="Universidad Nacional Mayor de San Marcos">
 														<td class="text-center"><img
-																	src="img/convenios/logo_unmsm_2022.jpg"
-																	width="230px"></td>
+																src="img/convenios/logo_unmsm_2022.jpg" width="230px">
+														</td>
 													</tr>
 												</tbody>
 											</table>
@@ -305,7 +308,7 @@
 													<tr
 														title="Universidad Nacional de Educación Enrique Guzmán y Valle">
 														<td class="text-center"><img
-																	src="img/convenios/logo_une_2019.jpg" width="230px">
+																src="img/convenios/logo_une_2019.jpg" width="230px">
 														</td>
 													</tr>
 												</tbody>
@@ -315,26 +318,39 @@
 											<table cellpadding="2">
 												<tbody>
 													<tr title="Technical and Business Institute">
-														<td class="text-center"><img
-																	src="img/convenios/logo_tbi.jpg" width="230px">
+														<td class="text-center"><img src="img/convenios/logo_tbi.jpg"
+																width="230px">
 														</td>
 													</tr>
 												</tbody>
 											</table>
 										</li>
-										
-									<li class="titulo_enlace">PROGRAMAS DE ESTUDIO</li>
-									<li class="programa_enlace"><a href="../html/area_integral_gerencia.html" class="aside_enlace">Integral de Gerencia</a></li>
-					    <li class="programa_enlace"><a href="html/area_administracion_general.html" class="aside_enlace">Administración General</a></li>
-					    <li class="programa_enlace"><a href="html/area_desarrollo_docente.html" class="aside_enlace">Desarrollo Docente</a></li>
-					    <li class="programa_enlace"><a href="html/area_psicologia.html" class="aside_enlace">Psicología</a></li>
-					    <li class="programa_enlace"><a href="html/area_asuntos_medicos.html" class="aside_enlace">Asuntos Médicos, Tecno. y Servicios de Salud</a></li>
-					    <li class="programa_enlace"><a href="html/area_derecho.html" class="aside_enlace">Derecho, Jurídico, Civiles y Penitenciarios</a></li>
-					    <li class="programa_enlace"><a href="html/area_programas_seguridad.html" class="aside_enlace">Programas de Seguridad</a></li>
-					    <li class="programa_enlace"><a href="html/area_secretario_archico.html" class="aside_enlace">Secretariado y Archivo</a></li>
-					    <li class="programa_enlace"><a href="html/area_gestion_ambiental.html" class="aside_enlace">Medio-Ambiente, Desastres Naturales, Sociales y Otros</a></li>
-					    <li class="programa_enlace"><a href="html/area_programas_tecnico.html" class="aside_enlace">Programas de Técnicos</a></li>
-																       <li>
+
+										<li class="titulo_enlace">PROGRAMAS DE ESTUDIO</li>
+										<li class="programa_enlace"><a href="../html/area_integral_gerencia.html"
+												class="aside_enlace">Integral de Gerencia</a></li>
+										<li class="programa_enlace"><a href="html/area_administracion_general.html"
+												class="aside_enlace">Administración General</a></li>
+										<li class="programa_enlace"><a href="html/area_desarrollo_docente.html"
+												class="aside_enlace">Desarrollo Docente</a></li>
+										<li class="programa_enlace"><a href="html/area_psicologia.html"
+												class="aside_enlace">Psicología</a></li>
+										<li class="programa_enlace"><a href="html/area_asuntos_medicos.html"
+												class="aside_enlace">Asuntos Médicos, Tecno. y Servicios de Salud</a>
+										</li>
+										<li class="programa_enlace"><a href="html/area_derecho.html"
+												class="aside_enlace">Derecho, Jurídico, Civiles y Penitenciarios</a>
+										</li>
+										<li class="programa_enlace"><a href="html/area_programas_seguridad.html"
+												class="aside_enlace">Programas de Seguridad</a></li>
+										<li class="programa_enlace"><a href="html/area_secretario_archico.html"
+												class="aside_enlace">Secretariado y Archivo</a></li>
+										<li class="programa_enlace"><a href="html/area_gestion_ambiental.html"
+												class="aside_enlace">Medio-Ambiente, Desastres Naturales, Sociales y
+												Otros</a></li>
+										<li class="programa_enlace"><a href="html/area_programas_tecnico.html"
+												class="aside_enlace">Programas de Técnicos</a></li>
+										<li>
 											<div id="current_date">
 											</div>
 											<script>
@@ -352,7 +368,9 @@
 											</script>
 
 										</li>
-										<center><li class="news-item" id="aside_cal"></li></center>
+										<center>
+											<li class="news-item" id="aside_cal"></li>
+										</center>
 										</li>
 									</ul>
 								</div>
