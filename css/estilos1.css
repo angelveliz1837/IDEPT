@@ -1180,6 +1180,29 @@ font-size:1.8em;
 /*-------------PARTE CELULAR-----------------*/
 @media only screen and (max-width: 500px){
 
+ #titulo-top{
+margin-left: 1em;
+ }
+
+ #buscador{
+  margin-left: 0.5em;
+  margin-right: -6em;
+ }
+
+ #barra-top{
+  margin-bottom: -2em;
+ }
+
+ /*.buscador{
+  padding: 10em;
+ }*/
+
+#boton_buscar{
+  margin-left: 20.6em;
+  margin-top: -3.8em;
+}
+
+
 .barra_celular:hover{
   margin-bottom: -50px;
 }
@@ -1192,7 +1215,7 @@ font-size:1.8em;
   padding-bottom: 30px;
  } 
 
-.logo{
+ .logo{
   margin-top: -15px;
   padding-bottom: -10px;
   margin-left: -50px;
@@ -1202,7 +1225,6 @@ font-size:1.8em;
 
 .contorno_icono{
 margin-right: 4em;
-z-index: 3000000;
 }
 
 }
