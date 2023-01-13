@@ -15,6 +15,10 @@ body{
     overflow-x: hidden;
 }
 
+tbody{
+align-items:"center"
+}
+
 /*--------------------------------------------------------------------------------*/
 
 .topmenu {
@@ -78,7 +82,14 @@ label{
 /***** FORMATEO *****/
 #encabezado {
   margin-top: 0px; /*margen top de la altura */
-  margin-right: -230px;/*margen hacia la derecha de la pantalla*/
+  margin-right: auto;/*margen hacia la derecha de la pantalla*/
+}
+
+.logo{
+  margin-top: -20px;
+  padding-bottom: 10px;
+  display: block;
+  padding-left: 30px;
 }
 
 #menu, #menu ul {
@@ -89,7 +100,8 @@ label{
 
 #menu {
   width: 100%;/* ancho del 100% del #menu */
-  margin-top: 25px; /*20px del margen de arriba del menú*/
+  margin-top: 25px; /*25px del margen de arriba del menú*/
+  margin-bottom: 25px;
   border: 1px solid #533839;/*borde grosor 1px estilo solido y color #533839*/
   background-color: #9d8282;/*fondo del menu*/
   background-image: linear-gradient(#533839, #9d8282);/*gradiente con los colores de arriba abajo*/
@@ -108,12 +120,11 @@ label{
     border-right: 1px solid #533839;/*borde de la derecha*/
     box-shadow: 1px 0 0 #444;/*sombra de cada item*/
     position: relative;/*elemento se coloca en relación con su posición normal*/
-    z-index: 250;
   }
 
  #menu a {
     float: left; /*especifica si un elemento debe flotar a la izquierda <--*/
-    padding: 10px 12px;/*dimensiones del contendido al borde*/
+    padding: 12px 20px;/*dimensiones del contendido al borde*/
     color: #aaaaaa;/*color de letra*/
     font: 13px Arial, Helvetica;/*estilo de letra*/
     text-decoration: none;/*quita la linea de decoracion */
@@ -134,15 +145,14 @@ html #menu li a:hover {/*selecciona elementos cuando pasa el mouse sobre cada me
       opacity: 0;/*no es opaco*/
       visibility: hidden;/*esconde la visibilidad de los items*/
       position: absolute;/* El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático) */
-      top: 50px; /*distancia de arriba*/
+      top: 40px; /*distancia de arriba*/
       left: 0; /*distancia de la izquierda*/
-      z-index: 1;/*sobrepuesto*/
+      z-index: 10;/*sobrepuesto*/
       background: #444;/*color de fondo*/
       background: linear-gradient(#444, #533839);/*gradiente con los colores de arriba abajo */
       box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);/*sombra de cada menú*/
       border-radius: 3px;/*curva de las esquinas*/
       transition: all .2s ease-in-out;/*tiempo que demora para aparecer los items*/
-      z-index: 10;
     }
 
     #menu li:hover > ul { /*selecciona elementos cuando pasa el mouse para todo ul que es padre de li:hover*/
@@ -217,6 +227,7 @@ html #menu li a:hover {/*selecciona elementos cuando pasa el mouse sobre cada me
 
 section.awSlider .carousel{
   display:table;
+  width: 100%;
   z-index:2;
   -moz-box-shadow: 0 0 4px #444;
   -webkit-box-shadow: 0 0 4px #444;
@@ -224,7 +235,8 @@ section.awSlider .carousel{
 }
 
 section.awSlider{
-  margin:10px auto;
+  margin: 10px auto;
+  width: 100%;
   padding:0px;
   position:relative;
   display:table;
@@ -268,6 +280,17 @@ section.awSlider > img{
   opacity:.3;
 
 }
+
+/* INICIO DE CARROUSEL */
+
+#banner__imgcab{
+  width: 100%;
+  height: 400px;
+  float: left;
+
+}
+
+/* FIN DE CARROUSEL */
 
 /*-----------------------------------------------------------------------------------------*/
 
@@ -601,8 +624,7 @@ thead {
 }
 
 tbody{
-  font: normal 1em Arial, sans-serif;/*letra*/
-  text-align: center;
+  font: normal 1.5em Arial, sans-serif;/*letra*/
 }
 
 /*-----------MENSAJE------------------------*/
@@ -1154,3 +1176,32 @@ font-size:1.8em;
 
 
 
+
+/*-------------PARTE CELULAR-----------------*/
+@media only screen and (max-width: 500px){
+
+.barra_celular:hover{
+  margin-bottom: -50px;
+}
+
+.barra_item{
+  padding-top: 5px;
+}
+
+ #encabezado{
+  padding-bottom: 30px;
+ } 
+
+.logo{
+  margin-top: -15px;
+  padding-bottom: -10px;
+  margin-left: -80px;
+  display: block;
+  width: 30em;
+}
+
+.contorno_icono{
+  margin-right: 2em;
+}
+
+}
