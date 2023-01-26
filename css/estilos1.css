@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400&display=swap');
 
-
 *{
     padding: 0px;
     margin: 0px;
@@ -19,746 +18,848 @@ tbody{
 align-items:"center"
 }
 
-/*--------------------------------------------------------------------------------*/
+/*--------BARRA BUSCADOR E INSCRIPCION------------------------------------*/
 
-.topmenu {
-  width: 100%; /*agranda al 100% el ancho de la pagina*/
-  background-color: #000000;/*color de fondo de la pagina*/
-  margin-top: 0;/*margen 0 para la parte de arriba del topmenu*/
+#barra{
+  display: flex;
+  float: left; /*Barra para la derecha*/
+  width: 100%;/*Ancho de la barra al 100%*/
+  background: #000; /*Fondo de la Barra*/
+  color: #fff; /*Color de letra*/
+  padding: 0.4%;/*margen por dentro de la barra*/
 }
 
-    .topmenu .container {
-        padding: 2px; /* ancho del topmenu  */
+    #barra h1 {
+      width: 30%; /*Ancho al 30% del total de la barra*/
+      font-size: 200%; /*tamaño del titulo*/
+      text-align: center; /*Texto centrado */
     }
 
-#barra-top{
-    padding: 2px;/*altura para centrar la barra-top y empareje con #inscribir*/
+#barra__buscador-inscripcion{
+  width: 100%; /*ocupa todo el 70% que falta de la #barra en un 100%*/
+  height: auto; /*centra la altura*/
 }
 
-#titulo-top {
-    width: 300px; /*ancho en Programas de Especializacion*/
-    color: #FFFFFF; /*color de letra en #titulo-top*/
-    font: normal 1.8em Arial, sans-serif;/*tamaño de letra de Programas de Especializacion*/
-    padding-top: 3px;
-}
-
-.buscador #buscador{
-    width: 350px; /*ancho del buscador para escribir */
-}
-
-#boton_buscar{
-  width: 100px; 
-  height: 28px; 
-  font-size: 1.5em
-}
-
-
-#inscribir{
-  padding: 8px;
-}
-
-    #inscribir .inscripcion {
-        transition: .3s all; /*tiempo que dura agrandar el botom .inscripcion*/
-        font-weight: bold; /*negrita para la palabra Inscribite en .inscripcion*/
-        width: 100%; /*estira al 100% el ancho que esta dentro de div inscribir*/
+    #barra__buscador-inscripcion input {
+      width: 40%;/*ocupa el 40% del 70% de form*/
+      padding: 0.5%; /*margen por dentro aumenta en 0.5%*/
+      margin-right: 0.5%; /*margeb de derecha aumenta en un 0.5%*/
+      font-size: 130%; /*tamaño de letra aumenta en un 130%*/
+      color: #000; /*color de la letra cuando se escribe*/
     }
 
-        #inscribir .inscripcion:hover { /* imagen de animacion de boton cuando es mouse pase por encima*/
-            -webkit-transform: scale(1.5, 1.5);
+    #buscador {
+      display: inline-block; /*cambia el div block a inline-block*/
+      width: 10%; /*ocupa el 10% del 70% de la barra*/
+      text-align: left; /*alinea a la izquierda el contenido*/
+    }
+
+        #buscador a {
+          padding-right: 20%; /*alinea a la derecha el contenido*/
+          font-size: 170%; /*tamaño de letra */
+        }
+
+    #inscripcion {
+      display: inline-block; /*cambia el div block a inline-block*/
+       width: 45%; /*ocupa el 45% del 70% de la barra*/
+       text-align: center; /*centra el texto*/
+    }
+
+        #inscripcion a {
+          padding: 0% 5%; /*margen por dentro del boton inscripcion*/
+          margin-right: 20%; /*margen derecha del boton inscripcion*/
+          font-size: 170%; /*tamaño de la letra*/
+          text-decoration: none;
+          color: #fff; /*Color de letra*/
+        }
+
+        #inscripcion a:hover { /* imagen de animacion de boton cuando es mouse pase por encima*/
+          transition: .3s all; /*tiempo que dura agrandar el botom inscripcion*/
+          -webkit-transform: scale(1.5, 1.5); /*transforma el boton de inscripcion*/
             -ms-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
         }
 
-label{
-    font-weight: normal; /*Letra normal para los label*/
+/*------------------------BARRA DEL NAVEGADOR-------------------------------------------------*/
+
+#navegador {
+  width: 100%;
+  float:left;
 }
 
-
-/*--------------------------------------------------------------------------------------------*/
-
-.texto{
-  width: 100%; /*ocupa todo el ancho de la pagina aunque se contraiga*/
-}
-/***** FORMATEO *****/
-#encabezado {
-  margin-top: 0px; /*margen top de la altura */
-  margin-right: auto;/*margen hacia la derecha de la pantalla*/
-}
-
-.logo{
-  margin-top: -20px;
-  padding-bottom: 10px;
-  display: block;
-  padding-left: 30px;
-}
-
-#menu, #menu ul {
-  margin: 0; /*margen 0 para el #menu y #menu dentro de ul*/
-  padding: 0;/*padding 0 para el #menu y #menu dentro de ul*/
-  list-style: none;/*quita la lista . que tiene por default*/
-}
-
-#menu {
-  width: 100%;/* ancho del 100% del #menu */
-  margin-top: 25px; /*25px del margen de arriba del menú*/
-  margin-bottom: 25px;
-  border: 1px solid #533839;/*borde grosor 1px estilo solido y color #533839*/
-  background-color: #9d8282;/*fondo del menu*/
-  background-image: linear-gradient(#533839, #9d8282);/*gradiente con los colores de arriba abajo*/
-  border-radius: 6px; /*borde de las esquinas para curvear*/
-  box-shadow: 0 1px 1px #ab4343;/*sombra de cada menú*/
-  zoom: 1;/*tamaño de letra para el menu*/
-  display: flex;/*caja flexible al nivel del contenedor*/
-}
-
-  #menu:after {
-    clear: both;/*se pone debajo de caja de navegacion*/
-  }
-
- #menu li {
-    float: left;/*especifica si un elemento debe flotar a la izquierda <-- */
-    border-right: 1px solid #533839;/*borde de la derecha*/
-    box-shadow: 1px 0 0 #444;/*sombra de cada item*/
-    position: relative;/*elemento se coloca en relación con su posición normal*/
-  }
-
- #menu a {
-    float: left; /*especifica si un elemento debe flotar a la izquierda <--*/
-    padding: 12px 20px;/*dimensiones del contendido al borde*/
-    color: #aaaaaa;/*color de letra*/
-    font: 13px Arial, Helvetica;/*estilo de letra*/
-    text-decoration: none;/*quita la linea de decoracion */
-    text-shadow: 0 1px 0 #000;/*sombra del texto*/
-    font-weight: bold;/*pone en negrita la letras*/
-  }
-
-    #menu li:hover > a { /* selecciona elementos cuando pasa el mouse para todo a que es padre de li*/
-      color: #fafafa;/*color que aparecera en cada item*/
+    #navegador__logo {
+      float:left;
+      width: 20%;
     }
 
-html #menu li a:hover {/*selecciona elementos cuando pasa el mouse sobre cada menu*/
-  color: #fafafa;
-}
-
-#menu ul {
-      margin: 20px 0 0 0;/*margen de de cada menu*/
-      opacity: 0;/*no es opaco*/
-      visibility: hidden;/*esconde la visibilidad de los items*/
-      position: absolute;/* El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático) */
-      top: 40px; /*distancia de arriba*/
-      left: 0; /*distancia de la izquierda*/
-      z-index: 10;/*sobrepuesto*/
-      background: #444;/*color de fondo*/
-      background: linear-gradient(#444, #533839);/*gradiente con los colores de arriba abajo */
-      box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);/*sombra de cada menú*/
-      border-radius: 3px;/*curva de las esquinas*/
-      transition: all .2s ease-in-out;/*tiempo que demora para aparecer los items*/
-    }
-
-    #menu li:hover > ul { /*selecciona elementos cuando pasa el mouse para todo ul que es padre de li:hover*/
-      opacity: 1; /*opacidad total ya que es de 0 a 1*/
-      visibility: visible;/* se mantiene visinle */
-      margin: 0;/* no tiene margen */
-    }
-
-      #menu ul li {
-        float: none; /*no especifica si un elemento debe flotar*/
-        display: block;/*Muestra el elemento como un elemento de bloque*/
-        border: 0;/*no tiene borde*/
-        box-shadow: 0 1px 0 #111, 0 2px 0 #666;/*sombra de cada item*/
-      }
-
-        #menu ul li:last-child {/*selector coincide con cada elemento que es el último li de su #menu ul*/
-          box-shadow: none;/*quita la sombra*/
+        #navegador__logo img {
+          width: 100%;
         }
 
-      #menu ul a {
-        padding: 10px;/*dimensiones del contendido al borde*/
-        width: 230px;/*ancho de medida de 230px*/
-        display: block;/*Muestra el elemento como un elemento de bloque*/
-        white-space: nowrap;/*El texto continúa en la misma línea hasta que se encuentra una etiqueta <br>*/
-        float: none;/*no especifica si un elemento debe flotar*/
-        text-transform: none;/*El texto se representa tal como es*/
-      }
+    #navegador__barra {
+      float:left;
+      width: 80%;
+    }
 
-        #menu ul a:hover {
-          background-color: #C9302C; /*color de fondo*/
+        #menu {
+          width: 100%;
+          border: 10% solid #533839;/*borde grosor 1px estilo solido y color #533839*/
+          background-color: #9d8282;/*fondo del menu*/
+          background-image: linear-gradient(#533839, #9d8282);/*gradiente con los colores de arriba abajo*/
+          border-radius: 0.6em; /*borde de las esquinas para curvear*/
+          box-shadow: 0 0.1em 0.1em #ab4343;/*sombra de cada menú*/
+          zoom: 1;/*tamaño de letra para el menu*/
+          display: flex;/*caja flexible al nivel del contenedor*/
         }
 
-          #menu ul li:first-child > a {
-            border-radius: 3px 3px 0 0; /*curva de la esquina*/
-          }
+        #menu:after {
+          clear: both;/*se pone debajo de caja de navegacion*/
+        }
 
-            #menu ul li:first-child > a:after {/*sale un borde tipo triangular para seleccionar*/
-              content: '';
-              position: absolute;/*El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático)*/
-              left: 40px;/*40px para la izquierda*/
-              top: -6px;/*6px para arriba */
-              border-left: 6px solid transparent;/*borde de la izquierda*/
-              border-right: 6px solid transparent;/*borde de la derecha*/
-              border-bottom: 6px solid #444;/*borde de parte inferior*/
+            #menu ul {
+              opacity: 0;/*no es opaco*/
+              visibility: hidden;/*esconde la visibilidad de los items*/
+              position: absolute;/* El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático) */
+              left: 0; /*distancia de la izquierda*/
+              z-index: 10;/*sobrepuesto*/
+              background: linear-gradient(#444, #533839);/*gradiente con los colores de arriba abajo */
+              transition: all .2s ease-in-out;/*tiempo que demora para aparecer los items*/
             }
-
-              #menu ul ul li:first-child a:after {
-                left: -6px;/*6px hacia la izquierda*/
-                top: 50%;/*top al 50%*/
-                margin-top: -6px;/*margen negativo que entra al contenido del texto*/
-                border-left: 0;/*sin borde al lado izquierdo*/
-                border-bottom: 6px solid transparent;/*borde inferior de 6px solido y transparente*/
-                border-top: 6px solid transparent;/*borde de arriba de 6px solido transparente*/
-                border-right: 6px solid #3b3b3b;/*borde de la derecha de 6px solido y colo #3b3b3b*/
-              }
-
-                #menu ul li:first-child a:hover:after {
-                  border-bottom-color: #C9302C;/*color del borde del triangulo para seleccionar*/
+            
+              
+                #menu li {
+                  float: left;/*especifica si un elemento debe flotar a la izquierda <-- */
+                  border-right: 0.1em solid #533839;/*borde de la derecha*/
+                  box-shadow: 0.1em 0 0 #444;/*sombra de cada item*/
+                  position: relative;/*elemento se coloca en relación con su posición normal*/
+                  width: 100%; /*ocupa todo la caja li*/
                 }
 
-                  #menu ul ul li:first-child a:hover:after {
-                    border-right-color: #C9302C;
-                    border-bottom-color: transparent;
-                    
-                  }
+                    #menu a {
+                      float: left; /*especifica si un elemento debe flotar a la izquierda <--*/
+                      padding: auto 17%;/*dimensiones del contendido al borde*/
+                      /*padding: 12px 20px;*/
+                      color: #aaaaaa;/*color de letra*/
+                      font: 145% Arial, Helvetica;/*estilo de letra*/
+                      text-align: center;
+                      text-decoration: none;/*quita la linea de decoracion */
+                      text-shadow: 0 0.12em 0 #000;/*sombra del texto*/
+                      font-weight: bold;/*pone en negrita la letras*/ 
+                      width: 100%;
+                    }
 
-                #menu ul li:last-child > a {
-                  border-radius: 0 0 3px 3px;/*curva final del ultimo item*/
-                }
+                        #menu ul li:last-child {/*selector coincide con cada elemento que es el último li de su #menu ul*/
+                          box-shadow: none;/*quita la sombra*/
+                        }
+                        
+                            #menu li:hover > ul { /*selecciona elementos cuando pasa el mouse para todo ul que es padre de li:hover*/
+                              opacity: 1; /*opacidad total ya que es de 0 a 1*/
+                              visibility: visible;/* se mantiene visible */
+                              margin: 0;/* no tiene margen */
+                            }
 
-/*-----------------------------------------------------------------------------------------*/
+                            #menu .subitem {
+                              text-align: justify;
+                            }
 
-section.awSlider .carousel{
-  display:table;
+                                #menu ul a:hover, #menu ul a:focus{
+                                  background-color: #C9302C; /*color de fondo*/
+                                }                          
+
+/*----------------CARRUSEL----------------------------------------------------------------------*/
+
+#baner {
   width: 100%;
-  z-index:2;
-  -moz-box-shadow: 0 0 4px #444;
-  -webkit-box-shadow: 0 0 4px #444;
-  box-shadow: 0 0 15px rgba(1,1,1,.5);
 }
 
-section.awSlider{
-  margin: 10px auto;
-  width: 100%;
-  padding:0px;
-  position:relative;
-  display:table;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+/*-----------------ARTICULO CONTENIDO--------------------------------------------------------------*/
 
-section.awSlider:hover > img{
-  padding: auto;
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity:.8;
-}
-
-section.awSlider img{
-  pointer-events: none;
-  margin: auto;
-}
-
-section.awSlider > img{
-  position:absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index:1;
-  transition:all .3s;
-  filter: blur(1.8vw);
-  -webkit-filter: blur(2vw);
-  -moz-filter: blur(2vw); 
-  -o-filter: blur(2vw); 
-  -ms-filter: blur(2vw);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity:.3;
-
-}
-
-/* INICIO DE CARROUSEL */
-
-#banner__imgcab{
-  width: 100%;
-  height: 400px;
-  float: left;
-
-}
-
-/* FIN DE CARROUSEL */
-
-/*-----------------------------------------------------------------------------------------*/
-
-
-.p10{
-  padding-left: 0;/*relleno izquierdo es como sangria*/
-  z-index: 15;
-}
-
-#titulo{
-  z-index: 5; /*z-index para que este encima de la sombra del carrusel*/
-  
-}
-
-.titulo { /*titulo de PROGRAMAS DE ESPECIALIZACION PROFESIONAL Y DIPLOMADOS*/
+#titulo { /*titulo de PROGRAMAS DE ESPECIALIZACION PROFESIONAL Y DIPLOMADOS*/
   background-color: #B04445;/*fondo para el titulo */
-  color: #ffffff; /*color de letra del titulo*/
-  border: 1px solid #fff;/*borde de 1px solido y color blanco*/
+  color: #fff; /*color de letra del titulo*/
+  border: 0.05em solid #fff;/*borde de 1px solido y color blanco*/
   display: block;/*ocupa todo un bloque*/
-  padding: 10px;/*espacio que hay entre contenido y borde*/
-  margin-top: 10px;/*margen posterior para arriba 10px*/
-  border-radius: 5px;/*curva en las esquinas*/
+  padding: 0.4em;/*espacio que hay entre contenido y borde*/
+  margin-top: 0.5em;/*margen posterior para arriba 10px*/
+  border-radius: 0.3em;/*curva en las esquinas*/
   font: bold 2em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
 }
 
-.titulo_programa{
+    .programa {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 1em 1%;
+      min-width: 15em;
+      max-width: 100%;
+      text-align: center;
+      border: 0.3em solid #FFF;
+      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);  
+      border-radius: 5%;
+      background-color: #e2e3db;
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+        .programa img {
+          max-width: 100%;
+          vertical-align: top;
+          height: auto;
+          margin: 0.3em;
+        }
+        
+        .programa i {
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          font-size: 500%;
+          color: #000;
+          width: 80%;
+          height: 50%;
+          line-height: 100%;
+          /*font-size: 1.8em;*/
+          /*border: 0.3em solid #FFF;*/
+          transform: translate(-50%, -50%) scale(0);
+          transition: transform 300ms 00ms cubic-bezier(.57,-0.52,.38,.75);
+        }
+        
+        .programa:hover img {
+          opacity: 0.3;
+          filter: grayscale(100%);
+        }
+
+        .programa:hover i {
+          transform: translate(-50%, -50%) scale(1);
+          transition: transform 300ms 100ms cubic-bezier(.21,.85,.65,1.32);
+        }
+
+/*-------------ASIDE CONTENIDO------------------------------------------------------*/
+
+#titulo-convenio {/*parte lateral donde van los convenios*/
+  margin-top: 1em;/*margen de arriba de 10px*/
+  padding-left: 0em;/*espacio de la derecha*/
+  width: 100%;/*ocupa el 100% de su contenedor*/
+  height: 99%; /*ocupa casi toda la altura */
+}
+
+    #titulo-convenio > #titulo-convenio__titulo {
+      color: #FFFFFF; /* color del titulo convenios */
+      background-color: #B04445;/*color de fondo del titulo*/
+      border-color: #C9302C;/*color de borde del titulo*/
+      font-size: 1.4em;/*tamaño de letra del titulo (convenios y auspicios)*/
+      font-weight: bold;
+    }
+
+#convenios {
+  margin: 0em;
+  padding: 0em;
+  text-align: center;
+  list-style: none; /*no tiene propiedad de lista por el none*/
+}
+
+    .convenios__universidad {
+      border-bottom: 1px dotted #555;/* borde de la parte de abajo */
+    }
+
+    #titulo_enlace{
+      font-size: 1.8em;
+        color:firebrick;
+        font-weight: bold;
+        padding-top:5%;
+    }
+
+    .programa_enlace{
+      margin: 1.5em 2em;
+      border-radius: 0.5em;
+      border: 0.3em solid #973331;
+      text-align: justify;
+    }
+
+        .nombre_enlace {
+          text-decoration: none;
+          font-size: 1.6em;
+          font-weight: bold;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: #973331;
+        }
+
+        .programa_enlace .nombre_enlace {
+          display: block;
+          margin: 0em;
+          padding: 0.4em 1em;
+          width: 100%;
+        }
+
+        .programa_enlace:hover {
+          background-color: #aaa;
+        }
+
+        .nombre_enlace:hover {
+          text-decoration: none;
+          color: red;
+        }
+
+            #aside_cal {
+              text-align: center;
+              font-size: 200%;
+            }
+
+                table {
+                  width: 100%;
+                  border-collapse: separate;
+                  border-spacing: 0.4em 0.5em;
+                }           
+
+/*----------------------------------FOOTER----------------------------------------------------------*/
+
+#referencia {
+  display:flex;
+  width: 100%;
+  background-color:#973331;/*color de fondo*/
+  color: #000000;/*color de letra*/
+  border-top: solid #ffffff 2px;/*borde de arriba*/
+  margin: 1% 0%;
+  padding: 0.5% 0%;
+}
+
+    #referencia__titulo {
+      width: 100%; /*contenido al 100% dentro del contenedor*/
+      padding-bottom: 1%;/* espacio de abajo */
+      text-align: center; /*texto centrado*/
+      color: #ffffff;/*color de texto*/
+      font: 3em Arial, Helvetica;/* tamaño de letra y etilo de letra */
+    }
+
+    .referencia__texto { 
+      font: 1.5em Arial, Helvetica; /* tamaño de letra y etilo de letra */
+    }
+
+        .referencia__texto ul {
+          padding: 0% 3%;
+          list-style: none; /*no tiene propiedad de lista por el none*/
+        }
+
+            .referencia__texto ul > li {
+              padding: 1.5% 0%;
+              border-bottom: dashed #ffffff 1px;/*borde de abajo*/
+            }
+
+                .referencia__texto a {
+                  color: #973331; /* color de texto */
+                }
+
+    #referencia__autor {
+      width: 100%;
+      text-align: center;
+      font-size: 150%;
+    } 
+
+/*--------------------------NAVEGADOR LATERAL------------------------------------------------------*/
+
+#navegador_lateral {
+  position: fixed; /*posicion con relacion de la ventana del navegador*/
+  left: 95%; /*posicion para la derecha*/
+  top: 20%;/*posicion de arriba*/
+  width: 200%;/*ancho*/
+  z-index: 200;
+  
+}
+
+    #navegador_lateral__redes {
+      text-decoration: none;
+    }
+
+        #navegador_lateral__redes li {
+          list-style-type: none;
+          background-color: #333;/*color de fondo*/
+          padding: 0.4em;/*no tiene espacio del contenido al borde*/
+          transition: all 0.25s ease-in-out;/*translacion*/
+          cursor: pointer; /*cursor del mouse que se muestra*/
+          filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+          filter: gray; /*filtro */
+          -webkit-filter: grayscale(100%);
+        }
+
+        #navegador_lateral__redes li:hover {
+          margin-left: -2.5%; /*margen de la izquierda*/
+          filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+          -webkit-filter: grayscale(0%);
+        }
+
+            #navegador_lateral__redes a {
+              text-decoration: none; /*no tiene decoracion*/
+              color: #efeefe;
+              font: normal 1.5em Arial, sans-serif;/*letra*/
+            }
+
+                .navegador_lateral__redes-imagen {
+                      float: left; /*flotante a la izquierda*/   
+                }
+
+                .navegador_lateral__redes-nombre {
+                  margin-top: 0.2em;
+                  padding: 0.1em 0em 0.1em 2.5em;
+                }
+                    
+                .navegador_lateral__redes-nombre:hover {
+                  text-decoration: none; /*no tiene decoracion*/
+                  color: #fff;
+                }
+
+/*------------- CONTENIDO MISION, VISION Y QUIENES SOMOS --------------------------------------*/
+
+.sobre_idept__titulo {
+  background-color: #B04445;/*fondo para el titulo */
+  color: #fff; /*color de letra del titulo*/
+  border: 0.05em solid #fff;/*borde de 1px solido y color blanco*/
+  display: block;/*ocupa todo un bloque*/
+  padding: 0.4em;/*espacio que hay entre contenido y borde*/
+  margin-top: 0.5em;/*margen posterior para arriba 10px*/
+  border-radius: 0.3em;/*curva en las esquinas*/
+  font: bold 2em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
+}
+
+.sobre_idept__contenido {
+  padding: 3% 3% 2% 3%;/*margen*/
+  overflow: auto;/*no deja que el contenido desborde a su contenedor*/
+  text-align: justify;/*texto justificado*/
+  font-size: 1.6em;
+}
+
+    .sobre_idept__contenido img {
+      float: right;/*se posiciona a la derecha*/
+      margin: 0em 0.5em 0em 2em;/*margen*/
+      border: 0.4em solid;/*grosor del borde*/
+      border-color: #c3bebb;/*color de borde*/
+      border-radius: 1em / 0.5em;/*borde*/
+      -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+    -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    #izquierda img {
+      float: left;
+      margin: 0em 2em 0em 0em;/*margen*/
+      padding: none;
+    }
+
+#abajo {
+  padding-bottom: 0%;
+}
+
+/*-----------CONTENIDO MENSAJE-------------*/
+
+    #mensaje_foto img{
+      margin-bottom: 1.5%;
+    }
+
+/*--------- CONTENIDO AUTORIDADES ----------*/
+
+.foto {
+  padding: 2em;
+}
+
+    .foto__autoridad{
+      width: 100%;/*ocupa todo el ancho*/
+      height: 100%;/*ocupa todo el alto*/
+      -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+      -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .foto__autoridad:hover{
+      background: -webkit-linear-gradient(bottom, #FFFFFF, #933939);/*gradiente*/
+      opacity: 0.9;
+    }
+
+        .foto__descripcion h4{
+          font: bold 2em Georgia, sans-serif;/*letra*/
+        }
+
+        .foto__descripcion p{
+          font: normal 1.5em Arial, sans-serif;/*letra*/
+          line-height: 2em;/*espaciador entre lineas*/
+        }
+
+/*--------------- CONNTENIDO DE REPRESENTANTES --------------------------------------------*/
+
+.representantes__tabla thead {
+  font-size: 2em;
+}
+
+.representantes__tabla tbody {
+  font-size: 1.5em;
+}
+
+    .representantes__tabla td {
+    border-bottom: #fff;
+    }
+
+/*----------- TERMINO DEL PRIMER ITEM -------------------------------------------------------*/
+/*----------- INICIO DEL SEGUNDO ITEM -------------------------------------------------------*/
+
+/*------------ORGANIZACION DE PROGRAMAS ----------------------------------------------------*/
+#organizacion {
+  background: #FFFFFF; /*fondo blanco*/
+  padding: 2em 2em 0em 2em; /*espacio del texto al borde*/
+  border-radius: 2%; /*curva del borde*/
+  margin: 1em 0em 0em 0em;/*margen de arriba y abajo*/
+}
+
+    .organizacion__contenido {
+      font: normal 1em Arial, sans-serif;/*letra*/
+      line-height: 1.5em;/*espaciador entre lineas*/
+      margin: 0em 0.1em;
+    }
+
+        .organizacion__contenido strong {
+          font-size: 1.6em;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+/*---------------------------------------- PROGRAMAS -------------------------------------------------------*/
+
+#galeria {
+	width: 100%;/*Ocupa toda el ancho de la pagina*/
+	/*padding: 0.5em;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+    #galeria div{
+        width: 98%;/*Ayuda a la primera caja ocupar el 98% de ancho*/
+        margin: 0.9%;
+        border: .5em solid darkred;
+        background-color:lightgrey;
+    }
+
+    .galeria__programas {
+      /*margin-top: 10px;*/
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+        .galeria__programas__area {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          transition: all 0.2s ease-in;
+        }
+
+            .galeria__programas__area:hover {
+              cursor: pointer;
+              transform: scale(1.05);
+              -webkit-box-shadow: 1px 1px 10px 1px #1d2028;
+              box-shadow: 1px 1px 10px 1px #1d2028;
+            }
+
+            .galeria__programas__area a {
+              text-decoration: none;
+            }
+
+                .galeria__programas__area img {
+                  height: 100%;/*Ocupa toda la altura de la imagen*/
+                  width: 100%;/*La imagen ocupa el 100% de ancho*/
+                  object-fit: cover;
+                }
+
+                .galeria__programas__area h2 {
+                  margin-top: 0.5em;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  font-size: 2.3em;
+                  font-weight: bold;
+                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                  color:rgb(51, 27, 27);
+                  text-align: center;
+                  text-decoration: none;
+                  transition: color 0.3s ease-in-out;
+                }
+
+                .galeria__programas__area h2:hover{
+                  cursor: pointer;
+                  color: #973331;
+                }
+
+/*----------- TERMINO DEL SEGUNDO ITEM -------------------------------------------------------*/
+/*----------- INICIO DEL TERCER ITEM -------------------------------------------------------*/
+
+/*-------------------------------PROCESOS-------------------------------------------------------*/
+    .sobre_idept__contenido .imagen-proceso {
+    margin-bottom: 2%;
+    }
+
+    #izquierda .imagen-proceso {
+      margin-bottom: 2%;
+    }
+
+/*---------------------------------- REQUISITOS ---------------------------------------------------*/
+
+/* SE UTILIZO IDS Y CLASES ANTERIORES */
+
+/*----------- TERMINO DEL TERCER ITEM -------------------------------------------------------*/
+/*----------- INICIO DEL CUARTO ITEM -------------------------------------------------------*/
+
+/*--------------------------- CONVENIO COOPERACION ACADEMICA ----------------------------------------*/
+
+ul .cuadrado{
+  list-style: square;
+}
+
+ul .circulo{
+  list-style: circle;
+}
+
+.titulo__universidad {
+  color: #973331;
+}
+
+.subtitulo__universidad {
+  text-decoration:underline; 
+  font-size:1em; 
+  line-height:0px;
+}
+
+/*-------------------- CONVENIO DE CAPACITACION INTERINSTITUCIONAL ---------------------------------------------------*/
+
+/* SE UTILIZO IDS Y CLASES ANTERIORES */
+
+/*----------- TERMINO DEL CUARTO ITEM -------------------------------------------------------*/
+/*----------- INICIO DEL QUINTO ITEM -------------------------------------------------------*/
+/*------------------------ MODELO DE CERTIFICACION ----------------------------------------------------------*/
+
+.certificados{
+  margin-top: 2em;
+  background: #FFFFFF; 
+  border-radius: 1%;
+  border: solid 0.3em #000;
+  width: auto; 
+  position: initial; 
+  text-align: center;
+}
+
+    .certificados div {
+      margin-bottom: 3%;
+    }
+
+#certificado__borde {
+  border: 0px;
+}
+
+/*----------- TERMINO DEL QUINTO ITEM -------------------------------------------------------*/
+/*----------- INICIO DEL SEXTO ITEM -------------------------------------------------------*/
+/*--------------------------- PREGUNTAS FRECUENTES -------------------------------------------------*/
+
+.respuesta__letra {
+  font-size: 1.5em;
+}
+
+/*------------------------------------- EVENTOS Y NOTICIAS -----------------------------------------*/
+#portafolio{
+  margin-top: 1%;
+  background-color: #e2e3db;
+  border-radius: 2%;
+  border-style: groove;
+  display: inline-block;
+  padding: 1% 1% 0% 1%;
+}
+
+    #portafolio a {
+      text-decoration: none;
+      font-size: 2em;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:darkslategray;
+    }
+
+        #portafolio img{
+          padding-bottom: 3%;
+        }
+
+    .boton{
+      padding: 2%;
+      display: contents;
+    }
+
+        .noticia img{
+          float: none;
+          display:block;
+          margin: 1.6em auto;
+          border: .5em solid;/*grosor del borde*/
+          border-color: #c3bebb;/*color de borde*/
+          border-radius: 2.5em / 1.5em;/*borde*/
+          -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+        -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        .noticia h2 {
+          color: #940505;
+          padding: 1% 0%;
+          font-size: 2.5em;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+
+    .excepcion {
+      height: 99.97% !important;
+    }
+
+    /*--------------------- RESOLUCION ----------------------------------------------------*/
+    #resolucion img {
+      border: #000 solid 0.2em;
+      width: 100%;
+    }
+
+    #resolucion .resolucion-imagen1 {
+      margin-top: 1em;
+    }
+
+    /*------PROGRAMA INTEGRAL DE GERENCIA --------------------------------------------------------*/
+
+#int_ger {
+  background-color:#F5CFD5;
+  color: #000;
+  font-weight: bold;
+  border: 0.1em solid #000;
+}
+
+.programa__titulo {
   margin-top:1.5%;
   padding-left: 1%;
   font: bold 2.7em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
 }
-
-.titulo_subprograma{
-  font: bold 1.5em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
+    
+.programa__lista { 
+  background-color:white;
+  color: #000;
+  border-radius: 0.5%;
+  border: 2px solid #000;
+  height: 96%;
 }
+    
+    .programa__lista__conteo {
+      padding-top: 2%;
+      font-weight: bold;
+      margin-left: 2%;
+      margin-right: 3%;
+    }
 
-#adm_gen{
+    .programa__lista li {
+      font-size: 1.3em;
+      font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      text-align: justify;
+    }
+        
+    .programa__lista h5 {
+      font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      text-align: justify;
+    }
+
+/*--------------------ADMINISTRACION GENERAL --------------------------------------------------------------*/
+
+#adm_gen {
   background-color:#F5CFD5; /*ROSADO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
-#asun_med{
-  background-color:#5BF5F5; /*celeste pastel*/
-  color: #000;
-  font-weight: bold;
-  border:2px solid #000;
-}
-#derecho{
-  background-color:#F5E4D1;/*DERECHO PASTEL*/
-  color: #000;
-  font-weight: bold;
-  border:2px solid #000;
-}
-#ges_doc{
+
+    .subprograma__titulo {
+      font: bold 1.5em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
+    }
+
+/*----------------------- GESTIÓN Y DESARROLLO DOCENTE -----------------------------------------------------*/
+
+#ges_doc {
   background-color:#B8D679; /*VERDE PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
-#med_amb{
-  background-color:#CDC99C; /*MARRON PASTEL*/
+
+#programa__excepcion-bajar {
+  height: 98% !important;
+}
+
+/*------------------------- PSICOLOGIA --------------------------------------------------------------------------*/
+
+#psicologia {
+  background-color:#B49FDF;/*MORADO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
-#int_ger{
-  background-color:#F5CFD5;
+
+#programa__excepcion-subir {
+  height: 94% !important;
+}
+
+/*------------------- ASUNTOS MEDICOS ------------------------------------------------------------------------*/
+
+#asun_med {
+  background-color:#5BF5F5; /*celeste pastel*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
-#pro_seg{
+
+/*------------------------------------ PROGRAMAS DE SEGURIDAD ----------------------------------------------*/
+
+#pro_seg {
   background-color:#ECEA64;/*AMARILLO PASTEL*/
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
-#pro_tec{
-  background-color:#B49FDF;/*MORADO PASTEL*/
-  color: #000;
-  font-weight: bold;
-  border:2px solid #000;
-}
-#psicologia{
-  background-color:#B49FDF;/*MORADO PASTEL*/
-  color: #000;
-  font-weight: bold;
-  border:2px solid #000;
-}
-#sec_arc{
+
+/*----------------------------------- SECRETARIADO Y ARCHIVO -------------------------------------------------*/
+
+#sec_arc {
   background-color:#8CC78C;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
 }
 
-.portfolio-item {
-  margin: auto;
+/*---------------------------------- MEDIO AMBIENTE -------------------------------------------------------------*/
 
-}
-
-#contenedor {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-
-div #item {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 210px;
-  max-width: 100%;
-  background: #000000;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);  
-  border-radius: 5%;
-}
-
-div #item img {
-  max-width: 100%;
-  vertical-align: top;
-  height: auto;
-
-}
-
-div #item i {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  font-size: 35px;
+#med_amb {
+  background-color:#CDC99C; /*MARRON PASTEL*/
   color: #000;
-  width: 80%;
-  height: 50%;
-  line-height: 100%;
+  font-weight: bold;
+  border:2px solid #000;
 }
 
-div .red{
-  font-size: 1.8em;
-  border: 3px solid #FFF;
+/*-------------------------------------- DERECHO -----------------------------------------------------------------------------*/
+
+#derecho {
+  background-color:#F5E4D1;/*DERECHO PASTEL*/
+  color: #000;
+  font-weight: bold;
+  border:2px solid #000;
 }
 
- div #item.red {
-  background-color: #e2e3db;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+/*--------------------------------------- PROGRAMAS TECNICOS ------------------------------------------------------------------*/
+
+#pro_tec {
+  background-color:#B49FDF;/*MORADO PASTEL*/
+  color: #000;
+  font-weight: bold;
+  border:2px solid #000;
 }
 
-div #item:hover img {
-  opacity: 0.3;
-  filter: grayscale(100%);
-}
+/*--------------------------------- CONTACTANOS ---------------------------------------------------------------------------*/
 
-div #item i {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 300ms 00ms cubic-bezier(.57,-0.52,.38,.75);
-}
-
-div #item:hover i {
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms 100ms cubic-bezier(.21,.85,.65,1.32);
-}
-
-
-/*-------------------------------------------------------------------*/
-
-
-#convenios {/*parte lateral donde van los convenios*/
-  margin-top: 10px;/*margen de arriba de 10px*/
-  padding-left: 0px;/*espacio de la derecha*/
-  width: 100%;/*ocupa el 100% de su contenedor*/
-}
-
-.text-center img {/* contiene las imagenes UNMSM Y UNE */
-  width: 100%;/*ocupa el 100% del ancho del contenedor*/
-}
-
-.panel ul {
-  padding: 0px; /*no tiene espacio entre el contenido y el borde*/
-  margin: 0px; /*no tiene margen*/
-  list-style: none; /*no tiene propiedad de lista por el none*/
-}
-
-.news-item {
-  padding: 4px 4px; /*espacio del contenido al borde*/
-  margin: 0px; /*no tiene margen*/
-  border-bottom: 1px dotted #555;/* borde de la parte de abajo */
-}
-
-.panel-heading{
-  z-index: 155;
-}
-
-.panel-info > .panel-heading {
-  color: #FFFFFF; /* color del titulo convenios */
-  background-color: #B04445;/*color de fondo del titulo*/
-  border-color: #C9302C;/*color de borde del titulo*/
-  font-size: 1.3em;/*tamaño de letra del titulo (convenios y auspicios)*/
-}
-
-
-/*--------------------------------------------------------------------------------------------*/
-
-.footer {
-  background-color:#973331;/*color de fondo*/
-  color: #000000;/*color de letra*/
-  border-top: solid #ffffff 2px;/*borde de arriba*/
-  padding-top: 25px;/*espacio del contenido de arriba*/
-  padding-bottom: 25px;/*espacio del contenido de abajo*/
-}
-
-    .footer .footer-title {
-      padding-bottom: 10px;/* espacio de abajo */
-      text-align: center; /*texto centrado*/
-      color: #ffffff;/*color de texto*/
-      font: 1.8em Arial, Helvetica;/* tamaño de letra y etilo de letra */
-    }
-
-    .footer .footer-texto {
-      font: 1.4em Arial, Helvetica; /* tamaño de letra y etilo de letra */
-      width: 100%; /*contenido al 100% dentro del contenedor*/
-    }
-
-        .footer .footer-texto ul {
-          list-style: none; /*no tiene propiedad de lista por el none*/
-        }
-
-            .footer .footer-texto ul li {
-                padding-top: 15px; /* espacio de arriba */
-                padding-bottom: 15px;/* espacio de abajo */
-                border-bottom: dashed #ffffff 1px;/*borde de abajo*/
-            }
-
-    .footer a {
-        color: #ffffff; /* color de texto */
-    }
-
-        .footer a:hover { /*color de texto cuando pase el mouse por el hover*/
-            color: #dcdcdc; /*color de texto*/
-            text-decoration: none; /* quita el decorativo del texto */
-        }
-
-
-/*--------------------------------------------------------------------------------*/
-
-.sticky-container {
-  padding: 0px;/* no hay espacio entre el contenido al barode */
-  margin: 0px;/*no tiene margen*/
-  position: fixed; /*posicion con relacion de la ventana del navegador*/
-  right: -119px; /*posicion para la derecha*/
-  top: 130px;/*posicion de arriba*/
-  width: 200px;/*ancho*/
-  z-index: 200;
-}
-
-.sticky li {
-  list-style-type: none;
-  background-color: #333;/*color de fondo*/
-  color: #efefef; /*color de letra*/
-  height: 43px;/*altura*/
-  padding: 0px;/*no tiene espacio del contenido al borde*/
-  margin: 0px 0px 1px 0px; /*margen */
-  transition: all 0.25s ease-in-out;/*translacion*/
-  cursor: pointer; /*cursor del mouse que se muestra*/
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  filter: gray; /*filtro */
-  -webkit-filter: grayscale(100%);
-}
-
-.sticky li:hover {
-  margin-left: -115px; /*margen de la izquierda*/
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-}
-
-.sticky li img {
-  float: left; /*flotante a la izquierda*/
-  margin: 5px 5px; /*margen */
-  margin-right: 10px; /*magen del derecha*/
-}
-
-.sticky li p {
-  padding: 0px; /*no tiene espacio entre el contenido al borde*/
-  margin: 0px;/* no tiene margen */
-  line-height: 43px;/**/
-}
-
-.sticky a {
-  color: #aaaaaa; /*color de letra*/
-}
-
-.sticky a:hover { 
-  color: #aaaaaa; /*color de letra cuando pase el mouse*/
-  text-decoration: none; /*no tiene decoracion*/
-}
-
-/*------------AUTORIDADES ----------------------*/
-
-.separador{
-  padding: 20px;/*espaciador de la caja*/
-}
-.thumbnail{
-width: 100%;/*ocupa todo el ancho*/
-height: 100%;/*ocupa todo el alto*/
--webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
--moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-.thumbnail:hover{
-  background: -webkit-linear-gradient(bottom, #FFFFFF, #933939);/*gradiente*/
-  opacity: 0.9;
-}
-
-h4{
-  font: bold 2em Georgia, sans-serif;/*letra*/
-}
-
-p{
-  font: normal 1.5em Arial, sans-serif;/*letra*/
-  line-height: 25px;/*espaciador entre lineas*/
-}
-
-/*----------------REPRESENTANTES-------------------*/
-
-thead {
-    font: bold 2em Verdana, sans-serif;/*letra*/
-}
-
-tbody{
-  font: normal 1.5em Arial, sans-serif;/*letra*/
-}
-
-/*-----------MENSAJE------------------------*/
-
-section.seccion{
-  padding: 10px;/*margen*/
-  margin-right: -5px;/*margen de la derecha*/
-  overflow: auto;/*no deja que el contenido desborde a su contenedor*/
-  text-align: justify;/*texto justificado*/
-}
-section.seccion img{
-  float: right;/*se posiciona a la derecha*/
-  margin: 0px 10px;/*margen*/
-  border: 5px solid;/*grosor del borde*/
-  border-color: #c3bebb;/*color de borde*/
-  border-radius: 20px / 10px;/*borde*/
-  -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
--moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-}
-
-/*-----------------------MISION----------------------------------*/
-
-#media{
-  float: left;
-  margin-right: 30px;
-}
-
-/*---------------------RESOLUCION------------------------------*/
-div#resolucion > img{
-  display: inline-block;/**/
-  width: 100%;/*ocupa todo el ancho*/
-  padding: 10px 5px 0px 10px;/*espacio del contenido al borde*/
-}
-
-#resolucion:last-child{/*insertando algo despues el contenido*/
-  padding-bottom: 10px;/* separador de abajo */
-}
-
-/*--------------------ORGANIZACION-------------------------------------------*/
-
-#organizacion{
-  background: #FFFFFF; /*fondo blanco*/
-  padding: 10px; /*espacio del texto al borde*/
-  border-radius: 2%; /*curva del borde*/
-  margin: 10px 0px;/*margen de arriba y abajo*/
-}
-.organizacion{
-  font: normal 1.7em Arial, sans-serif;/*letra*/
-  line-height: 20px;/*espaciador entre lineas*/
-  margin: 15px 10px;
-}
-.organizacion strong {
-  font-size: 1.4em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/*---------------------------PROCESOS--------------------------------*/
-
-.margen{
-  padding: 20px 0px 0px 0px;
-}
-
-.margen1{
-  padding: 20px;
-  vertical-align: 50px;
-}
-
-.seccion .procesos_img{
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.seccion.margen1 img{
-  float:left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-
-
-/*------------------REQUISITOS-------------------------------------*/
-
-.margen12{
-  padding: 20px;
-}
-
-.seccion.margen12 iframe{
-  float:left;
-  margin-right: 40px;
-  margin-bottom: 30px;
-  width: 45em;
-  height: 40em;
-  border: 5px solid;/*grosor del borde*/
-  border-color: #c3bebb;/*color de borde*/
-  border-radius: 20px / 10px;/*borde*/
-  -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
--moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-/*------------------COOPERACION INSTITUCIONAL -----------------------------*/
-
-.seccion.margen123{
-  padding: 20px 10px 0px 0px;
-}
-
-/*----------------MODELO DE CERTIFICADO---------------------------------------*/
-
-
-#tabla{
-  background: #FFFFFF; 
-  border-radius: 1%;
-  border: solid 3px #000;
-  width: auto; 
-  position: initial; 
-  align-content: center;
-}
-
-.intervalo{
-    border: solid 3px #000;
-}
-
-/*------------------------FORMULARIO--------------------------------*/
-
-.flex-container {
+#contactanos__formulario {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  max-width: 1000px;
   flex-grow: 1;
   font: normal 1.5em Arial, sans-serif;
   margin: 2% 3% 2% 3%;
@@ -769,42 +870,71 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
   border-radius: 2%;
 }
 
-.letra_select{
-  font-weight: bold;
-  font-size: 0.9em;
-}
+    .seleccionar {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
 
-.letra_form{
-  font-weight: bold;
-}
+        .contactanos__formulario__titulo {
+          font-weight: bold;
+        }
 
-.letra_cont{
-  font-size: 1.2em;
-}
+        .contactanos__formulario__color {
+          color:green;
+          font-weight: bold;
+        }
 
-.letra_boton{
-  padding: 2%;
-  font-weight: bold;
-  color: white;
-  width: 20%;
-  border-radius: 5%;
-  font-size: 1em;
-}
+        .contactanos__formulario__contenido {
+          font-size: 1.2em;
+        }
 
-.letra_boton:hover{
-  border: 2px solid white;
-  background: #940505;
+        #contactanos__formulario__mensaje {
+          height: 15em;
+        }
 
-}
+    #boton {
+      text-align: center;
+    }
 
-.color_ast{
-  color:green;
-  font-weight: bold;
-}
+        .contactanos__formulario__boton {
+          padding: 2%;
+          font-weight: bold;
+          color: white;
+          width: 25%;
+          border-radius: 5%;
+          font-size: 1em;
+        }
 
-/*--------------MATRICULA-----------------------------------------*/
+            .contactanos__formulario__boton:hover {
+              border: 2px solid white;
+              background: #940505;
+            }
 
-.matricula .matricula-title {
+    .sobre_idept__contenido iframe {
+      float:left;
+      margin-left: -3%;
+      margin-right: 3%;
+      margin-bottom: 3%;
+      border: 5px solid;/*grosor del borde*/
+      border-color: #c3bebb;/*color de borde*/
+      border-radius: 20px / 10px;/*borde*/
+      -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+    -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    }
+
+        .contactanos {
+          font-weight: bold; 
+          font-size: 1.2em;
+        }
+
+        .contactanos__referencia {
+          font-size: 1.09em;
+        }
+
+/*----------------------------- MATRICULA ---------------------------------------------------*/
+
+/*.matricula .matricula-title {
   color: #C9302C;
 }
 
@@ -911,321 +1041,4 @@ box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
   padding: 0.8em 1.2em; 
   font: normal 0.8em Hervetica, sans-serif;
 }
-
-
-/*-------------------AREAS----------------------------------------*/
-
-#contenido{ 
-  /*width:390px; */
-  padding:0; 
-  margin:0 auto;
-}  
-
-#botones article{ 
-       display:inline-block; 
-       text-align:center; 
-       /*width:15.75%;*/
-       height:auto; 
-       padding:1px;
-       margin:0; 
-       margin-bottom:1em;
-       border:1px solid #d9d9d9;
-     }
-
-#botones img{
-      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-      -webkit-transition: box-shadow 1.5s ease;
-      -moz-transition: box-shadow 1.5s ease;
-      transition: box-shadow 1.5s ease; 
-    }
-
-#botones article:hover{
-      -webkit-box-shadow: 0 0 6px 1px #f60000;
-      box-shadow: 0 0 6px 1px #f60000; }
-
-#titulo__imagen{
-  display:block; font: solid 2px Arial, sans-serif; 
-  background: #96989a; 
-  color: #FFF; 
-  width: 100%; 
-  z-index: 50; 
-  padding-bottom: 30px;
-}
-
-#imagen__area{
-  display: inline-block; 
-  padding-top: 60px; 
-  border-radius: 0% 0% 9% 9%;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-/*------------------------NOTICIAS Y EVENTOS------------------------------------------*/
-#portafolio{
-  margin-top: 1%;
-  background-color: #e2e3db;
-  border-radius: 2%;
-  border-style: groove;
-  display: inline-block;
-  padding: 1% 1% 0% 1%;
-}
-
-#portafolio a{
-  text-decoration: none;
-  font-size: 2em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:darkslategray;
-}
-
-#portafolio img{
-  padding-bottom: 3%;
-}
-
-.boton{
-  padding: 2%;
-  display: contents;
-}
-
-section.noticia img{
-  float: none;
-  display:block;
-  margin: 1.6em auto;
-  border: 5px solid;/*grosor del borde*/
-  border-color: #c3bebb;/*color de borde*/
-  border-radius: 20px / 10px;/*borde*/
-  -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
--moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-.noticia h2 {
-  color: #940505;
-  font-size: 1.6em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/*----------------LISTA DE PROGRAMAS ---------------------------------*/
-.lista_programas{ 
-  background-color:white;
-  color: #000;
-  border-radius: 0.5%;
-  border: 2px solid #000;
-}
-
-.lista_programas_conteo{
-  padding-top: 2%;
-  font-weight: bold;
-  margin-left: 2%;
-  margin-right: 3%;
-}
-
-#letra_programa li{
-font-size: 1.3em;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-text-align: justify;
-}
-
-#letra_programa h5{
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-text-align: justify;
-}
-
-
-/*---------------------CONVENIOS----------------------------------*/
-ul .cuadrado{
-  list-style: square;
-}
-
-ul .circulo{
-  list-style: circle;
-}
-
-.lista_convenios{
-  font-size: 1.5em;
-}
-
-/*-----------GALERIA-------------------------*/
-#galeria {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--main-textColor);
-  border-bottom: 1px solid var(--alterText);
-}
-
-.lista_galeria {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.lista_galeria_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  transition: all 0.2s ease-in;
-}
-
-.lista_galeria_item:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  -webkit-box-shadow: 1px 1px 10px 1px #1d2028;
-  box-shadow: 1px 1px 10px 1px #1d2028;
-}
-
-.lista_galeria_item_img {
-  height: 100%;
-  width: 98%;
-  object-fit: cover;
-}
-
-.lista_galeria_item_enlace{
-  text-decoration: none;
-  align-content: center;
-}
-
-.lista_galeria_item_info {
-  margin-top: 5px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content:center;
-  transition: color 0.3s ease-in-out;
-  color:rgb(51, 27, 27);
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.lista_galeria_item_info:hover{
-  cursor: pointer;
-  color: #528ac1;
-}
-
-#galeria {
-	width: 100%;
-	padding: 5px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-#galeria div{
-    width: 98%;
-    margin: 0.9%;
-    border: 5px solid darkred;
-    background-color:lightgrey;
-    
-}
-
-/*-------------------CALENDARIO---------------------*/
-table {
-  border-collapse: separate;
-  border-spacing: 1.6em 10px;
-  display: inline-table;
-}
-.br td {
-  padding: 1em 1.5em;
-  border-radius: 10px;
-  border: 1px solid red;
-}
-
-.hoy{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-/*---------------------PROGRAMAS ENLACE------------------*/
-.programa_enlace{
-margin: 20px 0px;
-padding: 5px 10px;
-border-radius: 10px;
-border: 3px solid #973331;
-font-size: 1.6em;
- font-weight: bold;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-align: justify;
-}
-
-.aside_enlace{
-text-decoration:none;
-color: #973331;
-}
-
-.programa_enlace:hover{
-background-color: #aaaaaa; /*color de fondo*/
-text-decoration:none;
-color:red;
-}
-
-.titulo_enlace{
-font-size:1.8em;
-	color:firebrick;
-	font-weight: bold;
-	padding-top:5%;
-}
-
-
-
-
-/*-------------PARTE CELULAR-----------------*/
-@media only screen and (max-width: 500px){
-
- #titulo-top{
-margin-left: 1em;
- }
-
- #buscador{
-  margin-left: 0.5em;
-  margin-right: -6em;
- }
-
- #barra-top{
-  margin-bottom: -2em;
- }
-
- /*.buscador{
-  padding: 10em;
- }*/
-
-#boton_buscar{
-  margin-left: 20.6em;
-  margin-top: -3.8em;
-}
-
-
-.barra_celular:hover{
-  margin-bottom: -50px;
-}
-
-.barra_item{
-  padding-top: 5px;
-}
-
- #encabezado{
-  padding-bottom: 30px;
- } 
-
- .logo{
-  margin-top: -15px;
-  padding-bottom: -10px;
-  margin-left: -50px;
-  display: block;
-  width: 23em;
-}
-
-.contorno_icono{
-margin-right: 4em;
-}
-
-}
-
+*/
