@@ -15,16 +15,16 @@
 </head>
 <!-- BARRA BUSCADOR E INSCRIPCION -->
 <header id="barra">
-	<h1>Programas de Especialización</h1>
-	<form id="barra__buscador-inscripcion">
-		<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
-		<div id="buscador">
-			<a class="btn btn-danger" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
-		</div>
-		<div id="inscripcion">
-			<a href="formulario.html" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
-		</div>
-	</form>
+    <h1>Programas de Especialización</h1>
+    <form id="barra__buscador-inscripcion">
+        <input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
+        <div id="buscador">
+            <a class="btn btn-danger" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
+        </div>
+        <div id="inscripcion">
+            <a href="formulario.html" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
+        </div>
+    </form>
 </header>
 
 <!-- BARRA DE NAVEGADOR -->
@@ -114,23 +114,29 @@
                 <div id="titulo">
                     MATRÍCULA
                 </div>
-                <div><p></p></div>
-                <div class="recomendacion">
+                <div>
+                    <p></p>
+                </div>
+                <div class="matricula__recomendacion">
                     <ol>
                         <li>Leer y entender todos los puntos tratados en el presente contrato.</li>
                         <li>Realizar el Deposito Correspondiente (Matrícula y 1ra Mensualidad).</li>
                         <li>Rellenar completamente todos los datos requeridos.</li>
-                        <li>Dar clic en Enviar e Imprimir Documento (el documento impreso queda como comprobante del participante).</li>
-                        <li>Comunicarse vía teléfono, e-mail o correo para coordinación de envios y Confirmación de datos.</li>
+                        <li>Dar clic en Enviar e Imprimir Documento (el documento impreso queda como comprobante del
+                            participante).</li>
+                        <li>Comunicarse vía teléfono, e-mail o correo para coordinación de envios y Confirmación de
+                            datos.</li>
                         <li>Todos los campos deben de estar llenos.</li>
                     </ol>
-                    <h3 class="matricula-title">CONTRATO DE MATRÍCULA</h3>
+                    <h3 class="matricula__titulo">CONTRATO DE MATRÍCULA</h3>
                     <hr>
-                    <form method="POST" action="" accept-charset="UTF-8" role="form" class="form-horizontal"><input name="_token" type="hidden" value="RCUrvyBF0HZBZuQflwDGOmilksjUzF05SSYJA09P">
+                    <form method="POST" action="" accept-charset="UTF-8" role="form" class="form-horizontal"><input
+                            name="_token" type="hidden" value="RCUrvyBF0HZBZuQflwDGOmilksjUzF05SSYJA09P">
+
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="apellidos" class="col-sm-4 control-label pr0">Apellidos</label>
+                                    <label for="apellidos" class="col-sm-4 control-label">Apellidos:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="apellidos" type="text" id="apellidos">
                                     </div>
@@ -138,7 +144,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="nombres" class="col-sm-4 control-label pr0">Nombres</label>
+                                    <label for="nombres" class="col-sm-4 control-label">Nombres:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="nombres" type="text" id="nombres">
                                     </div>
@@ -149,7 +155,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="doc" class="col-sm-4 control-label pr0">DNI / Otro Doc.</label>
+                                    <label for="doc" class="col-sm-4 control-label">DNI / Otro Doc:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="doc" type="text" id="doc">
                                     </div>
@@ -157,7 +163,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="telefono" class="col-sm-4 control-label pr0">Teléfono</label>
+                                    <label for="telefono" class="col-sm-4 control-label">Teléfono:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="telefono" type="text" id="telefono">
                                     </div>
@@ -168,7 +174,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="correo" class="col-sm-2 control-label pr0">Correo</label>
+                                    <label for="correo" class="col-sm-2 control-label">Correo:</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="correo" type="email" id="correo">
                                     </div>
@@ -179,7 +185,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="trabajo" class="col-sm-2 control-label pr0">Centro Laboral</label>
+                                    <label for="trabajo" class="col-sm-2 control-label">Centro Laboral:</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="trabajo" type="text" id="trabajo">
                                     </div>
@@ -190,7 +196,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="unidad" class="col-sm-4 control-label pr0">Unidad o Área</label>
+                                    <label for="unidad" class="col-sm-4 control-label">Unidad o Área:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="unidad" type="text" id="unidad">
                                     </div>
@@ -198,7 +204,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="cargo" class="col-sm-4 control-label pr0">Cargo</label>
+                                    <label for="cargo" class="col-sm-4 control-label">Cargo:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="cargo" type="text" id="cargo">
                                     </div>
@@ -209,7 +215,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="direccion2" class="col-sm-2 control-label pr0">Dirección</label>
+                                    <label for="direccion2" class="col-sm-2 control-label">Dirección:</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="direccion2" type="text" id="direccion2">
                                     </div>
@@ -220,7 +226,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="distrito2" class="col-sm-4 control-label pr0">Distrito</label>
+                                    <label for="distrito2" class="col-sm-4 control-label">Distrito:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="distrito2" type="text" id="distrito2">
                                     </div>
@@ -228,7 +234,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="provincia2" class="col-sm-4 control-label pr0">Provincia</label>
+                                    <label for="provincia2" class="col-sm-4 control-label">Provincia:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="provincia2" type="text" id="provincia2">
                                     </div>
@@ -239,7 +245,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="ciudad2" class="col-sm-4 control-label pr0">Ciudad</label>
+                                    <label for="ciudad2" class="col-sm-4 control-label">Ciudad:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="ciudad2" type="text" id="ciudad2">
                                     </div>
@@ -247,23 +253,24 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="telefono2" class="col-sm-4 control-label pr0">Teléfono</label>
+                                    <label for="telefono2" class="col-sm-4 control-label">Teléfono:</label>
                                     <div class="col-sm-8">
                                         <input class="form-control" name="telefono2" type="text" id="telefono2">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <hr>
+                        <hr><!-- LINEA SEPARADORA -->
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="col-sm-2">
-                                    <label for="institucion" class="col-sm-12 control-label pr0">Institución</label>
+                                <div class="col-sm-2 matricula__seleccionar">
+                                    <label for="institucion" class="control-label">Institución:</label>
                                 </div>
                                 <div class="col-sm-10">
                                     <form class="btn-group bootstrap-select form-control">
                                         <select class="form-select" id="institucion" name="institucion">
-                                            <option value="UNE">Universidad Nacional de Educación Enrique Guzmán y Valle</option>
+                                            <option value="UNE">Universidad Nacional de Educación Enrique Guzmán y Valle
+                                            </option>
                                             <option value="UNMSM">Universidad Nacional Mayor de San Marcos</option>
                                             <option value="IDEPT">Instituto de Desarrollo Profesional y Técnico</option>
                                         </select>
@@ -271,102 +278,116 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
+                        <br><!-- SEPARADOR DE CONTENIDOS -->
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="col-sm-2">
-                                    <label for="programa" class="col-sm-12 control-label pr0">Programa o Esp</label>
+                                <div class="col-sm-2 matricula__seleccionar">
+                                    <label for="programa" class="control-label">Programa:</label>
                                 </div>
                                 <div class="col-sm-10">
-                                    <form class="btn-group bootstrap-select form-control listado">
+                                    <form class="btn-group bootstrap-select form-control programa__listado">
                                         <select class="form-select" id="programa" name="programa">
-                                          <option value="P0408">(antes de sept.2016) COMPUTACIÓN E INFORMÁTICA</option>
-                                          <option value="P0407">(antes de sept.2016) COMPUTACIÓN EJECUTIVA</option>
-                                          <option value="P0261">(antes de set2016) COMPUTACIÓN E INFORMÁTICA</option>
-                                          <option value="P0238">(antes de set2016) COMPUTACIÓN EJECUTIVA</option>
-                                      </select>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row ultimo_dato">
-                        <div class="col-sm-8">
-                            <div class="form-group">
-                                <label for="deposito" class="col-sm-5 control-label pr0 deposito">Depósito o Trans.</label>
-                                <div class="col-sm-7 relleno_deposito">
-                                    <input class="form-control" name="deposito" type="text" id="deposito">
+                                            <option value="P0408">(antes de sept.2016) COMPUTACIÓN E INFORMÁTICA
+                                            </option>
+                                            <option value="P0407">(antes de sept.2016) COMPUTACIÓN EJECUTIVA</option>
+                                            <option value="P0261">(antes de set2016) COMPUTACIÓN E INFORMÁTICA</option>
+                                            <option value="P0238">(antes de set2016) COMPUTACIÓN EJECUTIVA</option>
+                                        </select>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="fecha_dep" class="col-sm-4 control-label pr0 fecha">Fecha</label>
-                                <div class="col-sm-8 fecha_dep">
-                                    <input class="form-control" placeholder="(dd/mm/AAAA)" name="fecha_dep" type="text" id="fecha_dep">
+                        <hr> <!-- LINEA SEPARADORA -->
+                        <div class="row matricula__deposito">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label for="deposito" class="col-sm-4 control-label deposito">Depósito o
+                                        Trans.:</label>
+                                    <div class="col-sm-8 deposito__contenido">
+                                        <input class="form-control" name="deposito" type="text" id="deposito">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="fecha_dep" class="col-sm-4 control-label fecha">Fecha:</label>
+                                    <div class="col-sm-8 fecha_dep">
+                                        <input class="form-control" placeholder="(dd/mm/AAAA)" name="fecha_dep"
+                                            type="text" id="fecha_dep">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-sm-12 comentario">
-                            No se olvide de enviar el depósito escaneado al correo idept5@hotmail.com, gracias.
-                        </div>
-                    </div>
-
-                    <div class="row cuentas-corrientes">
-                        <div class="col-sm-12">
-                            <p>
-                                <strong>Banco de Crédito del Perú - Cuenta en Soles</strong>
-                                <br>
-                                Nº 193-1939374-0-35 a nombre de Instituto de Desarrollo Profesional y Técnico<br>
-                                Matrícula   S/. 120.00<br>
-                                Mensualidad S/. 120.00<br>
-                                Certificación   S/. 250.00<br>
-                            </p>
-                        </div>
-
-                        <div class="col-sm-12">
-                            <p>
-                                <strong>Western Union – para Participantes Extranjeros No-Peruanos</strong>
-                                <br>
-                                (giros a nombre de: EDGARDO ADRIAN MUÑOZ NUÑEZ, D.N.I.:45050022)<br>
-                                Matrícula   US $ 80.00<br>
-                                Mensualidad US $ 80.00<br>
-                                Certificación   US $ 100.00<br>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <strong>IMPORTANTE</strong>
-                    <br>
-
-                    <ol>
-                        <li>La duración de los estudios es de acuerdo al Programa elegido, según lo especificado en el presente documento.</li>
-                        <li>Al participante se le proporciona módulos de aprendizaje que incluyen exámenes de contenidos que deben ser entregados o enviados mensualmente.</li>
-                        <li>Los materiales de estudio que se entregan al participante son para su uso personal y exclusivo.</li>
-                        <li>El participante se compromete a verificar su código de matrícula en nuestra sede. Debe hacerlo en forma personal, por teléfono o e-mail.</li>
-                        <li>El costo total establecido en la presente solicitud no incluye los gastos de Certificación y Diplomado, los mismos que deben ser abonados en nuestra dirección o al representante designado expresamente para tal fin.</li>
-                        <li>El participante debe concluir todos sus exámenes para poder gestionar la certificación.</li>
-                        <li>El participante debe leer cuidadosamente y entender este contrato de matricula. Una vez firmado no existen devoluciones monetarias.</li>
-                        <li>Los Precios mostrados NO INCLUYEN gastos de ENVIO o ENCOMIENDA</li>
-                    </ol>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group text-center">
-                                <button type="submit" title="Enviar Matrícula" class="btn btn-danger enviar_matricula"><i class="fa fa-envelope"></i>&nbsp;Enviar Matrícula</button>
+                        <div class="row">
+                            <div class="col-sm-12 comentario">
+                                No se olvide de enviar el depósito escaneado al correo idept5@hotmail.com, gracias.
                             </div>
                         </div>
-                    </div>
-                </form>
-            </div>
+
+                        <div class="row cuentas-corrientes">
+                            <div class="col-sm-12">
+                                <p>
+                                    <strong>Banco de Crédito del Perú - Cuenta en Soles</strong>
+                                    <br>
+                                    Nº 193-1939374-0-35 a nombre de Instituto de Desarrollo Profesional y Técnico<br>
+                                    Matrícula S/. 120.00<br>
+                                    Mensualidad S/. 120.00<br>
+                                    Certificación S/. 250.00<br>
+                                </p>
+                            </div>
+                            <div class="col-sm-12">
+                                <p>
+                                    <strong>Western Union – para Participantes Extranjeros No-Peruanos</strong>
+                                    <br>
+                                    (giros a nombre de: EDGARDO ADRIAN MUÑOZ NUÑEZ, D.N.I.:45050022)<br>
+                                    Matrícula US $ 80.00<br>
+                                    Mensualidad US $ 80.00<br>
+                                    Certificación US $ 100.00<br>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <strong>IMPORTANTE</strong>
+                        <br>
+                        <ol>
+                            <br>
+                            <li>La duración de los estudios es de acuerdo al Programa elegido, según lo especificado en
+                                el presente documento.</li>
+                            <br>
+                            <li>Al participante se le proporciona módulos de aprendizaje que incluyen exámenes de
+                                contenidos que deben ser entregados o enviados mensualmente.</li>
+                            <br>
+                            <li>Los materiales de estudio que se entregan al participante son para su uso personal y
+                                exclusivo.</li>
+                            <br>
+                            <li>El participante se compromete a verificar su código de matrícula en nuestra sede. Debe
+                                hacerlo en forma personal, por teléfono o e-mail.</li>
+                            <br>
+                            <li>El costo total establecido en la presente solicitud no incluye los gastos de
+                                Certificación y Diplomado, los mismos que deben ser abonados en nuestra dirección o al
+                                representante designado expresamente para tal fin.</li>
+                            <br>
+                            <li>El participante debe concluir todos sus exámenes para poder gestionar la certificación.
+                            </li>
+                            <br>
+                            <li>El participante debe leer cuidadosamente y entender este contrato de matricula. Una vez
+                                firmado no existen devoluciones monetarias.</li>
+                            <br>
+                            <li>Los Precios mostrados NO INCLUYEN gastos de ENVIO o ENCOMIENDA</li>
+                        </ol>
+                        <hr> <!-- LINEA SEPARADORA -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group text-center">
+                                    <button type="submit" title="Enviar Matrícula"
+                                        class="btn btn-danger enviar_matricula"><i
+                                            class="fa fa-envelope"></i>&nbsp;Enviar Matrícula</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </article>
 
             <!-- ENLACES PARA CONVENIOS Y PROGRAMAS -->
@@ -382,7 +403,8 @@
                                 <tbody>
                                     <tr title="Universidad Nacional Mayor de San Marcos">
                                         <td class="text-center">
-                                            <img src="../img/convenios/logo_unmsm_2022.jpg" width="230em">
+                                            <img src="../img/convenios/logo_unmsm_2022.jpg" width="230em"
+                                                alt="logo_unmsm">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -393,7 +415,7 @@
                                 <tbody>
                                     <tr title="Universidad Nacional de Educación Enrique Guzmán y Valle">
                                         <td class="text-center">
-                                            <img src="../img/convenios/logo_une_2019.jpg" width="230em">
+                                            <img src="../img/convenios/logo_une_2019.jpg" width="230em" alt="logo_une">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -404,7 +426,7 @@
                                 <tbody>
                                     <tr title="Technical and Business Institute">
                                         <td class="text-center">
-                                            <img src="../img/convenios/logo_tbi.jpg" width="230em">
+                                            <img src="../img/convenios/logo_tbi.jpg" width="230em" alt="logo_tbi">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -525,28 +547,28 @@
     <ul id="navegador_lateral__redes">
         <li>
             <a href="contactanos.html">
-                <img class="navegador_lateral__redes-imagen" width="32" height="32" title="" alt=""
+                <img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_correo"
                     src="../img/redes/correo.png">
                 <p class="navegador_lateral__redes-nombre">Contáctanos</p>
             </a>
         </li>
         <li>
             <a target="_blank" href="https://www.facebook.com/institutoIDEPT" target="_blank">
-                <img class="navegador_lateral__redes-imagen" width="32" height="32" title="" alt=""
+                <img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_facebook"
                     src="../img/redes/facebook.png">
                 <p class="navegador_lateral__redes-nombre">Facebook</p>
             </a>
         </li>
         <li>
             <a aria-label="Chat on WhatsApp" href="https://wa.me/51945094204" target="_blank">
-                <img class="navegador_lateral__redes-imagen" width="32" height="32" alt="Chat on WhatsApp"
+                <img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_WhatsApp"
                     src="../img/redes/wsp.png">
                 <p class="navegador_lateral__redes-nombre">WhatsApp</p>
             </a>
         </li>
         <li>
             <a href="https://goo.gl/maps/Fi8RgquSGG4Hx5R68" target="_blank">
-                <img class="navegador_lateral__redes-imagen" width="32" height="32" title="" alt=""
+                <img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_ubicacion"
                     src="../img/redes/ubicacion.png">
                 <p class="navegador_lateral__redes-nombre">Ubícanos</p>
             </a>
