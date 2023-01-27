@@ -1,6 +1,3 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400&display=swap');
 
 *{
     padding: 0px;
@@ -934,15 +931,102 @@ ul .circulo{
 
 /*----------------------------- MATRICULA ---------------------------------------------------*/
 
-/*.matricula .matricula-title {
+.matricula__recomendacion {
+  font: normal 1.7em sans-serif;
+  text-align: justify;
+}
+
+.matricula__titulo {
   color: #C9302C;
 }
 
-.matricula .cuentas-corrientes {
-  padding-top: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
+.form-group {
+  margin-bottom: 0.4em;
 }
+
+.form-group label {
+  padding-right: 0em;
+}
+
+.form-group input {
+  font-size: 1em;
+}
+
+.matricula__seleccionar {
+  padding-right: 0em;
+}
+    .matricula__seleccionar label {
+      float: right;
+    }
+
+    #institucion {
+      font-size: 1em;
+    }
+
+    #programa {
+      width: 100%;
+      font-size: 1.5em;
+    }
+
+    .programa__listado {
+      padding: 0px;
+    }
+
+
+#matricula__deposito {
+  padding-bottom: 1.5em;
+}
+
+    .deposito {
+      padding-top: 0.5em;
+    }
+
+    .deposito__contenido {
+      padding: 0px;
+      margin: 0px;
+    }
+
+        #deposito {
+          font-size: 1em;
+        }
+
+    .fecha {
+      text-align: center;
+      padding-top: 0.5em;
+    }
+    
+    .fecha_dep {
+      margin: 0px;
+    }
+
+        #fecha_dep {
+          font-size: 1em;
+        }
+    
+.comentario{
+  padding: 1em 0em;
+  color:red; 
+  font: bold 1em Arial, sans-serif; 
+}
+
+.cuentas-corrientes {
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  font: normal 1em sans-serif;
+}
+
+.enviar_matricula {
+  padding: 0.8em; 
+  font: normal 1em Hervetica, sans-serif;
+}
+/*
+
+
+
+
+
+
+
 
 .matricula a {
   color: black;
@@ -954,91 +1038,7 @@ ul .circulo{
   text-decoration: none;
 }
 
-.recomendacion{
-  font: normal 1.7em sans-serif;
-  text-align: justify;
-
-}
-
-.form-group {
-  margin-bottom: 5px;
-}
-
-.pr0 {
-  padding-right: 0px;
-}
-
 .prl0 {
   padding-left: 0px;
-}
-
-.cuentas-corrientes{
-  font: normal 0.64em sans-serif;
-}
-
-.matricula .cuentas-corrientes {
-  padding-top: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-#apellidos, #nombres, #doc, #telefono, #correo, #trabajo, #unidad, #cargo, #direccion2, #distrito2, 
-#provincia2, #ciudad2, #telefono2{
-  font-size: 0.8em;
-}
-
-#institucion{
-  font-size: 0.9em;
-}
-
-.listado{
-  padding: 0px;
-}
-
-#programa{
-  width: 100%;
-  font-size: 1.5em;
-}
-
-#ultimo_dato{
-  padding-bottom: 15px;
-}
-
-.deposito{
-  text-align: center;
-  padding-top: 10px;
-}
-
-.relleno_deposito{
-  padding: 0px;
-  margin: 0px;
-}
-
-#deposito{
-  font-size: 0.8em;
-}
-
-.fecha{
-  text-align: center;
-  padding-top: 10px;
-}
-
-.fecha_dep{
-  margin: 0px;
-}
-
-#fecha_dep{
-  font-size: 0.8em;
-}
-
-.comentario{
-  color:red; 
-  font: bold 0.96em Arial, sans-serif; 
-  border: none;
-}
-
-.enviar_matricula{
-  padding: 0.8em 1.2em; 
-  font: normal 0.8em Hervetica, sans-serif;
 }
 */
