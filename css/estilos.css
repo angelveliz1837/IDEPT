@@ -965,13 +965,14 @@ ul .circulo{
 
     #programa {
       width: 100%;
-      font-size: 1.5em;
+      font-size: 0.8m;
+      padding: 0.5% 0% 0.5% 0.5%;
+      border: #fff;
     }
 
     .programa__listado {
-      padding: 0px;
+      display: none;
     }
-
 
 #matricula__deposito {
   padding-bottom: 1.5em;
@@ -1019,26 +1020,11 @@ ul .circulo{
   padding: 0.8em; 
   font: normal 1em Hervetica, sans-serif;
 }
-/*
+
+
+
+/*-------------------------------------------------*/
 
 
 
 
-
-
-
-
-.matricula a {
-  color: black;
-  text-decoration: none;
-}
-
-.table .matricula a:hover {
-  color: #C9302C;
-  text-decoration: none;
-}
-
-.prl0 {
-  padding-left: 0px;
-}
-*/

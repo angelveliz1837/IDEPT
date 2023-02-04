@@ -127,701 +127,706 @@
                     </ol>
                     <h3 class="matricula__titulo">CONTRATO DE MATRÍCULA</h3>
                     <hr>
-                    <form method="POST" action="" accept-charset="UTF-8" role="form" class="form-horizontal"><input
-                            name="_token" type="hidden" value="RCUrvyBF0HZBZuQflwDGOmilksjUzF05SSYJA09P">
+                    <form name="frmregistro" onsubmit="registrar(this)" class="form-horizontal">
+                        <table>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="apellidos" class="col-sm-4 control-label">Apellidos:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="apellidos" id="apellidos" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="nombres" class="col-sm-4 control-label">Nombres:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="nombres" id="nombres" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="doc" class="col-sm-4 control-label">DNI / Otro Doc:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="doc" class="form-control" id="doc">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="celular" class="col-sm-4 control-label">Celular:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="celular" class="form-control" id="celular">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="apellidos" class="col-sm-4 control-label">Apellidos:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="apellidos" type="text" id="apellidos">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="correo" class="col-sm-2 control-label">Correo:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="email" class="form-control" id="correo">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="nombres" class="col-sm-4 control-label">Nombres:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="nombres" type="text" id="nombres">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="doc" class="col-sm-4 control-label">DNI / Otro Doc:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="doc" type="text" id="doc">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="trabajo" class="col-sm-2 control-label">Centro Laboral:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="trabajo" class="form-control" id="trabajo">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="celular" class="col-sm-4 control-label">Celular:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="celular" type="text" id="celular">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="correo" class="col-sm-2 control-label">Correo:</label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="unidad" class="col-sm-4 control-label">Unidad o Área:</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" name="unidad" type="text" id="unidad">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="cargo" class="col-sm-4 control-label">Cargo:</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" name="cargo" type="text" id="cargo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="direccion2" class="col-sm-2 control-label">Dirección:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" name="direccion2" type="text" id="direccion2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="distrito2" class="col-sm-4 control-label">Distrito:</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" name="distrito2" type="text" id="distrito2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="provincia2" class="col-sm-4 control-label">Provincia:</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" name="provincia2" type="text" id="provincia2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="ciudad2" class="col-sm-4 control-label">Ciudad:</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" name="ciudad2" type="text" id="ciudad2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                </div>
+                            </div>
+                            <hr><!-- LINEA SEPARADORA -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-2 matricula__seleccionar">
+                                        <label for="institucion" class="control-label">Institución:</label>
+                                    </div>
                                     <div class="col-sm-10">
-                                        <input class="form-control" name="correo" type="email" id="correo">
+                                        <form class="btn-group bootstrap-select form-control">
+                                            <select class="form-select" id="institucion" name="institucion">
+                                                <option value="UNE">Universidad Nacional de Educación Enrique Guzmán y
+                                                    Valle
+                                                </option>
+                                                <option value="UNMSM">Universidad Nacional Mayor de San Marcos</option>
+                                                <option value="IDEPT">Instituto de Desarrollo Profesional y Técnico
+                                                </option>
+                                            </select>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="trabajo" class="col-sm-2 control-label">Centro Laboral:</label>
+                            <br><!-- SEPARADOR DE CONTENIDOS -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-2 matricula__seleccionar">
+                                        <label for="programa" class="control-label">Programa:</label>
+                                    </div>
                                     <div class="col-sm-10">
-                                        <input class="form-control" name="trabajo" type="text" id="trabajo">
+                                        <form class="btn-group form-control programa__listado">
+                                            <select id="programa" name="programa">
+                                                <option value="P0001">ALTA DIRECCIÓN EMPRESARIAL / ALTA DIRECCIÓN Y GESTIÓN GERENCIAL / GERENCIA GENERAL</option>
+                                                <option value="P0002">ALTA DIRECCIÓN E INNOVACIÓN</option>
+                                                <option value="P0003">ALTA DIRECCIÓN Y GESTIÓN EMPRESARIAL / ALTA DIRECCIÓN Y GESTIÓN GERENCIAL / DIR. Y GERENCIA EMPRESARIAL / GESTIÓN Y GERENCIA / DIR. Y ADMINISTRACIÓN DE EMPRESAS</option>
+                                                <option value="P0004">COACHING EMPRESARIAL / COACHING EJECUTIVO</option>
+                                                <option value="P0005">DIGITALIZACIÓN EMPRESARIAL / TRANSFORMACIÓN EMPRESARIAL</option>
+                                                <option value="P0006">DISRUPCIÓN DIGITAL EN LAS EMPRESAS Y NEGOCIOS</option>
+                                                <option value="P0007">DIRECCIÓN Y GER. COMERCIAL / GERENCIA COMERCIAL</option>
+                                                <option value="P0008">DIRECCIÓN Y GERENCIA DE LOGÍSTICA / GERENCIA DE LOGÍSTICA / GERENCIA DEL APROVISIONAMIENTO</option>
+                                                <option value="P0009">DIRECCIÓN Y GERENCIA DE LOS SISTEMAS DE CONTROL</option>
+                                                <option value="P0010">DIRECCIÓN Y GERENCIA DE PERSONAL / DIRECCIÓN Y GERENCIA DE RECURSOS HUMANOS / DIRECCIÓN Y GERENCIA DE RELACIONES INDUSTRIALES</option>
+                                                <option value="P0011">DIRECCIÓN Y GERENCIA DE PLANIFICACIÓN / GERENCIA DE PLANIFICACIÓN / GER. Y CALIDAD EN LA PLANIFICACIÓN</option>
+                                                <option value="P0012">DIRECCIÓN Y GERENCIA DE VENTAS Y MERCADOTECNIA</option>
+                                                <option value="P0013">DIRECCIÓN Y GERENCIA DEL DESARROLLO ORGANIZACIONAL / GER. Y CALIDAD EN EL DESARROLLO ORGANIZACIONAL</option>
+                                                <option value="P0014">DIRECCIÓN Y GER. EN LA GESTIÓN DE PRODUCCIÓN / GERENCIA DE PRODUCCIÓN / GER. Y CALIDAD EN LA PRODUCCIÓN</option>
+                                                <option value="P0015">DIRECCIÓN Y GERENCIA MUNICIPAL / DIRECCIÓN Y GERENCIA MUNICIPAL Y REGIONAL</option>
+                                                <option value="P0016">DIRECCIÓN Y GESTIÓN MILITAR</option>
+                                                <option value="P0017">ESTRATEGIAS Y GESTIÓN DE LA TRANSFORMACIÓN DIGITAL / EL IMPACTO DE LA TRANSFORMACIÓN DIGITAL</option>
+                                                <option value="P0018">GERENCIA DEL TALENTO HUMANO / GESTIÓN DEL TALENTO HUMANO </option>
+                                                <option value="P0019">GERENCIA DE PROYECTOS DE INVERSIÓN PÚBLICA / GESTIÓN DE PROYECTOS DE INVERSIÓN PÚBLICA</option>
+                                                <option value="P0020">GERENCIA FINANCIERA / GESTIÓN FINANCIERA</option>
+                                                <option value="P0021">GESTIÓN DE LAS CONTRATACIONES DEL ESTADO</option>
+                                                <option value="P0022">GESTIÓN DE NEGOCIOS INTERNACIONALES</option>
+                                                <option value="P0023">GESTIÓN DE LOS NEGOCIOS INTERNACIONALES Y COMERCIO EXTERIOR</option>
+                                                <option value="P0024">GESTIÓN DE REMUNERACIONES Y COMPENSACIONES</option>
+                                                <option value="P0025">GESTIÓN PÚBLICA</option>
+                                                <option value="P0026">GESTIÓN PÚBLICA REGIONAL / GESTIÓN PÚBLICA MUNICIPAL</option>
+                                                <option value="P0027">GESTIÓN TECNOLÓGICA</option>
+                                                <option value="P0028">INGENIERÍA DE LA CALIDAD</option>
+                                                <option value="P0029">INNOVACIÓN PÚBLICA Y ECOSISTEMA</option>
+                                                <option value="P0030">INTELIGENCIA ARTIFICIAL / ESTRATEGIAS DE INTELIGENCIA ARTIFICIAL Y SUS APLICACIONES EN LOS NEGOCIOS</option>
+                                                <option value="P0031">LA GESTIÓN PÚBLICA INTERCULTURAL / ENFOQUE INTERCULTURAL DE LA GESTIÓN PÚBLICA</option>
+                                                <option value="P0032">LIDERAZGO Y HABILIDADES GERENCIALES</option>
+                                                <option value="P0033">MARKETING DIGITAL Y ESTRATEGIA ONLINE / MARKETING DIGITAL PARA PREVALECER EN LA ERA DIGITAL</option>
+                                                <option value="P0034">SISTEMA INTEGRADO DE GESTIÓN</option>
+                                                <option value="P0035">TECNOLOGÍA FINANCIERA</option>
+                                                <option value="P0036">TRANSFORMACIÓN CULTURAL</option>
+                                                <option value="P0037">ADMINISTRACIÓN BANCARIA / BANCA Y SEGUROS / GESTIÓN BANCARIA</option>
+                                                <option value="P0038">ADMINISTRACIÓN DE ABASTECIMIENTOS / ADMINISTRACIÓN DE ALMACENES / LOGÍSTICA</option>
+                                                <option value="P0039">ADMINISTRACIÓN DE BIENES PATRIMONIALES DEL ESTADO / DIRECCIÓN Y GERENCIA DE BIENES PATRIMONIALES DEL ESTADO</option>
+                                                <option value="P0040">ADMINISTRACIÓN DE CRÉDITOS Y COBRANZAS</option>
+                                                <option value="P0041">ADMINISTRACIÓN DE EMPRESAS</option>
+                                                <option value="P0042">ADMINISTRACIÓN DE INSTITUCIONES DE SEGURIDAD SOCIAL / ADMINISTRACIÓN DE LA SEGURIDAD SOCIAL</option>
+                                                <option value="P0043">ADMINISTRACIÓN DE PEQUEÑAS EMPRESAS / GESTIÓN DE PEQUEÑAS EMPRESAS</option>
+                                                <option value="P0044">ADMINISTRACIÓN DE PERSONAL / ADMINISTRACIÓN DE RECURSOS HUMANOS</option>
+                                                <option value="P0045">ADMINISTRACIÓN DE PROYECTOS / ADMINISTRACIÓN Y PLANIFICACIÓN DE PROYECTOS / PLANIFICACIÓN Y CONTROL DE PROYECTOS</option>
+                                                <option value="P0046">ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS / INGENIERÍA DE SIS. INFORMÁTICOS / SISTEMAS DE INFOR. GERENCIAL</option>
+                                                <option value="P0047">ADMINISTRACIÓN DE VENTAS Y MERCADOTECNIA</option>
+                                                <option value="P0048">ADMINISTRACIÓN DEPORTIVA / GERENCIA DEPORTIVA</option>
+                                                <option value="P0049">ADMINISTRACIÓN ESTRATÉGICA</option>
+                                                <option value="P0050">ADMINISTRACIÓN Y GESTIÓN PÚBLICA</option>
+                                                <option value="P0051">ANÁLISIS CREDITICIO Y GESTIÓN DE COBRANZAS / ANÁLISIS FINANCIERO, CREDITICIO Y GESTIÓN DE COBRANZAS</option>
+                                                <option value="P0052">AUDITORÍA</option>
+                                                <option value="P0053">CAJERO BANCARIO / CAJERO DE ORGANIZACIONES DEL SISTEMA FINANCIERO / PROMOTOR DE SERVICIOS BANCARIOS</option>
+                                                <option value="P0054">COMERCIO INTERNACIONAL</option>
+                                                <option value="P0055">COMPUTACIÓN E INFORMÁTICA / COMPUTACIÓN EJECUTIVA</option>
+                                                <option value="P0056">CONTABILIDAD</option>
+                                                <option value="P0057">CONTABILIDAD DE COSTOS Y PRESUPUESTOS / COSTOS Y PRESUPUESTOS</option>
+                                                <option value="P0058">CONTABILIDAD GUBERNAMENTAL</option>
+                                                <option value="P0059">CONTABILIDAD INTERNACIONAL / DIMENSIÓN INTERNACIONAL DE LA CONTABILIDAD</option>
+                                                <option value="P0060">CONTABILIDAD SISTEMATIZADA</option>
+                                                <option value="P0061">CONTABILIDAD TRIBUTARIA</option>
+                                                <option value="P0062">ECONOMÍA</option>
+                                                <option value="P0063">EL NUEVO SISTEMA NACIONAL DE INVERSIÓN PÚBLICA</option>
+                                                <option value="P0064">ESPECIALISTA ADMINISTRATIVO EN PERSONAL</option>
+                                                <option value="P0065">ESTADÍSTICA</option>
+                                                <option value="P0066">FINANZAS / FINANZAS CORPORATIVAS</option>
+                                                <option value="P0067">GESTIÓN DE ARCHIVOS Y TRAMITE DOCUMENTARIO</option>
+                                                <option value="P0068">INGENIERÍA FINANCIERA</option>
+                                                <option value="P0069">MARKETING DE LOS SERVICIOS DE SALUD / MARKETING DE LOS SERVICIOS MÉDICOS</option>
+                                                <option value="P0070">MARKETING DE LOS SERVICIOS EDUCATIVOS</option>
+                                                <option value="P0071">MARKETING FARMACÉUTICO</option>
+                                                <option value="P0072">MARKETING POLÍTICO</option>
+                                                <option value="P0073">PRESUPUESTO PÚBLICO</option>
+                                                <option value="P0074">PROYECTOS DE INVERSIÓN PÚBLICA / EL NUEVO SISTEMA DE INVERSIÓN PÚBLICA – INVIERTE.PE</option>
+                                                <option value="P0075">RELACIONES PÚBLICAS</option>
+                                                <option value="P0076">SISTEMA DE GESTIÓN Y CONTROL DEL ESTADO</option>
+                                                <option value="P0077">SISTEMAS ADMINISTRATIVOS DEL ESTADO</option>
+                                                <option value="P0078">SISTEMAS DE INFORMACIÓN GERENCIAL</option>
+                                                <option value="P0079">ACOMPAÑAMIENTO Y MONITOREO PEDAGÓGICO</option>
+                                                <option value="P0080">ADMINISTRACIÓN DE LA EDUCACIÓN / ADM. EDUCATIVA</option>
+                                                <option value="P0081">ANDRAGOGÍA / DOCENCIA EN EDUCACIÓN DE ADULTOS / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN DE ADULTOS / METODOLOGÍA DE LA EDUCACIÓN DE ADULTOS</option>
+                                                <option value="P0082">AUXILIAR DE EDUCACIÓN / ASISTENTE DE EDUCACIÓN</option>
+                                                <option value="P0083">AUXILIAR DE EDUCACIÓN INICIAL</option>
+                                                <option value="P0084">AUXILIAR DE EDUCACIÓN PRIMARIA / ASISTENTE DE EDUCACIÓN PRIMARIA</option>
+                                                <option value="P0085">AUXILIAR DE EDUCACIÓN SECUNDARIA / ASISTENTE DE EDUCACIÓN SECUNDARIA</option>
+                                                <option value="P0086">AUXILIAR DE SERVICIOS GENERALES EN INSTITUCIONES EDUCATIVAS</option>
+                                                <option value="P0087">COMPETENCIAS DIGITALES PARA LA NUEVA PEDAGOGÍA</option>
+                                                <option value="P0088">COMPRENSIÓN Y REDACCIÓN DE TEXTOS A NIVEL SUPERIOR</option>
+                                                <option value="P0089">CREATIVIDAD Y EDUCACIÓN CONTEMPORÁNEA / EL APRENDIZAJE CREATIVO / DESARROLLO DE LA CREATIVIDAD</option>
+                                                <option value="P0090">CURRÍCULUM E INNOVACIÓN DIDÁCTICA / DIDÁCTICA GENERAL Y CURRÍCULUM </option>
+                                                <option value="P0091">DESARROLLO DE LA INTELIGENCIA EMOCIONAL DEL NIÑO Y EL ADOLESCENTE</option>
+                                                <option value="P0092">DIDÁCTICA DE LA CIENCIA, TECNOLOGÍA Y AMBIENTE / METOD. DE LA ENSEÑANZA DE LA CIENCIAS, TECNOLOGÍA Y AMBIENTE</option>
+                                                <option value="P0093">DIDÁCTICA DE LAS LENGUAS EXTRANJERAS / METODOLOGÍA DE LA ENSE. DEL INGLÉS / TEC. DE LA ENSE. DEL INGLÉS</option>
+                                                <option value="P0094">DIDÁCTICA PARA EL DESARROLLO DE LAS INTELIGENCIAS MÚLTIPLES / ESTRATE. DID. PARA EL DESARR. DE INTEL. MÚLTIPLES</option>
+                                                <option value="P0095">DIDÁCTICA PARA EL DESARROLLO DE LAS MATEMÁTICAS / ESTRATEGIAS DID. PARA EL DESARROLLO DE LAS MATEMÁTICAS / METOD. DE LA ENSEÑANZA DE LAS MATEMÁTICAS / TECNOLOGÍA DE LA ENSEÑANZA DE LAS MATEMÁTICAS</option>
+                                                <option value="P0096">DIRECCIÓN Y GERENCIA DE CENTROS EDUCATIVOS / GERENCIA DE INSTITUCIONES EDUCATIVAS</option>
+                                                <option value="P0097">DOCENCIA EN EDUCACIÓN BÁSICA ALTERNATIVA / ESTRATEGIAS DID. EN EDU. BÁSICA ALTERNATIVA / METODOLOGÍA DE LA EDUCACIÓN BÁSICA ALTERNATIVA / TECNOLOGÍA EBA</option>
+                                                <option value="P0098">DOCENCIA EN EDUCACIÓN ESPECIAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN ESPECIAL / METOD. DE LA EDU. ESPECIAL</option>
+                                                <option value="P0099">DOCENCIA DE LA EDUCACIÓN FÍSICA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN FÍSICA / METOD. DE LA EDUCACIÓN FÍSICA</option>
+                                                <option value="P0100">DOCENCIA EN EDUCACIÓN INICIAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN INICIAL / METODOLOGÍA DE LA EDUCACIÓN INICIAL / TECNOLOGÍA DE LA EDUCACIÓN INICIAL</option>
+                                                <option value="P0101">DOCENCIA EN EDUCACIÓN PRIMARIA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN PRIMARIA / METODOLOGÍA DE LA EDUCACIÓN PRIMARIA / TECNOLOG. DE LA EDUCACIÓN PRIMARIA</option>
+                                                <option value="P0102">DOCENCIA EN EDUCACIÓN RELIGIOSA Y FORMACIÓN DE VALORES / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN RELIGIOSA Y FORMACIÓN DE VALORES</option>
+                                                <option value="P0103">DOCENCIA EN EDUCACIÓN SUPERIOR / DOCENCIA UNIVERSITARIA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN SUPERIOR</option>
+                                                <option value="P0104">DOCENCIA EN EDUCACIÓN TÉCNICO-PRODUCTIVA / ESTRATEGIAS DIDÁCTICAS EN EDUCA005CIÓN TÉCNICO - PRODUCTIVA</option>
+                                                <option value="P0105">EDUCACIÓN A DISTANCIA EN LA SOCIEDAD DIGITAL / TECNOLOGÍA EDUCATIVA EN UN MODELO DE EDU. A DISTANCIA</option>
+                                                <option value="P0106">EDUCACIÓN INCLUSIVA</option>
+                                                <option value="P0107">EDUCACIÓN INTERCULTURAL BILINGÜE</option>
+                                                <option value="P0108">EDUCACIÓN MUSICAL / PEDAGOGÍA MUSICAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN MUSICAL</option>
+                                                <option value="P0109">EDUCACIÓN VIRTUAL Y EL USO DE LAS TIC’S</option>
+                                                <option value="P0110">ENFOQUES DEL DESARROLLO PERSONAL, CIUDADANÍA Y CÍVICA / DESARROLLO PERSONAL, CIUDADANÍA Y CÍVICA</option>
+                                                <option value="P0111">ESPECIALISTA EN RACIONALIZACIÓN</option>
+                                                <option value="P0112">ESTIMULACIÓN TEMPRANA / INTERVENCIÓN TEMPRANA / ATENCIÓN Y CUIDADOS EN LA PRIMERA INFANCIA</option>
+                                                <option value="P0113">ESTRATEGIAS DIDÁCTICAS EN EL ÁREA DE LA EDUCACIÓN PARA EL TRABAJO</option>
+                                                <option value="P0114">ESTRATEGIA DIDÁCTICA EN LA EDUCACIÓN HÍBRIDA / METODOLOGÍA DE LA EDUCACIÓN HÍBRIDA</option>
+                                                <option value="P0115">ESTRATEGIAS DIDÁCTICAS DE LAS CIENCIAS SOCIALES EN EDUCACIÓN SECUNDARIA</option>
+                                                <option value="P0116">ESTRATEGIAS DIDÁCTICAS EN ARTE Y CULTURA</option>
+                                                <option value="P0117">ESTRATEGIAS DIDÁCTICAS EN CIENCIA Y TECNOLOGÍA</option>
+                                                <option value="P0118">ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN ARTÍSTICA / METODOLOGÍA DE LA EDUCACIÓN ARTÍSTICA</option>
+                                                <option value="P0119">ESTRATEGIAS DIDÁCTICAS EN LA ENSEÑANZA DE LA LECTURA Y ESCRITURA / METODOLOGÍA DE LA ENSEÑANZA DE LA LECTURA Y ESCRITURA / METOD. DE LA ENSEÑANZA DEL LENGUAJE</option>
+                                                <option value="P0120">ESTRATEGIAS DIDÁCTICAS EN LA ENSEÑANZA DEL INGLÉS EN EL NIVEL SECUNDARIA</option>
+                                                <option value="P0121">ESTRATEGIAS DIDÁCTICAS PARA LA RETROALIMENTACIÓN VIRTUAL / RETROALIMENTACIÓN EN ENTORNOS VIRTUALES</option>
+                                                <option value="P0122">EVALUACIÓN, ACREDITACIÓN Y CERTIFICACIÓN DE LA CALIDAD EDUCATIVA</option>
+                                                <option value="P0123">EVALUACIÓN DE LOS APRENDIZAJES EN ENTORNOS VIRTUALES / LA EVALUACIÓN EN LA EDUCACIÓN VIRTUAL</option>
+                                                <option value="P0124">FORMACIÓN DE FORMADORES EN ACTUALIZACIÓN DOCENTE / FORMACIÓN DE PROFESIONALES DE LA ENSEÑANZA / FORMADOR DE FORMADORES / FORMACIÓN DE DOCENTE EN SERVICIO</option>
+                                                <option value="P0125">GERENCIA Y CALIDAD EDUCATIVA / GESTIÓN Y CALIDAD EDUCATIVA</option>
+                                                <option value="P0126">GESTIÓN DE LA PLANIFICACIÓN CURRICULAR</option>
+                                                <option value="P0127">GESTIÓN ESCOLAR</option>
+                                                <option value="P0128">GESTIÓN Y LIDERAZGO EDUCATIVO</option>
+                                                <option value="P0129">HABILIDADES BLANDAS PARA DOCENTES</option>
+                                                <option value="P0130">HABILIDADES EMOCIONALES EN EDUCACIÓN HÍBRIDA</option>
+                                                <option value="P0131">HERRAMIENTAS DIGITALES PARA DOCENTES</option>
+                                                <option value="P0132">IMPLEMENTACIÓN DE RUTAS DE APRENDIZAJE EN EDUCACIÓN PRIMARIA</option>
+                                                <option value="P0133">INFORMÁTICA APLICADA A LOS PROCESOS DE ENSEÑANZA Y APRENDIZAJE</option>
+                                                <option value="P0134">INTERVENCIÓN PEDAGÓGICA EN DIFICULTADES DE APRENDIZAJE / INTERVENCIÓN DOCENTE EN DIFICU. DE APRENDIZAJE</option>
+                                                <option value="P0135">LABORATORIO ESCOLAR</option>
+                                                <option value="P0136">LA EDUCACIÓN Y LA PANDEMIA DEL CORONAVIRUS</option>
+                                                <option value="P0137">LA GESTIÓN EDUCATIVA Y LAS RUTAS DE APRENDIZAJE</option>
+                                                <option value="P0138">LA INTELIGENCIA EMOCIONAL</option>
+                                                <option value="P0139">LAS RÚBRICAS COMO INSTRUMENTO DE EVALUACIÓN</option>
+                                                <option value="P0140">LAS RUTAS DE APRENDIZAJE EN LA EDUCACIÓN INICIAL</option>
+                                                <option value="P0141">LAS TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN APLICADAS A LA EDUCACIÓN (TIC’S)</option>
+                                                <option value="P0142">LAS TIC’S EN EL AULA DE INGLÉS / EL USO DE LAS TIC’S PARA LA ENSEÑANZA DE LA LENGUA EXTRANJERA</option>
+                                                <option value="P0143">LIDERAZGO PEDAGÓGICO Y COACHING / LIDERAZGO Y COACHING PEDAGÓGICO</option>
+                                                <option value="P0144">METODOLOGÍA DE LA ENSEÑANZA SUPERIOR</option>
+                                                <option value="P0145">METODOLOGÍA DE LA INVESTIGACIÓN EDUCATIVA / INVESTIGACIÓN CIENTÍFICA EN CIENCIAS DE LA EDUCACIÓN</option>
+                                                <option value="P0146">METODOLOGÍA DE LA INVESTIGACIÓN UNIVERSITARIA</option>
+                                                <option value="P0147">METODOLOGÍA DEL DEPORTE</option>
+                                                <option value="P0148">MODERNIZACIÓN Y MEJORAMIENTO DE LA CALIDAD DE LA EDUCACIÓN</option>
+                                                <option value="P0149">NEUROCIENCIAS APLICADAS A LA EDUCACIÓN</option>
+                                                <option value="P0150">PLANIFICACIÓN CURRICULAR EN BASE A COMPETENCIAS</option>
+                                                <option value="P0151">PLANIFICACIÓN CURRICULAR Y EVALUACIÓN FORMATIVA</option>
+                                                <option value="P0152">ROBÓTICA EDUCATIVA</option>
+                                                <option value="P0153">SITUACIONES Y ESTRATEGIAS DE LAS RUTAS DE APRENDIZAJE EN EDUCACIÓN SECUNDARIA</option>
+                                                <option value="P0154">TUTORÍA EDUCATIVA</option>
+                                                <option value="P0155">TUTORÍA ESCOLAR EN ENTORNOS VIRTUALES</option>
+                                                <option value="P0156">TUTORÍA UNIVERSITARIA</option>
+                                                <option value="P0157">TUTORÍA Y ORIENTACIÓN EDUCATIVA</option>
+                                                <option value="P0158">AUTISMO/ INTERVENCIÓN EN LOS TRASTORNOS DEL ESPECTRO AUTISTA</option>
+                                                <option value="P0159">CIENCIAS DE LA CONDUCTA Y CUIDADO DE LA SALUD</option>
+                                                <option value="P0160">ESTRATEGIAS TÉCNICAS Y TRATAMIENTOS PSICOLÓGICOS / INTERVENCIÓN PSICOLÓGICA</option>
+                                                <option value="P0161">GLOBALIZACIÓN, SALUD MENTAL, MEDICINA PSICOLÓGICA</option>
+                                                <option value="P0162">PREVENCIÓN DEL MALTRATO CONTRA LA MUJER Y EL NIÑO</option>
+                                                <option value="P0163">PSICOLOGÍA CLÍNICA</option>
+                                                <option value="P0164">PSICOLOGÍA DE LA EDUCACIÓN / PSICOLOGÍA EDUCATIVA</option>
+                                                <option value="P0165">PSICOLOGÍA DEL NIÑO</option>
+                                                <option value="P0166">PSICOLOGÍA FORENSE</option>
+                                                <option value="P0167">PSICOLOGÍA INDUSTRIAL / PSICOLOGÍA ORGANIZACIONAL</option>
+                                                <option value="P0168">PSICOMOTRICIDAD Y ESTIMULACIÓN TEMPRANA</option>
+                                                <option value="P0169">PSICOTERAPIA / SISTEMAS PSICOTERAPÉUTICOS</option>
+                                                <option value="P0170">TERAPIA DE PAREJAS</option>
+                                                <option value="P0171">TERAPIA DEL LENGUAJE</option>
+                                                <option value="P0172">TERAPIA FAMILIAR SISTÉMICA</option>
+                                                <option value="P0173">ADMINISTRACIÓN DE CLÍNICAS Y HOSPITALES / ADMINISTRACIÓN HOSPITALARIA</option>
+                                                <option value="P0174">ADMINISTRACIÓN DE LA SALUD PÚBLICA / SALUD PÚBLICA</option>
+                                                <option value="P0175">ADMINISTRACIÓN DE LOS SERVICIOS DE ENFERMERÍA</option>
+                                                <option value="P0176">ADMINISTRACIÓN DE LOS SERVICIOS DE LAVANDERÍA EN CLÍNICAS Y HOSPITALES / GESTIÓN DE LOS SERVICIOS DE LAVANDERÍA EN CENTROS HOSPITALARIOS</option>
+                                                <option value="P0177">ADMINISTRACIÓN DE PROGRAMAS DE VACUNACIÓN / FUNDAMENTOS Y ADMINISTRACIÓN DE LAS INMUNIZACIONES</option>
+                                                <option value="P0178">ÁREA DE CUIDADO DE ENFERMERÍA ESPECIAL EN GINECO-OBSTETRICIA</option>
+                                                <option value="P0179">ASISTENTE DE OBSTETRICIA</option>
+                                                <option value="P0180">ATENCIÓN AL PACIENTE HOSPITALIZADO</option>
+                                                <option value="P0181">ATENCIÓN INTEGRADA DE LAS ENFERMEDADES PREVALENTES DE LA INFANCIA (AIEPI)</option>
+                                                <option value="P0182">ATENCIÓN INTEGRAL DE SALUD CON ENFOQUE FAMILIAR Y COMUNITARIO / SALUD FAMILIAR Y COMUNITARIA</option>
+                                                <option value="P0183">AUDITORÍA DE LA CALIDAD DE LOS SERVICIOS DE ENFERMERÍA</option>
+                                                <option value="P0184">AUDITORÍA MÉDICA Y ODONTOLÓGICA / AUDITORÍA MÉDICA Y ESTOMATOLOGÍA / AUDITORÍA ODONTOLÓGICA Y EVALUACIÓN DE LOS SERVICIOS DE SALUD</option>
+                                                <option value="P0185">AUDITORÍA MÉDICA, CONTROL DE GESTIÓN Y EVALUACIÓN DE LOS SERVICIOS DE SALUD / AUDITORÍA MÉDICA</option>
+                                                <option value="P0186">BIOSEGURIDAD EN CENTROS HOSPITALARIOS / BIOSEG. EN CLÍNICAS Y HOSPITALES / BIOSEGURIDAD EN CENTROS DE SALUD</option>
+                                                <option value="P0187">BIOSEGURIDAD LABORAL ORIENTADA A LA PREVENCIÓN DEL COVID-19 / PROTOCOLOS DE SEGURIDAD Y SALUD EN EL TRABAJO FRENTE AL COVID-19</option>
+                                                <option value="P0188">CARDIOLOGÍA</option>
+                                                <option value="P0189">CRECIMIENTO Y DESARROLLO DEL NIÑO / CONTROL DEL CRECIMIENTO DEL NIÑO SANO</option>
+                                                <option value="P0190">CUIDADOS CRÍTICOS E INTENSIVOS NEONATALES</option>
+                                                <option value="P0191">DIAGNÓSTICO POR IMÁGENES, MEDICINA NUCLEAR Y RADIOTERAPIA / RADIOLOGÍA, MEDICINA NUCLEAR Y RADIOTERAPIA / TOMOGRAFÍA, RESONANCIA MAGNÉTICA Y ECOGRAFÍA</option>
+                                                <option value="P0192">DIAGNÓSTICO, TRATAMIENTO, CONTROL Y PREVENCIÓN DE LA TUBERCULOSIS</option>
+                                                <option value="P0193">DIÁLISIS PERITONEAL</option>
+                                                <option value="P0194">DIRECCIÓN EN SALUD PÚBLICA Y HOSPITALES / ALTA DIRE. EN SALUD PÚBLICA Y HOSPITALES / GESTIÓN EN SALUD PÚBLICA</option>
+                                                <option value="P0195">DIRECCIÓN Y GERENCIA DE CLÍNICAS Y HOSPITALES / GERENCIA DE CLÍNICAS Y HOSPITALES</option>
+                                                <option value="P0196">DIRECCIÓN Y GERENCIA DE LOS SERVICIOS DE SALUD / DIR. Y GER. DE LOS SERVICIOS MÉDICOS / GER. DE CALIDAD DE LOS SERVICIOS DE SALUD / GER. DE CALIDAD DE LOS SERVICIOS MÉDICOS</option>
+                                                <option value="P0197">DISPENSACIÓN DE MEDICAMENTOS EN DOSIS UNITARIA</option>
+                                                <option value="P0198">DISPOSITIVOS MÉDICOS / GESTIÓN DE DISPOSITIVOS MÉDICOS / GESTIÓN DE TECNOLOGÍAS SANITARIAS</option>
+                                                <option value="P0199">EL RESPIRADOR MECÁNICO / EL VENTILADOR ARTIFICIAL</option>
+                                                <option value="P0200">EMBARAZO DE ALTO RIESGO</option>
+                                                <option value="P0201">ENFERMEDADES METAXÉNICAS</option>
+                                                <option value="P0202">ENFERMERÍA COMUNITARIA / ENFERMERÍA EN SALUD COMUNITARIA</option>
+                                                <option value="P0203">ENFERMERÍA DE URGENCIAS Y EMERGENCIAS</option>
+                                                <option value="P0204">ENFERMERÍA EN CUIDADOS CRÍTICOS / ENFERMERÍA EN CUIDADOS INTENSIVOS</option>
+                                                <option value="P0205">ENFERMERÍA EN GASTROENTEROLOGÍA Y ENDOSCOPÍA</option>
+                                                <option value="P0206">ENFERMERÍA EN SALUD MENTAL / ENFERMERÍA PSIQUIÁTRICA</option>
+                                                <option value="P0207">ENFERMERÍA GERIÁTRICA</option>
+                                                <option value="P0208">ENFERMERÍA OBSTÉTRICA / OBSTETRICIA PARA ASISTENTES PARAMÉDICOS</option>
+                                                <option value="P0209">ENFERMERÍA ONCOLÓGICA</option>
+                                                <option value="P0210">ENFERMERÍA PEDIÁTRICA</option>
+                                                <option value="P0211">ENFERMERÍA TÉCNICA / TÉCNICA EN ENFERMERÍA</option>
+                                                <option value="P0212">ENFERMERÍA Y CUIDADOS INTENSIVOS COVID-19</option>
+                                                <option value="P0213">EPIDEMIOLOGÍA</option>
+                                                <option value="P0214">ESTIMULACIÓN DEL BEBÉ ANTES DE NACER / ESTIMULACIÓN DEL BEBÉ INTRAÚTERO / ESTIMULACIÓN PRENATAL</option>
+                                                <option value="P0215">FISIOTERAPIA PARA ASISTENTES PARAMÉDICOS / FISIOTERAPIA / TÉCNICO EN FISIOTERAPIA</option>
+                                                <option value="P0216">FLEBOLOGÍA</option>
+                                                <option value="P0217">GERENCIA Y CALIDAD EN OBSTETRICIA</option>
+                                                <option value="P0218">GERIATRÍA</option>
+                                                <option value="P0219">GESTIÓN CLÍNICA EN LAS ORGANIZACIONES DE ENFERMERÍA / GESTIÓN CLÍNICA POR PROCESOS EN ORGANIZACIÓN DE ENFERMERÍA</option>
+                                                <option value="P0220">GESTIÓN DE PROYECTOS HOSPITALARIOS</option>
+                                                <option value="P0221">GESTIÓN TECNOLÓGICA DE EQUIPAMIENTO BIOMÉDICO</option>
+                                                <option value="P0222">HEMATOLOGÍA</option>
+                                                <option value="P0223">HEMODIÁLISIS</option>
+                                                <option value="P0224">HIGIENE DEL MEDIO HOSPITALARIO</option>
+                                                <option value="P0225">INMUNIZACIONES / VACUNACIÓN E INMUNOLOGÍA</option>
+                                                <option value="P0226">INSTRUMENTACIÓN QUIRÚRGICA</option>
+                                                <option value="P0227">INTELIGENCIA ARTIFICIAL EN EL CAMPO DE LA SALUD /APLICACIÓN DE LA INTELIGENCIA ARTIFICIAL EN EL SECTOR SALUD</option>
+                                                <option value="P0228">LA CENTRAL DE ESTERILIZACIÓN HOSPITALARIA / GESTIÓN DE CENTRALES DE ESTERILIZACIÓN</option>
+                                                <option value="P0229">LABORATORIO CLÍNICO / TÉCNICO EN LABORATORIO</option>
+                                                <option value="P0230">MANEJO DEL COVID-19 EN LA INFANCIA Y EN LA ADOLESCENCIA</option>
+                                                <option value="P0231">MANTENIMIENTO DE DISPOSITIVOS MÉDICOS / MANTENIMIENTO DE EQUIPOS MÉDICOS</option>
+                                                <option value="P0232">MEDICINA PREVENTIVA Y SALUD PÚBLICA</option>
+                                                <option value="P0233">NEFROLOGÍA</option>
+                                                <option value="P0234">NEONATOLOGÍA</option>
+                                                <option value="P0235">NUTRICIÓN CLÍNICA</option>
+                                                <option value="P0236">NUTRICIÓN ENTERAL Y PARENTERAL</option>
+                                                <option value="P0237">NUTRICIÓN Y DIETÉTICA</option>
+                                                <option value="P0238"> ONCOLOGÍA</option>
+                                                <option value="P0239">OSTEOPATÍA</option>
+                                                <option value="P0240">PODOLOGÍA</option>
+                                                <option value="P0241">PREVENCIÓN Y CONTROL DE INFECCIONES RESPIRATORIAS AGUDAS, COVID-19 / CUIDADOS, SEGUIMIENTO Y GESTIÓN DE VIRUS RESPIRATORIO EMERGENTE</option>
+                                                <option value="P0242">PROGRAMA NACIONAL DE FORMACIÓN EN SALUD FAMILIAR Y COMUNITARIA PROFAM</option>
+                                                <option value="P0243">PROMOCIÓN DE LA SALUD</option>
+                                                <option value="P0244">PSICOPROFILAXIS OBSTÉTRICA Y ESTIMULACIÓN TEMPRANA</option>
+                                                <option value="P0245">RADIOLOGÍA / RADIOLOGÍA PARA ASISTENTES PARAMÉDICOS / TÉCNICO EN RADIOLOGÍA</option>
+                                                <option value="P0246">REHABILITACIÓN INFANTIL</option>
+                                                <option value="P0247">SALUD DEPORTIVA / MEDICINA DEL DEPORTE</option>
+                                                <option value="P0248">SALUD LABORAL / SALUD OCUPACIONAL</option>
+                                                <option value="P0249">SALUD MATERNO PERINATAL Y COVID-19 / OBSTETRICIA EN TIEMPOS DE COVID-19 / CORONAVIRUS Y EL EMBARAZO</option>
+                                                <option value="P0250">SALUD MENTAL COMUNITARIA</option>
+                                                <option value="P0251">SEGURIDAD Y SALUD EN EL TRABAJO FRENTE A LA PANDEMIA</option>
+                                                <option value="P0252">TÉCNICAS Y PROCEDIMIENTOS EN BANCOS DE SANGRE</option>
+                                                <option value="P0253">TÉCNICO EN CUIDADOS DE ENFERMERÍA / TÉCNICO EN ATENCIÓN A PERSONAS EN SITUACIÓN DE DEPENDENCIA</option>
+                                                <option value="P0254">TRANSFORMACIÓN DIGITAL EN EL SECTOR SALUD</option>
+                                                <option value="P0255">TRAUMATOLOGÍA Y ORTOPEDIA</option>
+                                                <option value="P0256">UNIDAD DE CUIDADOS INTENSIVOS PEDIÁTRICOS</option>
+                                                <option value="P0257">URGENCIAS OBSTÉTRICAS Y GINECOLÓGICAS</option>
+                                                <option value="P0258">URGENCIAS QUIRÚRGICAS</option>
+                                                <option value="P0259">ZOONOSIS</option>
+                                                <option value="P0260">ADMINISTRACIÓN DE FARMACIAS / ADMINISTRACIÓN FARMACÉUTICA / GERENCIA DE FARMACIAS</option>
+                                                <option value="P0261">ASISTENTE DE FARMACIA</option>
+                                                <option value="P0262">ASUNTOS REGULATORIOS FARMACÉUTICOS</option>
+                                                <option value="P0263">BUENAS PRÁCTICAS DE ALMACENAMIENTO Y DISTRIBUCIÓN DE PRODUCTOS FARMACÉUTICOS Y AFINES</option>
+                                                <option value="P0264">BUENAS PRÁCTICAS DE MANUFACTURA EN LA INDUSTRIA FARMACÉUTICA</option>
+                                                <option value="P0265">BUENAS PRÁCTICAS DE MANUFACTURA, ALMACENAMIENTO Y DISTRIBUCIÓN EN LA INDUSTRIA FARMACÉUTICA</option>
+                                                <option value="P0266">DISPENSACIÓN DE PRODUCTOS FARMACÉUTICOS</option>
+                                                <option value="P0267">FARMACIA / FARMACIA PARA ASISTENTES PARAMÉDICOS / TÉCNICO EN FARMACIA</option>
+                                                <option value="P0268">FARMACIA CLÍNICA Y ATENCIÓN FARMACÉUTICA</option>
+                                                <option value="P0269">MEZCLAS ONCOLÓGICAS / MEZCLAS CITOSTÁTICAS</option>
+                                                <option value="P0270">TOXICOLOGÍA / TOXICOLOGÍA FARMACOLÓGICA / TOXICOLOGÍA PARA FARMACÉUTICOS </option>
+                                                <option value="P0271">HOMEOPATÍA</option>
+                                                <option value="P0272">KINESIOLOGÍA</option>
+                                                <option value="P0273">NATURISMO Y SALUD HUMANA</option>
+                                                <option value="P0274">QUIROPRÁCTICA / QUIROPRAXIA</option>
+                                                <option value="P0275">TÉCNICO EN MASAJES / TÉCNICO MASAJISTA</option>
+                                                <option value="P0276">CONTACTOLOGÍA / LENTES DE CONTACTO</option>
+                                                <option value="P0277">MATERIALES ODONTOLÓGICOS</option>
+                                                <option value="P0278">OPTOMETRÍA / OPTOMETRÍA: ASPECTOS ACTUALES Y SU APLICACIÓN CLÍNICA</option>
+                                                <option value="P0279">PRÓTESIS DENTAL PARCIAL REMOVIBLE</option>
+                                                <option value="P0280">SALUD DENTAL / SALUD ORAL</option>
+                                                <option value="P0281">SALUD PÚBLICA DENTAL / SALUD PÚBLICA ESTOMATOLÓGICA</option>
+                                                <option value="P0282">ALTA DIRECCIÓN PARA EL SECTOR JUSTICIA / GERENCIA EN EL SECTOR JUSTICIA</option>
+                                                <option value="P0283">BENEFICIOS PENITENCIARIOS / DERECHO PENITENCIARIO</option>
+                                                <option value="P0284">DERECHO ADMINISTRATIVO / DERECHO ADMINISTRATIVO CONTENCIOSO</option>
+                                                <option value="P0285">DERECHO ADUANERO</option>
+                                                <option value="P0286">DERECHO AMBIENTAL Y DESARROLLO SOSTENIBLE</option>
+                                                <option value="P0287">DERECHO BANCARIO Y FINANCIERO</option>
+                                                <option value="P0288">DERECHO CIVIL PATRIMONIAL</option>
+                                                <option value="P0289">DERECHO COMERCIAL / DERECHO EMPRESARIAL</option>
+                                                <option value="P0290">DERECHO CONTRA LA VIOLENCIA FAMILIAR</option>
+                                                <option value="P0291">DERECHO DE FAMILIA</option>
+                                                <option value="P0292">DERECHO DE LA MINERÍA</option>
+                                                <option value="P0293">DERECHO DE LA PROPIEDAD INTELECTUAL Y DE LA COMPETENCIA</option>
+                                                <option value="P0294">DERECHO DE LOS NEGOCIOS INTERNACIONALES Y LA NUEVA ECONOMÍA</option>
+                                                <option value="P0295">DERECHO DE PROPIEDAD Y POSESIÓN</option>
+                                                <option value="P0296">DERECHO DEL TRABAJO Y LA SEGURIDAD SOCIAL</option>
+                                                <option value="P0297">DERECHO EN CIENCIAS PENALES</option>
+                                                <option value="P0298">DERECHO LABORAL</option>
+                                                <option value="P0299">DERECHO LABORAL Y SUS MODIFICACIONES</option>
+                                                <option value="P0300">DERECHO NOTARIAL</option>
+                                                <option value="P0301">DERECHO NOTARIAL Y REGISTRAL</option>
+                                                <option value="P0302">DERECHO PENAL ESPECIAL</option>
+                                                <option value="P0303">DERECHO PROCESAL CIVIL</option>
+                                                <option value="P0304">DERECHO PROCESAL CONSTITUCIONAL</option>
+                                                <option value="P0305">DERECHO PROCESAL FAMILIAR, FILIACIÓN Y DERECHO DEL NIÑO</option>
+                                                <option value="P0306">DERECHO PROCESAL PENAL</option>
+                                                <option value="P0307">DERECHO PÚBLICO Y BUEN GOBIERNO</option>
+                                                <option value="P0308">DERECHO REGISTRAL</option>
+                                                <option value="P0309">DERECHO TRIBUTARIO / TRIBUTACIÓN</option>
+                                                <option value="P0310">DERECHOS HUMANOS</option>
+                                                <option value="P0311">DIRECCIÓN Y GERENCIA DE ESTABLECIMIENTOS PENITENCIARIOS / GESTIÓN DE ESTABLECIMIENTOS PENITENCIARIOS</option>
+                                                <option value="P0312">DIRECCIÓN Y GERENCIA DE INSTITUCIONES JUDICIALES</option>
+                                                <option value="P0313">EL NUEVO PROCESO PENAL</option>
+                                                <option value="P0314">GESTIÓN JUDICIAL</option>
+                                                <option value="P0315">LUCHA CONTRA LA EXPLOTACIÓN INFANTIL</option>
+                                                <option value="P0316">MEDICINA FORENSE / MEDICINA LEGAL</option>
+                                                <option value="P0317">ODONTOLOGÍA FORENSE/ESTOMATOLOGÍA FORENSE / ODONTOLOGÍA LEGAL</option>
+                                                <option value="P0318">ORATORIA JURÍDICA Y LITIGACIÓN ORAL</option>
+                                                <option value="P0319">PREVENCIÓN DE LA VIOLENCIA FAMILIAR / VIOLENCIA FAMILIAR</option>
+                                                <option value="P0320">PROCESOS DE SEPARACIÓN DE CUERPOS Y DIVORCIOS</option>
+                                                <option value="P0321">PROMOCIÓN DE LA SALUD FÍSICA Y MENTAL EN LOS ESTABLECIMIENTOS PENITENCIARIOS</option>
+                                                <option value="P0322">RÉGIMEN PATRIMONIAL Y UNIÓN DE HECHO</option>
+                                                <option value="P0323">SEGURIDAD EN ESTABLECIMIENTOS PENITENCIARIOS / SEGURIDAD PENITENCIARIA</option>
+                                                <option value="P0324">SERVICIO CIVIL / EL SERVICIO CIVIL PERUANO</option>
+                                                <option value="P0325">SISTEMA PENITENCIARIO Y DERECHOS HUMANOS</option>
+                                                <option value="P0326">TEORÍA DEL ESTADO</option>
+                                                <option value="P0327"> ADMINISTRACIÓN DE LA SEGURIDAD EMPRESARIAL / ADMINISTRACIÓN DE LA SEGURIDAD INDUSTRIAL</option>
+                                                <option value="P0328">AGENTE DE SEGURIDAD / SEGURIDAD Y VIGILANCIA / SEGURIDAD Y PROTECCIÓN DE INSTALACIONES</option>
+                                                <option value="P0329">AUDITORÍA DE LA SEGURIDAD Y SALUD EN EL TRABAJO / AUDITORÍA DE LA SEGURIDAD Y SALUD OCUPACIONAL / AUDITORÍA DEL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO</option>
+                                                <option value="P0330">CRIMINALÍSTICA</option>
+                                                <option value="P0331">DIRECCIÓN Y GERENCIA DE SEGURIDAD / DIRECCIÓN Y GERENCIA DE LA SEGURIDAD EMPRESARIAL</option>
+                                                <option value="P0332">DIRECCIÓN Y GERENCIA DE SEGURIDAD Y VIGILANCIA / DIRECCIÓN Y GERENCIA DE PROTECCIÓN DE INSTALACIONES</option>
+                                                <option value="P0333">INTELIGENCIA POLICIAL E INVESTIGACIÓN PRIVADA</option>
+                                                <option value="P0334">INVESTIGACIÓN DE LAVADO DE ACTIVOS / LUCHA CONTRA EL LAVADO DE ACTIVOS</option>
+                                                <option value="P0335">LUCHA CONTRA LAS DROGAS / LUCHA CONTRA EL TRÁFICO ILÍCITO DE DROGAS</option>
+                                                <option value="P0336">SEGURIDAD CIUDADANA INTEGRAL</option>
+                                                <option value="P0337">SEGURIDAD E HIGIENE EN LA INDUSTRIA DE LA CONSTRUCCIÓN / SEGURIDAD E HIGIENE EN OBRAS CONSTRUCCIÓN</option>
+                                                <option value="P0338">SEGURIDAD INDUSTRIAL</option>
+                                                <option value="P0339">SEGURIDAD INTEGRAL</option>
+                                                <option value="P0340">SEGURIDAD MINERA</option>
+                                                <option value="P0341">SEGURIDAD MINERA Y SALUD OCUPACIONAL</option>
+                                                <option value="P0342">SEGURIDAD Y SALUD EN EL TRABAJO / SEGURIDAD Y SALUD LABORAL</option>
+                                                <option value="P0343">SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE/ GESTIÓN DE SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE</option>
+                                                <option value="P0344">TECNOLOGÍA DE LA INVESTIGACIÓN POLICIAL</option>
+                                                <option value="P0345">ADMINISTRACIÓN Y GESTIÓN SECRETARIAL / ASISTENTE ADMINISTRATIVO / ASISTENTE DE GERENCIA</option>
+                                                <option value="P0346">ARCHIVO CLÍNICO / DOCUMENTACIÓN CLÍNICA Y ARCHIVO</option>
+                                                <option value="P0347">GERENCIA DE BIBLIOTECAS / GESTIÓN BIBLIOTECARIA / ADMINISTRACIÓN DE BIBLIOTECAS / BIBLIOTECONOMÍA</option>
+                                                <option value="P0348">GESTIÓN DOCUMENTAL Y ARCHIVO / ADMINISTRACIÓN DE ARCHIVOS / ARCHIVÍSTICA / TECNOLOGÍA DE ARCHIVOS / DOCUMENTACIÓN Y ARCHIVO</option>
+                                                <option value="P0349">OFIMÁTICA</option>
+                                                <option value="P0350">SECRETARIADO BILINGÜE</option>
+                                                <option value="P0351">SECRETARIADO COMERCIAL</option>
+                                                <option value="P0352">SECRETARIADO COMPUTARIZADO</option>
+                                                <option value="P0353">SECRETARIADO EJECUTIVO / SECRETARIADO GERENCIAL</option>
+                                                <option value="P0354">SECRETARIADO EN GERENCIA EDUCATIVA</option>
+                                                <option value="P0355">SECRETARIADO JURÍDICO</option>
+                                                <option value="P0356">SECRETARIADO MÉDICO</option>
+                                                <option value="P0357">ADMINISTRACIÓN DE RESTAURANTES / GERENCIA DE RESTAURANTES / DIRECCIÓN Y GERENCIA DE RESTAURANTES</option>
+                                                <option value="P0358">ADMINISTRACIÓN DEL TURISMO / ADMINISTRACIÓN TURÍSTICA</option>
+                                                <option value="P0359">ADMINISTRACIÓN HOTELERA / GERENCIA HOTELERA</option>
+                                                <option value="P0360">ADMINISTRACIÓN Y GESTIÓN DE MUSEOS / MUSEOLOGÍA</option>
+                                                <option value="P0361">ARQUEOLOGÍA Y PATRIMONIO / GESTIÓN DEL PATRIMONIO ARQUEOLÓGICO / GESTIÓN DEL PATRIMONIO CULTURAL</option>
+                                                <option value="P0362">AGROFORESTACIÓN / REFORESTACIÓN</option>
+                                                <option value="P0363">ANÁLISIS, GESTIÓN Y RESOLUCIÓN DE CONFLICTOS SOCIOAMBIENTALES</option>
+                                                <option value="P0364">AUDITORÍA MEDIOAMBIENTAL</option>
+                                                <option value="P0365">GESTIÓN AMBIENTAL / INGENIERÍA AMBIENTAL / INGENIERÍA Y DESARROLLO SUSTENTABLE</option>
+                                                <option value="P0366">GESTIÓN DE RECURSOS HÍDRICOS / GESTIÓN INTEGRADA DE RECURSOS HÍDRICOS</option>
+                                                <option value="P0367">GESTIÓN DE RECURSOS NATURALES Y EVALUACIÓN DEL IMPACTO AMBIENTAL</option>
+                                                <option value="P0368">GESTIÓN DE RESIDUOS SÓLIDOS / GESTIÓN INTEGRADA DE RESIDUOS SÓLIDOS / RESIDUOS SÓLIDOS</option>
+                                                <option value="P0369">PLANTAS DE TRATAMIENTO DE AGUAS RESIDUALES</option>
+                                                <option value="P0370">SALUD AMBIENTAL / SANEAMIENTO AMBIENTAL</option>
+                                                <option value="P0371">DESASTRES Y EMERGENCIAS MÉDICAS</option>
+                                                <option value="P0372">GESTIÓN DE DESASTRES NATURALES Y ATENCIÓN BÁSICA DE EMERGENCIAS SANITARIAS / PRIMEROS AUXILIOS EN DESASTRES NATURALES, ACCIDENTES Y EMERGENCIAS</option>
+                                                <option value="P0373">GESTIÓN DE RIESGOS DE DESASTRES NATURALES</option>
+                                                <option value="P0374">ADMINISTRACIÓN DE LA SEGURIDAD SOCIAL</option>
+                                                <option value="P0375">ASISTENCIA SOCIAL / TECNOLOGÍA DE LA ASISTENCIA SOCIAL / TECNOLOGÍA DEL TRABAJO SOCIAL</option>
+                                                <option value="P0376">GERENCIA DE PROYECTOS SOCIALES / GERENCIA SOCIAL</option>
+                                                <option value="P0377">SERVICIO SOCIAL EN SALUD COMUNITARIA</option>
+                                                <option value="P0378">ACCIDENTOLOGÍA VIAL / INVESTIGACIÓN DE ACCIDENTES DE TRÁNSITO</option>
+                                                <option value="P0379">ADMINISTRACIÓN DE EMPRESAS DE TRANSPORTE / GESTIÓN DEL TRANSPORTE</option>
+                                                <option value="P0380">EDUCACIÓN VIAL / EDUCACIÓN Y SEGURIDAD VIAL</option>
+                                                <option value="P0381">DIRECCIÓN Y GERENCIA DE EMPRESAS MINERAS</option>
+                                                <option value="P0382">GESTIÓN DE LA HIGIENE OCUPACIONAL EN LA MINERÍA E INDUSTRIA EN GENERAL</option>
+                                                <option value="P0383">GESTIÓN DE SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE (SSOMA)</option>
+                                                <option value="P0384">GESTIÓN INTEGRADA ISO 9001, ISO 14001, ISO 45001 Y OHSAS</option>
+                                                <option value="P0385">IDENTIFICACIÓN DE PELIGROS, EVALUACIÓN DE RIESGOS Y CONTROL - IPERC</option>
+                                                <option value="P0386">TÉCNICAS DE EXPLOTACIÓN MINERA</option>
+                                                <option value="P0387">DIRECCIÓN Y GERENCIA DE LOS SISTEMAS DE COMUNICACIÓN / GER. Y CALIDAD EN LOS SISTEMAS DE COMUNICACIÓN</option>
+                                                <option value="P0388">GERENCIA DE TELECOMUNICACIONES / ADMINISTRACIÓN DE LAS TELECOMUNICACIONES</option>
+                                                <option value="P0389">GESTIÓN DE MEDIOS DE COMUNICACIÓN / GESTIÓN DE LOS MEDIOS MASIVOS DE COMUNICACIÓN</option>
+                                                <option value="P0390">LOCUCIÓN RADIAL / PERIODISMO RADIAL</option>
+                                                <option value="P0391">PERIODISMO</option>
+                                                <option value="P0392">TÉCNICO EN TELECOMUNICACIONES</option>
+                                                <option value="P0393">AGENTE INMOBILIARIO / AGENTE DE BIENES RAÍCES</option>
+                                                <option value="P0394">COSMETOLOGÍA / COSMIATRÍA</option>
+                                                <option value="P0395">DIRECTOR TÉCNICO DE FÚTBOL</option>
+                                                <option value="P0396">ENTRENAMIENTO DEPORTIVO Y PREPARADOR FÍSICO/PREPARACIÓN FÍSICA Y ENTRENAMIENTO DEPORTIVO / PREPARADOR FÍSICO DEPORTIVO</option>
+                                                <option value="P0397">INGLÉS</option>
+                                                <option value="P0398">AVICULTURA</option>
+                                                <option value="P0399">CULTIVO DE FLORES Y PLANTAS ORNAMENTALES / TÉCNICAS DE JARDINERÍ</option>
+                                                <option value="P0400">MANEJO INTEGRADO DE CONTROL DE PLAGAS</option>
+                                                <option value="P0401">TÉCNICAS DE EXPLOTACIÓN AGRÍCOLA</option>
+                                                <option value="P0402">TÉCNICAS DE EXPLOTACIÓN AGRÍCOLA TROPICAL: CAFÉ, CACAO Y PALMA ACEITERA</option>
+                                                <option value="P0403">TÉCNICAS DE EXPLOTACIÓN GANADERA / TÉCNICO ZOOTECNISTA</option>
+                                                <option value="P0404">ALIMENTACIÓN Y NUTRICIÓN</option>
+                                                <option value="P0405">CONTROL DE CALIDAD, HIGIENE, CONSERVACIÓN Y MANIPULACIÓN DE ALIMENTOS / CONT. DE CAL. Y TECN. DE ALIMENTOS</option>
+                                                <option value="P0406">GESTIÓN DE LA INOCUIDAD ALIMENTARIA / INOCUIDAD DE LOS ALIMENTOS</option>
+                                                <option value="P0407">INDUSTRIA MANUFACTURERA EN LA PRODUCCIÓN DE ALIMENTOS / PRODUCCIÓN DE ALIMENTOS</option>
+                                                <option value="P0408">TOXICOLOGÍA DE LOS ALIMENTOS</option>
+                                                <option value="P0409">CATASTRO TERRITORIAL / CATASTRO</option>
+                                                <option value="P0410">CONSTRUCCIÓN CIVIL / TÉCNICAS DE CONSTRUC. CIVIL</option>
+                                                <option value="P0411">CONSTRUCCIONES VIALES</option>
+                                                <option value="P0412">GERENCIA DE LA CONSTRUCCIÓN</option>
+                                                <option value="P0413">INGENIERÍA EN REFRIGERACIÓN Y AIRE ACONDICIONADO</option>
+                                                <option value="P0414">INSTALACIONES SANITARIAS / GASFITERÍA / FONTANERÍA</option>
+                                                <option value="P0415">MECÁNICA DE SUELOS</option>
+                                                <option value="P0416">RESIDENTADO EN OBRAS CIVILES / SUPERVISIÓN DE OBRAS PRIVADAS Y PÚBLICAS</option>
+                                                <option value="P0417">TOPOGRAFÍA</option>
+                                                <option value="P0418">CRIANZA Y EXPLOTACIÓN DE CONEJOS Y CUYES</option>
+                                                <option value="P0419">CRIANZA Y EXPLOTACIÓN DE CAMÉLIDOS SUDAMERICANOS: LLAMA, ALPACA Y VICUÑA</option>
+                                                <option value="P0420">CRIANZA DE PERROS</option>
+                                                <option value="P0421">TÉCNICO VETERINARIO / AUXILIAR VETERINARIO</option>
+                                                <option value="P0422">TÉCNICO VETERINARIO EN PERROS Y GATOS / AUXILIAR VETERINARIO EN PERROS Y GATOS</option>
+                                                <option value="P0423">CIRCUITO CERRADO DE TELEVISIÓN Y SEGURIDAD ELECTRÓNICA – CCTV / DISEÑO E INSTALACIÓN DE SISTEMAS DE VIDEOVIGILANCIA CCTV DIGITALES</option>
+                                                <option value="P0424">ELECTRICIDAD</option>
+                                                <option value="P0425">ELECTRICIDAD AUTOMOTRIZ</option>
+                                                <option value="P0426">ELECTRICIDAD INDUSTRIAL</option>
+                                                <option value="P0427">ELECTRÓNICA</option>
+                                                <option value="P0428">INGENIERÍA DE ELECTRÓNICA DIGITAL</option>
+                                                <option value="P0429">INSTALACIONES DE TELEFONÍA Y CABLE TELEVISIÓN</option>
+                                                <option value="P0430">REPARACIÓN DE ARTEFACTOS ELECTRODOMÉSTICOS</option>
+                                                <option value="P0431">INDUSTRIA MANUFACTURERA DE LA CARPINTERÍA Y EBANISTERÍA</option>
+                                                <option value="P0432">INDUSTRIA MANUFACTURERA DE CORTE Y CONFECCIÓN / INDUSTRIA DEL VESTIDO / SASTRERÍA</option>
+                                                <option value="P0433">INDUSTRIA MANUFACTURERA DEL CALZADO / ZAPATERÍA</option>
+                                                <option value="P0434">INDUSTRIA MANUFACTURERA DE LA SOLDADURA</option>
+                                                <option value="P0435">TÉCNICAS DE PATRONAJE EN EL DISEÑO DE MODAS</option>
+                                                <option value="P0436">ORFEBRERÍA</option>
+                                                <option value="P0437">MECÁNICA AUTOMOTRIZ</option>
+                                                <option value="P0438">MECÁNICA DE AJUSTE / MECÁNICA DE BANCO</option>
+                                                <option value="P0439">MECÁNICA DE MOTOCICLETAS</option>
+                                                <option value="P0440">MECÁNICA HIDRÁULICA PARA CENTRALES HIDROELÉCTRICAS</option>
+                                                <option value="P0441">MECÁNICA INDUSTRIAL NIVEL AVANZADO</option>
+                                                <option value="P0442">MECÁNICA INDUSTRIAL NIVEL BÁSICO</option>
+                                                <option value="P0443">MECÁNICA INDUSTRIAL NIVEL INTERMEDIO</option>
+                                                <option value="P0444">MECATRÓNICA</option>
+                                                <option value="P0445">MONTAJE, MANTENIMIENTO Y REPARACIÓN DE COMPUTADORAS</option>
+                                                <option value="P0446">MOTORES DIESEL Y SISTEMAS DE INYECCIÓN</option>
+                                                <option value="P0447">OPERACIÓN Y MANTENIMIENTO DE MAQUINARIAS PESADAS</option>
+                                                <option value="P0448">REBOBINADO DE MOTORES</option>
+                                                <option value="P0449">SISTEMAS DE INYECCIÓN Y ENCENDIDO ELECTRÓNICO</option>
+                                            </select>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <hr> <!-- LINEA SEPARADORA -->
+                            <div class="row matricula__deposito">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label for="deposito" class="col-sm-4 control-label deposito">Depósito o
+                                            Trans.:</label>
+                                        <div class="col-sm-8 deposito__contenido">
+                                            <input class="form-control" name="deposito" type="text" id="deposito">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="fecha_dep" class="col-sm-4 control-label fecha">Fecha:</label>
+                                        <div class="col-sm-8 fecha_dep">
+                                            <input class="form-control" placeholder="(dd/mm/AAAA)" name="fecha_dep"
+                                                type="text" id="fecha_dep">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 comentario">
+                                    No se olvide de enviar el depósito escaneado al correo idept5@hotmail.com, gracias.
+                                </div>
+                            </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="unidad" class="col-sm-4 control-label">Unidad o Área:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="unidad" type="text" id="unidad">
+                            <div class="row cuentas-corrientes">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <strong>Banco de Crédito del Perú - Cuenta en Soles</strong>
+                                        <br>
+                                        Nº 193-1939374-0-35 a nombre de Instituto de Desarrollo Profesional y
+                                        Técnico<br>
+                                        Matrícula S/. 120.00<br>
+                                        Mensualidad S/. 120.00<br>
+                                        Certificación S/. 250.00<br>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <p>
+                                        <strong>Western Union – para Participantes Extranjeros No-Peruanos</strong>
+                                        <br>
+                                        (giros a nombre de: EDGARDO ADRIAN MUÑOZ NUÑEZ, D.N.I.:45050022)<br>
+                                        Matrícula US $ 80.00<br>
+                                        Mensualidad US $ 80.00<br>
+                                        Certificación US $ 100.00<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <strong>IMPORTANTE</strong>
+                            <br>
+                            <ol>
+                                <br>
+                                <li>La duración de los estudios es de acuerdo al Programa elegido, según lo especificado
+                                    en
+                                    el presente documento.</li>
+                                <br>
+                                <li>Al participante se le proporciona módulos de aprendizaje que incluyen exámenes de
+                                    contenidos que deben ser entregados o enviados mensualmente.</li>
+                                <br>
+                                <li>Los materiales de estudio que se entregan al participante son para su uso personal y
+                                    exclusivo.</li>
+                                <br>
+                                <li>El participante se compromete a verificar su código de matrícula en nuestra sede.
+                                    Debe
+                                    hacerlo en forma personal, por teléfono o e-mail.</li>
+                                <br>
+                                <li>El costo total establecido en la presente solicitud no incluye los gastos de
+                                    Certificación y Diplomado, los mismos que deben ser abonados en nuestra dirección o
+                                    al
+                                    representante designado expresamente para tal fin.</li>
+                                <br>
+                                <li>El participante debe concluir todos sus exámenes para poder gestionar la
+                                    certificación.
+                                </li>
+                                <br>
+                                <li>El participante debe leer cuidadosamente y entender este contrato de matricula. Una
+                                    vez
+                                    firmado no existen devoluciones monetarias.</li>
+                                <br>
+                                <li>Los Precios mostrados NO INCLUYEN gastos de ENVIO o ENCOMIENDA</li>
+                            </ol>
+                            <hr> <!-- LINEA SEPARADORA -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-danger enviar_matricula">
+                                            <i class="fa fa-envelope"></i>&nbsp;Enviar Matrícula</td>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="cargo" class="col-sm-4 control-label">Cargo:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="cargo" type="text" id="cargo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="direccion2" class="col-sm-2 control-label">Dirección:</label>
-                                    <div class="col-sm-10">
-                                        <input class="form-control" name="direccion2" type="text" id="direccion2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="distrito2" class="col-sm-4 control-label">Distrito:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="distrito2" type="text" id="distrito2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="provincia2" class="col-sm-4 control-label">Provincia:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="provincia2" type="text" id="provincia2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="ciudad2" class="col-sm-4 control-label">Ciudad:</label>
-                                    <div class="col-sm-8">
-                                        <input class="form-control" name="ciudad2" type="text" id="ciudad2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                            </div>
-                        </div>
-                        <hr><!-- LINEA SEPARADORA -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-2 matricula__seleccionar">
-                                    <label for="institucion" class="control-label">Institución:</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <form class="btn-group bootstrap-select form-control">
-                                        <select class="form-select" id="institucion" name="institucion">
-                                            <option value="UNE">Universidad Nacional de Educación Enrique Guzmán y Valle
-                                            </option>
-                                            <option value="UNMSM">Universidad Nacional Mayor de San Marcos</option>
-                                            <option value="IDEPT">Instituto de Desarrollo Profesional y Técnico</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <br><!-- SEPARADOR DE CONTENIDOS -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-2 matricula__seleccionar">
-                                    <label for="programa" class="control-label">Programa:</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <form class="btn-group bootstrap-select form-control programa__listado">
-                                        <select class="form-select" id="programa" name="programa">
-                                            <option value="P0001">ALTA DIRECCIÓN EMPRESARIAL / ALTA DIRECCIÓN Y GESTIÓN GERENCIAL / GERENCIA GENERAL</option>
-                                            <option value="P0002">ALTA DIRECCIÓN E INNOVACIÓN</option>
-                                            <option value="P0003">ALTA DIRECCIÓN Y GESTIÓN EMPRESARIAL / ALTA DIRECCIÓN Y GESTIÓN GERENCIAL / DIR. Y GERENCIA EMPRESARIAL / GESTIÓN Y GERENCIA / DIR. Y ADMINISTRACIÓN DE EMPRESAS</option>
-                                            <option value="P0004">COACHING EMPRESARIAL / COACHING EJECUTIVO</option>
-                                            <option value="P0005">DIGITALIZACIÓN EMPRESARIAL / TRANSFORMACIÓN EMPRESARIAL</option>
-                                            <option value="P0006">DISRUPCIÓN DIGITAL EN LAS EMPRESAS Y NEGOCIOS</option>
-                                            <option value="P0007">DIRECCIÓN Y GER. COMERCIAL / GERENCIA COMERCIAL</option>
-                                            <option value="P0008">DIRECCIÓN Y GERENCIA DE LOGÍSTICA / GERENCIA DE LOGÍSTICA / GERENCIA DEL APROVISIONAMIENTO</option>
-                                            <option value="P0009">DIRECCIÓN Y GERENCIA DE LOS SISTEMAS DE CONTROL</option>
-                                            <option value="P0010">DIRECCIÓN Y GERENCIA DE PERSONAL / DIRECCIÓN Y GERENCIA DE RECURSOS HUMANOS / DIRECCIÓN Y GERENCIA DE RELACIONES INDUSTRIALES</option>
-                                            <option value="P0011">DIRECCIÓN Y GERENCIA DE PLANIFICACIÓN / GERENCIA DE PLANIFICACIÓN / GER. Y CALIDAD EN LA PLANIFICACIÓN</option>
-                                            <option value="P0012">DIRECCIÓN Y GERENCIA DE VENTAS Y MERCADOTECNIA</option>
-                                            <option value="P0013">DIRECCIÓN Y GERENCIA DEL DESARROLLO ORGANIZACIONAL / GER. Y CALIDAD EN EL DESARROLLO ORGANIZACIONAL</option>
-                                            <option value="P0014">DIRECCIÓN Y GER. EN LA GESTIÓN DE PRODUCCIÓN / GERENCIA DE PRODUCCIÓN / GER. Y CALIDAD EN LA PRODUCCIÓN</option>
-                                            <option value="P0015">DIRECCIÓN Y GERENCIA MUNICIPAL / DIRECCIÓN Y GERENCIA MUNICIPAL Y REGIONAL</option>
-                                            <option value="P0016">DIRECCIÓN Y GESTIÓN MILITAR</option>
-                                            <option value="P0017">ESTRATEGIAS Y GESTIÓN DE LA TRANSFORMACIÓN DIGITAL / EL IMPACTO DE LA TRANSFORMACIÓN DIGITAL</option>
-                                            <option value="P0018">GERENCIA DEL TALENTO HUMANO / GESTIÓN DEL TALENTO HUMANO </option>
-                                            <option value="P0019">GERENCIA DE PROYECTOS DE INVERSIÓN PÚBLICA / GESTIÓN DE PROYECTOS DE INVERSIÓN PÚBLICA</option>
-                                            <option value="P0020">GERENCIA FINANCIERA / GESTIÓN FINANCIERA</option>
-                                            <option value="P0021">GESTIÓN DE LAS CONTRATACIONES DEL ESTADO</option>
-                                            <option value="P0022">GESTIÓN DE NEGOCIOS INTERNACIONALES</option>
-                                            <option value="P0023">GESTIÓN DE LOS NEGOCIOS INTERNACIONALES Y COMERCIO EXTERIOR</option>
-                                            <option value="P0024">GESTIÓN DE REMUNERACIONES Y COMPENSACIONES</option>
-                                            <option value="P0025">GESTIÓN PÚBLICA</option>
-                                            <option value="P0026">GESTIÓN PÚBLICA REGIONAL / GESTIÓN PÚBLICA MUNICIPAL</option>
-                                            <option value="P0027">GESTIÓN TECNOLÓGICA</option>
-                                            <option value="P0028">INGENIERÍA DE LA CALIDAD</option>
-                                            <option value="P0029">INNOVACIÓN PÚBLICA Y ECOSISTEMA</option>
-                                            <option value="P0030">INTELIGENCIA ARTIFICIAL / ESTRATEGIAS DE INTELIGENCIA ARTIFICIAL Y SUS APLICACIONES EN LOS NEGOCIOS</option>
-                                            <option value="P0031">LA GESTIÓN PÚBLICA INTERCULTURAL / ENFOQUE INTERCULTURAL DE LA GESTIÓN PÚBLICA</option>
-                                            <option value="P0032">LIDERAZGO Y HABILIDADES GERENCIALES</option>
-                                            <option value="P0033">MARKETING DIGITAL Y ESTRATEGIA ONLINE / MARKETING DIGITAL PARA PREVALECER EN LA ERA DIGITAL</option>
-                                            <option value="P0034">SISTEMA INTEGRADO DE GESTIÓN</option>
-                                            <option value="P0035">TECNOLOGÍA FINANCIERA</option>
-                                            <option value="P0036">TRANSFORMACIÓN CULTURAL</option>
-                                            <option value="P0037">ADMINISTRACIÓN BANCARIA / BANCA Y SEGUROS / GESTIÓN BANCARIA</option>
-                                            <option value="P0038">ADMINISTRACIÓN DE ABASTECIMIENTOS / ADMINISTRACIÓN DE ALMACENES / LOGÍSTICA</option>
-                                            <option value="P0039">ADMINISTRACIÓN DE BIENES PATRIMONIALES DEL ESTADO / DIRECCIÓN Y GERENCIA DE BIENES PATRIMONIALES DEL ESTADO</option>
-                                            <option value="P0040">ADMINISTRACIÓN DE CRÉDITOS Y COBRANZAS</option>
-                                            <option value="P0041">ADMINISTRACIÓN DE EMPRESAS</option>
-                                            <option value="P0042">ADMINISTRACIÓN DE INSTITUCIONES DE SEGURIDAD SOCIAL / ADMINISTRACIÓN DE LA SEGURIDAD SOCIAL</option>
-                                            <option value="P0043">ADMINISTRACIÓN DE PEQUEÑAS EMPRESAS / GESTIÓN DE PEQUEÑAS EMPRESAS</option>
-                                            <option value="P0044">ADMINISTRACIÓN DE PERSONAL / ADMINISTRACIÓN DE RECURSOS HUMANOS</option>
-                                            <option value="P0045">ADMINISTRACIÓN DE PROYECTOS / ADMINISTRACIÓN Y PLANIFICACIÓN DE PROYECTOS / PLANIFICACIÓN Y CONTROL DE PROYECTOS</option>
-                                            <option value="P0046">ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS / INGENIERÍA DE SIS. INFORMÁTICOS / SISTEMAS DE INFOR. GERENCIAL</option>
-                                            <option value="P0047">ADMINISTRACIÓN DE VENTAS Y MERCADOTECNIA</option>
-                                            <option value="P0048">ADMINISTRACIÓN DEPORTIVA / GERENCIA DEPORTIVA</option>
-                                            <option value="P0049">ADMINISTRACIÓN ESTRATÉGICA</option>
-                                            <option value="P0050">ADMINISTRACIÓN Y GESTIÓN PÚBLICA</option>
-                                            <option value="P0051">ANÁLISIS CREDITICIO Y GESTIÓN DE COBRANZAS / ANÁLISIS FINANCIERO, CREDITICIO Y GESTIÓN DE COBRANZAS</option>
-                                            <option value="P0052">AUDITORÍA</option>
-                                            <option value="P0053">CAJERO BANCARIO / CAJERO DE ORGANIZACIONES DEL SISTEMA FINANCIERO / PROMOTOR DE SERVICIOS BANCARIOS</option>
-                                            <option value="P0054">COMERCIO INTERNACIONAL</option>
-                                            <option value="P0055">COMPUTACIÓN E INFORMÁTICA / COMPUTACIÓN EJECUTIVA</option>
-                                            <option value="P0056">CONTABILIDAD</option>
-                                            <option value="P0057">CONTABILIDAD DE COSTOS Y PRESUPUESTOS / COSTOS Y PRESUPUESTOS</option>
-                                            <option value="P0058">CONTABILIDAD GUBERNAMENTAL</option>
-                                            <option value="P0059">CONTABILIDAD INTERNACIONAL / DIMENSIÓN INTERNACIONAL DE LA CONTABILIDAD</option>
-                                            <option value="P0060">CONTABILIDAD SISTEMATIZADA</option>
-                                            <option value="P0061">CONTABILIDAD TRIBUTARIA</option>
-                                            <option value="P0062">ECONOMÍA</option>
-                                            <option value="P0063">EL NUEVO SISTEMA NACIONAL DE INVERSIÓN PÚBLICA</option>
-                                            <option value="P0064">ESPECIALISTA ADMINISTRATIVO EN PERSONAL</option>
-                                            <option value="P0065">ESTADÍSTICA</option>
-                                            <option value="P0066">FINANZAS / FINANZAS CORPORATIVAS</option>
-                                            <option value="P0067">GESTIÓN DE ARCHIVOS Y TRAMITE DOCUMENTARIO</option>
-                                            <option value="P0068">INGENIERÍA FINANCIERA</option>
-                                            <option value="P0069">MARKETING DE LOS SERVICIOS DE SALUD / MARKETING DE LOS SERVICIOS MÉDICOS</option>
-                                            <option value="P0070">MARKETING DE LOS SERVICIOS EDUCATIVOS</option>
-                                            <option value="P0071">MARKETING FARMACÉUTICO</option>
-                                            <option value="P0072">MARKETING POLÍTICO</option>
-                                            <option value="P0073">PRESUPUESTO PÚBLICO</option>
-                                            <option value="P0074">PROYECTOS DE INVERSIÓN PÚBLICA / EL NUEVO SISTEMA DE INVERSIÓN PÚBLICA – INVIERTE.PE</option>
-                                            <option value="P0075">RELACIONES PÚBLICAS</option>
-                                            <option value="P0076">SISTEMA DE GESTIÓN Y CONTROL DEL ESTADO</option>
-                                            <option value="P0077">SISTEMAS ADMINISTRATIVOS DEL ESTADO</option>
-                                            <option value="P0078">SISTEMAS DE INFORMACIÓN GERENCIAL</option>
-                                            <option value="P0079">ACOMPAÑAMIENTO Y MONITOREO PEDAGÓGICO</option>
-                                            <option value="P0080">ADMINISTRACIÓN DE LA EDUCACIÓN / ADM. EDUCATIVA</option>
-                                            <option value="P0081">ANDRAGOGÍA / DOCENCIA EN EDUCACIÓN DE ADULTOS / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN DE ADULTOS / METODOLOGÍA DE LA EDUCACIÓN DE ADULTOS</option>
-                                            <option value="P0082">AUXILIAR DE EDUCACIÓN / ASISTENTE DE EDUCACIÓN</option>
-                                            <option value="P0083">AUXILIAR DE EDUCACIÓN INICIAL</option>
-                                            <option value="P0084">AUXILIAR DE EDUCACIÓN PRIMARIA / ASISTENTE DE EDUCACIÓN PRIMARIA</option>
-                                            <option value="P0085">AUXILIAR DE EDUCACIÓN SECUNDARIA / ASISTENTE DE EDUCACIÓN SECUNDARIA</option>
-                                            <option value="P0086">AUXILIAR DE SERVICIOS GENERALES EN INSTITUCIONES EDUCATIVAS</option>
-                                            <option value="P0087">COMPETENCIAS DIGITALES PARA LA NUEVA PEDAGOGÍA</option>
-                                            <option value="P0088">COMPRENSIÓN Y REDACCIÓN DE TEXTOS A NIVEL SUPERIOR</option>
-                                            <option value="P0089">CREATIVIDAD Y EDUCACIÓN CONTEMPORÁNEA / EL APRENDIZAJE CREATIVO / DESARROLLO DE LA CREATIVIDAD</option>
-                                            <option value="P0090">CURRÍCULUM E INNOVACIÓN DIDÁCTICA / DIDÁCTICA GENERAL Y CURRÍCULUM </option>
-                                            <option value="P0091">DESARROLLO DE LA INTELIGENCIA EMOCIONAL DEL NIÑO Y EL ADOLESCENTE</option>
-                                            <option value="P0092">DIDÁCTICA DE LA CIENCIA, TECNOLOGÍA Y AMBIENTE / METOD. DE LA ENSEÑANZA DE LA CIENCIAS, TECNOLOGÍA Y AMBIENTE</option>
-                                            <option value="P0093">DIDÁCTICA DE LAS LENGUAS EXTRANJERAS / METODOLOGÍA DE LA ENSE. DEL INGLÉS / TEC. DE LA ENSE. DEL INGLÉS</option>
-                                            <option value="P0094">DIDÁCTICA PARA EL DESARROLLO DE LAS INTELIGENCIAS MÚLTIPLES / ESTRATE. DID. PARA EL DESARR. DE INTEL. MÚLTIPLES</option>
-                                            <option value="P0095">DIDÁCTICA PARA EL DESARROLLO DE LAS MATEMÁTICAS / ESTRATEGIAS DID. PARA EL DESARROLLO DE LAS MATEMÁTICAS / METOD. DE LA ENSEÑANZA DE LAS MATEMÁTICAS / TECNOLOGÍA DE LA ENSEÑANZA DE LAS MATEMÁTICAS</option>
-                                            <option value="P0096">DIRECCIÓN Y GERENCIA DE CENTROS EDUCATIVOS / GERENCIA DE INSTITUCIONES EDUCATIVAS</option>
-                                            <option value="P0097">DOCENCIA EN EDUCACIÓN BÁSICA ALTERNATIVA / ESTRATEGIAS DID. EN EDU. BÁSICA ALTERNATIVA / METODOLOGÍA DE LA EDUCACIÓN BÁSICA ALTERNATIVA / TECNOLOGÍA EBA</option>
-                                            <option value="P0098">DOCENCIA EN EDUCACIÓN ESPECIAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN ESPECIAL / METOD. DE LA EDU. ESPECIAL</option>
-                                            <option value="P0099">DOCENCIA DE LA EDUCACIÓN FÍSICA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN FÍSICA / METOD. DE LA EDUCACIÓN FÍSICA</option>
-                                            <option value="P0100">DOCENCIA EN EDUCACIÓN INICIAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN INICIAL / METODOLOGÍA DE LA EDUCACIÓN INICIAL / TECNOLOGÍA DE LA EDUCACIÓN INICIAL</option>
-                                            <option value="P0101">DOCENCIA EN EDUCACIÓN PRIMARIA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN PRIMARIA / METODOLOGÍA DE LA EDUCACIÓN PRIMARIA / TECNOLOG. DE LA EDUCACIÓN PRIMARIA</option>
-                                            <option value="P0102">DOCENCIA EN EDUCACIÓN RELIGIOSA Y FORMACIÓN DE VALORES / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN RELIGIOSA Y FORMACIÓN DE VALORES</option>
-                                            <option value="P0103">DOCENCIA EN EDUCACIÓN SUPERIOR / DOCENCIA UNIVERSITARIA / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN SUPERIOR</option>
-                                            <option value="P0104">DOCENCIA EN EDUCACIÓN TÉCNICO-PRODUCTIVA / ESTRATEGIAS DIDÁCTICAS EN EDUCA005CIÓN TÉCNICO - PRODUCTIVA</option>
-                                            <option value="P0105">EDUCACIÓN A DISTANCIA EN LA SOCIEDAD DIGITAL / TECNOLOGÍA EDUCATIVA EN UN MODELO DE EDU. A DISTANCIA</option>
-                                            <option value="P0106">EDUCACIÓN INCLUSIVA</option>
-                                            <option value="P0107">EDUCACIÓN INTERCULTURAL BILINGÜE</option>
-                                            <option value="P0108">EDUCACIÓN MUSICAL / PEDAGOGÍA MUSICAL / ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN MUSICAL</option>
-                                            <option value="P0109">EDUCACIÓN VIRTUAL Y EL USO DE LAS TIC’S</option>
-                                            <option value="P0110">ENFOQUES DEL DESARROLLO PERSONAL, CIUDADANÍA Y CÍVICA / DESARROLLO PERSONAL, CIUDADANÍA Y CÍVICA</option>
-                                            <option value="P0111">ESPECIALISTA EN RACIONALIZACIÓN</option>
-                                            <option value="P0112">ESTIMULACIÓN TEMPRANA / INTERVENCIÓN TEMPRANA / ATENCIÓN Y CUIDADOS EN LA PRIMERA INFANCIA</option>
-                                            <option value="P0113">ESTRATEGIAS DIDÁCTICAS EN EL ÁREA DE LA EDUCACIÓN PARA EL TRABAJO</option>
-                                            <option value="P0114">ESTRATEGIA DIDÁCTICA EN LA EDUCACIÓN HÍBRIDA / METODOLOGÍA DE LA EDUCACIÓN HÍBRIDA</option>
-                                            <option value="P0115">ESTRATEGIAS DIDÁCTICAS DE LAS CIENCIAS SOCIALES EN EDUCACIÓN SECUNDARIA</option>
-                                            <option value="P0116">ESTRATEGIAS DIDÁCTICAS EN ARTE Y CULTURA</option>
-                                            <option value="P0117">ESTRATEGIAS DIDÁCTICAS EN CIENCIA Y TECNOLOGÍA</option>
-                                            <option value="P0118">ESTRATEGIAS DIDÁCTICAS EN EDUCACIÓN ARTÍSTICA / METODOLOGÍA DE LA EDUCACIÓN ARTÍSTICA</option>
-                                            <option value="P0119">ESTRATEGIAS DIDÁCTICAS EN LA ENSEÑANZA DE LA LECTURA Y ESCRITURA / METODOLOGÍA DE LA ENSEÑANZA DE LA LECTURA Y ESCRITURA / METOD. DE LA ENSEÑANZA DEL LENGUAJE</option>
-                                            <option value="P0120">ESTRATEGIAS DIDÁCTICAS EN LA ENSEÑANZA DEL INGLÉS EN EL NIVEL SECUNDARIA</option>
-                                            <option value="P0121">ESTRATEGIAS DIDÁCTICAS PARA LA RETROALIMENTACIÓN VIRTUAL / RETROALIMENTACIÓN EN ENTORNOS VIRTUALES</option>
-                                            <option value="P0122">EVALUACIÓN, ACREDITACIÓN Y CERTIFICACIÓN DE LA CALIDAD EDUCATIVA</option>
-                                            <option value="P0123">EVALUACIÓN DE LOS APRENDIZAJES EN ENTORNOS VIRTUALES / LA EVALUACIÓN EN LA EDUCACIÓN VIRTUAL</option>
-                                            <option value="P0124">FORMACIÓN DE FORMADORES EN ACTUALIZACIÓN DOCENTE / FORMACIÓN DE PROFESIONALES DE LA ENSEÑANZA / FORMADOR DE FORMADORES / FORMACIÓN DE DOCENTE EN SERVICIO</option>
-                                            <option value="P0125">GERENCIA Y CALIDAD EDUCATIVA / GESTIÓN Y CALIDAD EDUCATIVA</option>
-                                            <option value="P0126">GESTIÓN DE LA PLANIFICACIÓN CURRICULAR</option>
-                                            <option value="P0127">GESTIÓN ESCOLAR</option>
-                                            <option value="P0128">GESTIÓN Y LIDERAZGO EDUCATIVO</option>
-                                            <option value="P0129">HABILIDADES BLANDAS PARA DOCENTES</option>
-                                            <option value="P0130">HABILIDADES EMOCIONALES EN EDUCACIÓN HÍBRIDA</option>
-                                            <option value="P0131">HERRAMIENTAS DIGITALES PARA DOCENTES</option>
-                                            <option value="P0132">IMPLEMENTACIÓN DE RUTAS DE APRENDIZAJE EN EDUCACIÓN PRIMARIA</option>
-                                            <option value="P0133">INFORMÁTICA APLICADA A LOS PROCESOS DE ENSEÑANZA Y APRENDIZAJE</option>
-                                            <option value="P0134">INTERVENCIÓN PEDAGÓGICA EN DIFICULTADES DE APRENDIZAJE / INTERVENCIÓN DOCENTE EN DIFICU. DE APRENDIZAJE</option>
-                                            <option value="P0135">LABORATORIO ESCOLAR</option>
-                                            <option value="P0136">LA EDUCACIÓN Y LA PANDEMIA DEL CORONAVIRUS</option>
-                                            <option value="P0137">LA GESTIÓN EDUCATIVA Y LAS RUTAS DE APRENDIZAJE</option>
-                                            <option value="P0138">LA INTELIGENCIA EMOCIONAL</option>
-                                            <option value="P0139">LAS RÚBRICAS COMO INSTRUMENTO DE EVALUACIÓN</option>
-                                            <option value="P0140">LAS RUTAS DE APRENDIZAJE EN LA EDUCACIÓN INICIAL</option>
-                                            <option value="P0141">LAS TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN APLICADAS A LA EDUCACIÓN (TIC’S)</option>
-                                            <option value="P0142">LAS TIC’S EN EL AULA DE INGLÉS / EL USO DE LAS TIC’S PARA LA ENSEÑANZA DE LA LENGUA EXTRANJERA</option>
-                                            <option value="P0143">LIDERAZGO PEDAGÓGICO Y COACHING / LIDERAZGO Y COACHING PEDAGÓGICO</option>
-                                            <option value="P0144">METODOLOGÍA DE LA ENSEÑANZA SUPERIOR</option>
-                                            <option value="P0145">METODOLOGÍA DE LA INVESTIGACIÓN EDUCATIVA / INVESTIGACIÓN CIENTÍFICA EN CIENCIAS DE LA EDUCACIÓN</option>
-                                            <option value="P0146">METODOLOGÍA DE LA INVESTIGACIÓN UNIVERSITARIA</option>
-                                            <option value="P0147">METODOLOGÍA DEL DEPORTE</option>
-                                            <option value="P0148">MODERNIZACIÓN Y MEJORAMIENTO DE LA CALIDAD DE LA EDUCACIÓN</option>
-                                            <option value="P0149">NEUROCIENCIAS APLICADAS A LA EDUCACIÓN</option>
-                                            <option value="P0150">PLANIFICACIÓN CURRICULAR EN BASE A COMPETENCIAS</option>
-                                            <option value="P0151">PLANIFICACIÓN CURRICULAR Y EVALUACIÓN FORMATIVA</option>
-                                            <option value="P0152">ROBÓTICA EDUCATIVA</option>
-                                            <option value="P0153">SITUACIONES Y ESTRATEGIAS DE LAS RUTAS DE APRENDIZAJE EN EDUCACIÓN SECUNDARIA</option>
-                                            <option value="P0154">TUTORÍA EDUCATIVA</option>
-                                            <option value="P0155">TUTORÍA ESCOLAR EN ENTORNOS VIRTUALES</option>
-                                            <option value="P0156">TUTORÍA UNIVERSITARIA</option>
-                                            <option value="P0157">TUTORÍA Y ORIENTACIÓN EDUCATIVA</option>
-                                            <option value="P0158">AUTISMO/ INTERVENCIÓN EN LOS TRASTORNOS DEL ESPECTRO AUTISTA</option>
-                                            <option value="P0159">CIENCIAS DE LA CONDUCTA Y CUIDADO DE LA SALUD</option>
-                                            <option value="P0160">ESTRATEGIAS TÉCNICAS Y TRATAMIENTOS PSICOLÓGICOS / INTERVENCIÓN PSICOLÓGICA</option>
-                                            <option value="P0161">GLOBALIZACIÓN, SALUD MENTAL, MEDICINA PSICOLÓGICA</option>
-                                            <option value="P0162">PREVENCIÓN DEL MALTRATO CONTRA LA MUJER Y EL NIÑO</option>
-                                            <option value="P0163">PSICOLOGÍA CLÍNICA</option>
-                                            <option value="P0164">PSICOLOGÍA DE LA EDUCACIÓN / PSICOLOGÍA EDUCATIVA</option>
-                                            <option value="P0165">PSICOLOGÍA DEL NIÑO</option>
-                                            <option value="P0166">PSICOLOGÍA FORENSE</option>
-                                            <option value="P0167">PSICOLOGÍA INDUSTRIAL / PSICOLOGÍA ORGANIZACIONAL</option>
-                                            <option value="P0168">PSICOMOTRICIDAD Y ESTIMULACIÓN TEMPRANA</option>
-                                            <option value="P0169">PSICOTERAPIA / SISTEMAS PSICOTERAPÉUTICOS</option>
-                                            <option value="P0170">TERAPIA DE PAREJAS</option>
-                                            <option value="P0171">TERAPIA DEL LENGUAJE</option>
-                                            <option value="P0172">TERAPIA FAMILIAR SISTÉMICA</option>
-                                            <option value="P0173">ADMINISTRACIÓN DE CLÍNICAS Y HOSPITALES / ADMINISTRACIÓN HOSPITALARIA</option>
-                                            <option value="P0174">ADMINISTRACIÓN DE LA SALUD PÚBLICA / SALUD PÚBLICA</option>
-                                            <option value="P0175">ADMINISTRACIÓN DE LOS SERVICIOS DE ENFERMERÍA</option>
-                                            <option value="P0176">ADMINISTRACIÓN DE LOS SERVICIOS DE LAVANDERÍA EN CLÍNICAS Y HOSPITALES / GESTIÓN DE LOS SERVICIOS DE LAVANDERÍA EN CENTROS HOSPITALARIOS</option>
-                                            <option value="P0177">ADMINISTRACIÓN DE PROGRAMAS DE VACUNACIÓN / FUNDAMENTOS Y ADMINISTRACIÓN DE LAS INMUNIZACIONES</option>
-                                            <option value="P0178">ÁREA DE CUIDADO DE ENFERMERÍA ESPECIAL EN GINECO-OBSTETRICIA</option>
-                                            <option value="P0179">ASISTENTE DE OBSTETRICIA</option>
-                                            <option value="P0180">ATENCIÓN AL PACIENTE HOSPITALIZADO</option>
-                                            <option value="P0181">ATENCIÓN INTEGRADA DE LAS ENFERMEDADES PREVALENTES DE LA INFANCIA (AIEPI)</option>
-                                            <option value="P0182">ATENCIÓN INTEGRAL DE SALUD CON ENFOQUE FAMILIAR Y COMUNITARIO / SALUD FAMILIAR Y COMUNITARIA</option>
-                                            <option value="P0183">AUDITORÍA DE LA CALIDAD DE LOS SERVICIOS DE ENFERMERÍA</option>
-                                            <option value="P0184">AUDITORÍA MÉDICA Y ODONTOLÓGICA / AUDITORÍA MÉDICA Y ESTOMATOLOGÍA / AUDITORÍA ODONTOLÓGICA Y EVALUACIÓN DE LOS SERVICIOS DE SALUD</option>
-                                            <option value="P0185">AUDITORÍA MÉDICA, CONTROL DE GESTIÓN Y EVALUACIÓN DE LOS SERVICIOS DE SALUD / AUDITORÍA MÉDICA</option>
-                                            <option value="P0186">BIOSEGURIDAD EN CENTROS HOSPITALARIOS / BIOSEG. EN CLÍNICAS Y HOSPITALES / BIOSEGURIDAD EN CENTROS DE SALUD</option>
-                                            <option value="P0187">BIOSEGURIDAD LABORAL ORIENTADA A LA PREVENCIÓN DEL COVID-19 / PROTOCOLOS DE SEGURIDAD Y SALUD EN EL TRABAJO FRENTE AL COVID-19</option>
-                                            <option value="P0188">CARDIOLOGÍA</option>
-                                            <option value="P0189">CRECIMIENTO Y DESARROLLO DEL NIÑO / CONTROL DEL CRECIMIENTO DEL NIÑO SANO</option>
-                                            <option value="P0190">CUIDADOS CRÍTICOS E INTENSIVOS NEONATALES</option>
-                                            <option value="P0191">DIAGNÓSTICO POR IMÁGENES, MEDICINA NUCLEAR Y RADIOTERAPIA / RADIOLOGÍA, MEDICINA NUCLEAR Y RADIOTERAPIA / TOMOGRAFÍA, RESONANCIA MAGNÉTICA Y ECOGRAFÍA</option>
-                                            <option value="P0192">DIAGNÓSTICO, TRATAMIENTO, CONTROL Y PREVENCIÓN DE LA TUBERCULOSIS</option>
-                                            <option value="P0193">DIÁLISIS PERITONEAL</option>
-                                            <option value="P0194">DIRECCIÓN EN SALUD PÚBLICA Y HOSPITALES / ALTA DIRE. EN SALUD PÚBLICA Y HOSPITALES / GESTIÓN EN SALUD PÚBLICA</option>
-                                            <option value="P0195">DIRECCIÓN Y GERENCIA DE CLÍNICAS Y HOSPITALES / GERENCIA DE CLÍNICAS Y HOSPITALES</option>
-                                            <option value="P0196">DIRECCIÓN Y GERENCIA DE LOS SERVICIOS DE SALUD / DIR. Y GER. DE LOS SERVICIOS MÉDICOS / GER. DE CALIDAD DE LOS SERVICIOS DE SALUD / GER. DE CALIDAD DE LOS SERVICIOS MÉDICOS</option>
-                                            <option value="P0197">DISPENSACIÓN DE MEDICAMENTOS EN DOSIS UNITARIA</option>
-                                            <option value="P0198">DISPOSITIVOS MÉDICOS / GESTIÓN DE DISPOSITIVOS MÉDICOS / GESTIÓN DE TECNOLOGÍAS SANITARIAS</option>
-                                            <option value="P0199">EL RESPIRADOR MECÁNICO / EL VENTILADOR ARTIFICIAL</option>
-                                            <option value="P0200">EMBARAZO DE ALTO RIESGO</option>
-                                            <option value="P0201">ENFERMEDADES METAXÉNICAS</option>
-                                            <option value="P0202">ENFERMERÍA COMUNITARIA / ENFERMERÍA EN SALUD COMUNITARIA</option>
-                                            <option value="P0203">ENFERMERÍA DE URGENCIAS Y EMERGENCIAS</option>
-                                            <option value="P0204">ENFERMERÍA EN CUIDADOS CRÍTICOS / ENFERMERÍA EN CUIDADOS INTENSIVOS</option>
-                                            <option value="P0205">ENFERMERÍA EN GASTROENTEROLOGÍA Y ENDOSCOPÍA</option>
-                                            <option value="P0206">ENFERMERÍA EN SALUD MENTAL / ENFERMERÍA PSIQUIÁTRICA</option>
-                                            <option value="P0207">ENFERMERÍA GERIÁTRICA</option>
-                                            <option value="P0208">ENFERMERÍA OBSTÉTRICA / OBSTETRICIA PARA ASISTENTES PARAMÉDICOS</option>
-                                            <option value="P0209">ENFERMERÍA ONCOLÓGICA</option>
-                                            <option value="P0210">ENFERMERÍA PEDIÁTRICA</option>
-                                            <option value="P0211">ENFERMERÍA TÉCNICA / TÉCNICA EN ENFERMERÍA</option>
-                                            <option value="P0212">ENFERMERÍA Y CUIDADOS INTENSIVOS COVID-19</option>
-                                            <option value="P0213">EPIDEMIOLOGÍA</option>
-                                            <option value="P0214">ESTIMULACIÓN DEL BEBÉ ANTES DE NACER / ESTIMULACIÓN DEL BEBÉ INTRAÚTERO / ESTIMULACIÓN PRENATAL</option>
-                                            <option value="P0215">FISIOTERAPIA PARA ASISTENTES PARAMÉDICOS / FISIOTERAPIA / TÉCNICO EN FISIOTERAPIA</option>
-                                            <option value="P0216">FLEBOLOGÍA</option>
-                                            <option value="P0217">GERENCIA Y CALIDAD EN OBSTETRICIA</option>
-                                            <option value="P0218">GERIATRÍA</option>
-                                            <option value="P0219">GESTIÓN CLÍNICA EN LAS ORGANIZACIONES DE ENFERMERÍA / GESTIÓN CLÍNICA POR PROCESOS EN ORGANIZACIÓN DE ENFERMERÍA</option>
-                                            <option value="P0220">GESTIÓN DE PROYECTOS HOSPITALARIOS</option>
-                                            <option value="P0221">GESTIÓN TECNOLÓGICA DE EQUIPAMIENTO BIOMÉDICO</option>
-                                            <option value="P0222">HEMATOLOGÍA</option>
-                                            <option value="P0223">HEMODIÁLISIS</option>
-                                            <option value="P0224">HIGIENE DEL MEDIO HOSPITALARIO</option>
-                                            <option value="P0225">INMUNIZACIONES / VACUNACIÓN E INMUNOLOGÍA</option>
-                                            <option value="P0226">INSTRUMENTACIÓN QUIRÚRGICA</option>
-                                            <option value="P0227">INTELIGENCIA ARTIFICIAL EN EL CAMPO DE LA SALUD /APLICACIÓN DE LA INTELIGENCIA ARTIFICIAL EN EL SECTOR SALUD</option>
-                                            <option value="P0228">LA CENTRAL DE ESTERILIZACIÓN HOSPITALARIA / GESTIÓN DE CENTRALES DE ESTERILIZACIÓN</option>
-                                            <option value="P0229">LABORATORIO CLÍNICO / TÉCNICO EN LABORATORIO</option>
-                                            <option value="P0230">MANEJO DEL COVID-19 EN LA INFANCIA Y EN LA ADOLESCENCIA</option>
-                                            <option value="P0231">MANTENIMIENTO DE DISPOSITIVOS MÉDICOS / MANTENIMIENTO DE EQUIPOS MÉDICOS</option>
-                                            <option value="P0232">MEDICINA PREVENTIVA Y SALUD PÚBLICA</option>
-                                            <option value="P0233">NEFROLOGÍA</option>
-                                            <option value="P0234">NEONATOLOGÍA</option>
-                                            <option value="P0235">NUTRICIÓN CLÍNICA</option>
-                                            <option value="P0236">NUTRICIÓN ENTERAL Y PARENTERAL</option>
-                                            <option value="P0237">NUTRICIÓN Y DIETÉTICA</option>
-                                            <option value="P0238"> ONCOLOGÍA</option>
-                                            <option value="P0239">OSTEOPATÍA</option>
-                                            <option value="P0240">PODOLOGÍA</option>
-                                            <option value="P0241">PREVENCIÓN Y CONTROL DE INFECCIONES RESPIRATORIAS AGUDAS, COVID-19 / CUIDADOS, SEGUIMIENTO Y GESTIÓN DE VIRUS RESPIRATORIO EMERGENTE</option>
-                                            <option value="P0242">PROGRAMA NACIONAL DE FORMACIÓN EN SALUD FAMILIAR Y COMUNITARIA PROFAM</option>
-                                            <option value="P0243">PROMOCIÓN DE LA SALUD</option>
-                                            <option value="P0244">PSICOPROFILAXIS OBSTÉTRICA Y ESTIMULACIÓN TEMPRANA</option>
-                                            <option value="P0245">RADIOLOGÍA / RADIOLOGÍA PARA ASISTENTES PARAMÉDICOS / TÉCNICO EN RADIOLOGÍA</option>
-                                            <option value="P0246">REHABILITACIÓN INFANTIL</option>
-                                            <option value="P0247">SALUD DEPORTIVA / MEDICINA DEL DEPORTE</option>
-                                            <option value="P0248">SALUD LABORAL / SALUD OCUPACIONAL</option>
-                                            <option value="P0249">SALUD MATERNO PERINATAL Y COVID-19 / OBSTETRICIA EN TIEMPOS DE COVID-19 / CORONAVIRUS Y EL EMBARAZO</option>
-                                            <option value="P0250">SALUD MENTAL COMUNITARIA</option>
-                                            <option value="P0251">SEGURIDAD Y SALUD EN EL TRABAJO FRENTE A LA PANDEMIA</option>
-                                            <option value="P0252">TÉCNICAS Y PROCEDIMIENTOS EN BANCOS DE SANGRE</option>
-                                            <option value="P0253">TÉCNICO EN CUIDADOS DE ENFERMERÍA / TÉCNICO EN ATENCIÓN A PERSONAS EN SITUACIÓN DE DEPENDENCIA</option>
-                                            <option value="P0254">TRANSFORMACIÓN DIGITAL EN EL SECTOR SALUD</option>
-                                            <option value="P0255">TRAUMATOLOGÍA Y ORTOPEDIA</option>
-                                            <option value="P0256">UNIDAD DE CUIDADOS INTENSIVOS PEDIÁTRICOS</option>
-                                            <option value="P0257">URGENCIAS OBSTÉTRICAS Y GINECOLÓGICAS</option>
-                                            <option value="P0258">URGENCIAS QUIRÚRGICAS</option>
-                                            <option value="P0259">ZOONOSIS</option>
-                                            <option value="P0260">ADMINISTRACIÓN DE FARMACIAS / ADMINISTRACIÓN FARMACÉUTICA / GERENCIA DE FARMACIAS</option>
-                                            <option value="P0261">ASISTENTE DE FARMACIA</option>
-                                            <option value="P0262">ASUNTOS REGULATORIOS FARMACÉUTICOS</option>
-                                            <option value="P0263">BUENAS PRÁCTICAS DE ALMACENAMIENTO Y DISTRIBUCIÓN DE PRODUCTOS FARMACÉUTICOS Y AFINES</option>
-                                            <option value="P0264">BUENAS PRÁCTICAS DE MANUFACTURA EN LA INDUSTRIA FARMACÉUTICA</option>
-                                            <option value="P0265">BUENAS PRÁCTICAS DE MANUFACTURA, ALMACENAMIENTO Y DISTRIBUCIÓN EN LA INDUSTRIA FARMACÉUTICA</option>
-                                            <option value="P0266">DISPENSACIÓN DE PRODUCTOS FARMACÉUTICOS</option>
-                                            <option value="P0267">FARMACIA / FARMACIA PARA ASISTENTES PARAMÉDICOS / TÉCNICO EN FARMACIA</option>
-                                            <option value="P0268">FARMACIA CLÍNICA Y ATENCIÓN FARMACÉUTICA</option>
-                                            <option value="P0269">MEZCLAS ONCOLÓGICAS / MEZCLAS CITOSTÁTICAS</option>
-                                            <option value="P0270">TOXICOLOGÍA / TOXICOLOGÍA FARMACOLÓGICA / TOXICOLOGÍA PARA FARMACÉUTICOS </option>
-                                            <option value="P0271">HOMEOPATÍA</option>
-                                            <option value="P0272">KINESIOLOGÍA</option>
-                                            <option value="P0273">NATURISMO Y SALUD HUMANA</option>
-                                            <option value="P0274">QUIROPRÁCTICA / QUIROPRAXIA</option>
-                                            <option value="P0275">TÉCNICO EN MASAJES / TÉCNICO MASAJISTA</option>
-                                            <option value="P0276">CONTACTOLOGÍA / LENTES DE CONTACTO</option>
-                                            <option value="P0277">MATERIALES ODONTOLÓGICOS</option>
-                                            <option value="P0278">OPTOMETRÍA / OPTOMETRÍA: ASPECTOS ACTUALES Y SU APLICACIÓN CLÍNICA</option>
-                                            <option value="P0279">PRÓTESIS DENTAL PARCIAL REMOVIBLE</option>
-                                            <option value="P0280">SALUD DENTAL / SALUD ORAL</option>
-                                            <option value="P0281">SALUD PÚBLICA DENTAL / SALUD PÚBLICA ESTOMATOLÓGICA</option>
-                                            <option value="P0282">ALTA DIRECCIÓN PARA EL SECTOR JUSTICIA / GERENCIA EN EL SECTOR JUSTICIA</option>
-                                            <option value="P0283">BENEFICIOS PENITENCIARIOS / DERECHO PENITENCIARIO</option>
-                                            <option value="P0284">DERECHO ADMINISTRATIVO / DERECHO ADMINISTRATIVO CONTENCIOSO</option>
-                                            <option value="P0285">DERECHO ADUANERO</option>
-                                            <option value="P0286">DERECHO AMBIENTAL Y DESARROLLO SOSTENIBLE</option>
-                                            <option value="P0287">DERECHO BANCARIO Y FINANCIERO</option>
-                                            <option value="P0288">DERECHO CIVIL PATRIMONIAL</option>
-                                            <option value="P0289">DERECHO COMERCIAL / DERECHO EMPRESARIAL</option>
-                                            <option value="P0290">DERECHO CONTRA LA VIOLENCIA FAMILIAR</option>
-                                            <option value="P0291">DERECHO DE FAMILIA</option>
-                                            <option value="P0292">DERECHO DE LA MINERÍA</option>
-                                            <option value="P0293">DERECHO DE LA PROPIEDAD INTELECTUAL Y DE LA COMPETENCIA</option>
-                                            <option value="P0294">DERECHO DE LOS NEGOCIOS INTERNACIONALES Y LA NUEVA ECONOMÍA</option>
-                                            <option value="P0295">DERECHO DE PROPIEDAD Y POSESIÓN</option>
-                                            <option value="P0296">DERECHO DEL TRABAJO Y LA SEGURIDAD SOCIAL</option>
-                                            <option value="P0297">DERECHO EN CIENCIAS PENALES</option>
-                                            <option value="P0298">DERECHO LABORAL</option>
-                                            <option value="P0299">DERECHO LABORAL Y SUS MODIFICACIONES</option>
-                                            <option value="P0300">DERECHO NOTARIAL</option>
-                                            <option value="P0301">DERECHO NOTARIAL Y REGISTRAL</option>
-                                            <option value="P0302">DERECHO PENAL ESPECIAL</option>
-                                            <option value="P0303">DERECHO PROCESAL CIVIL</option>
-                                            <option value="P0304">DERECHO PROCESAL CONSTITUCIONAL</option>
-                                            <option value="P0305">DERECHO PROCESAL FAMILIAR, FILIACIÓN Y DERECHO DEL NIÑO</option>
-                                            <option value="P0306">DERECHO PROCESAL PENAL</option>
-                                            <option value="P0307">DERECHO PÚBLICO Y BUEN GOBIERNO</option>
-                                            <option value="P0308">DERECHO REGISTRAL</option>
-                                            <option value="P0309">DERECHO TRIBUTARIO / TRIBUTACIÓN</option>
-                                            <option value="P0310">DERECHOS HUMANOS</option>
-                                            <option value="P0311">DIRECCIÓN Y GERENCIA DE ESTABLECIMIENTOS PENITENCIARIOS / GESTIÓN DE ESTABLECIMIENTOS PENITENCIARIOS</option>
-                                            <option value="P0312">DIRECCIÓN Y GERENCIA DE INSTITUCIONES JUDICIALES</option>
-                                            <option value="P0313">EL NUEVO PROCESO PENAL</option>
-                                            <option value="P0314">GESTIÓN JUDICIAL</option>
-                                            <option value="P0315">LUCHA CONTRA LA EXPLOTACIÓN INFANTIL</option>
-                                            <option value="P0316">MEDICINA FORENSE / MEDICINA LEGAL</option>
-                                            <option value="P0317">ODONTOLOGÍA FORENSE/ESTOMATOLOGÍA FORENSE / ODONTOLOGÍA LEGAL</option>
-                                            <option value="P0318">ORATORIA JURÍDICA Y LITIGACIÓN ORAL</option>
-                                            <option value="P0319">PREVENCIÓN DE LA VIOLENCIA FAMILIAR / VIOLENCIA FAMILIAR</option>
-                                            <option value="P0320">PROCESOS DE SEPARACIÓN DE CUERPOS Y DIVORCIOS</option>
-                                            <option value="P0321">PROMOCIÓN DE LA SALUD FÍSICA Y MENTAL EN LOS ESTABLECIMIENTOS PENITENCIARIOS</option>
-                                            <option value="P0322">RÉGIMEN PATRIMONIAL Y UNIÓN DE HECHO</option>
-                                            <option value="P0323">SEGURIDAD EN ESTABLECIMIENTOS PENITENCIARIOS / SEGURIDAD PENITENCIARIA</option>
-                                            <option value="P0324">SERVICIO CIVIL / EL SERVICIO CIVIL PERUANO</option>
-                                            <option value="P0325">SISTEMA PENITENCIARIO Y DERECHOS HUMANOS</option>
-                                            <option value="P0326">TEORÍA DEL ESTADO</option>
-                                            <option value="P0327"> ADMINISTRACIÓN DE LA SEGURIDAD EMPRESARIAL / ADMINISTRACIÓN DE LA SEGURIDAD INDUSTRIAL</option>
-                                            <option value="P0328">AGENTE DE SEGURIDAD / SEGURIDAD Y VIGILANCIA / SEGURIDAD Y PROTECCIÓN DE INSTALACIONES</option>
-                                            <option value="P0329">AUDITORÍA DE LA SEGURIDAD Y SALUD EN EL TRABAJO / AUDITORÍA DE LA SEGURIDAD Y SALUD OCUPACIONAL / AUDITORÍA DEL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO</option>
-                                            <option value="P0330">CRIMINALÍSTICA</option>
-                                            <option value="P0331">DIRECCIÓN Y GERENCIA DE SEGURIDAD / DIRECCIÓN Y GERENCIA DE LA SEGURIDAD EMPRESARIAL</option>
-                                            <option value="P0332">DIRECCIÓN Y GERENCIA DE SEGURIDAD Y VIGILANCIA / DIRECCIÓN Y GERENCIA DE PROTECCIÓN DE INSTALACIONES</option>
-                                            <option value="P0333">INTELIGENCIA POLICIAL E INVESTIGACIÓN PRIVADA</option>
-                                            <option value="P0334">INVESTIGACIÓN DE LAVADO DE ACTIVOS / LUCHA CONTRA EL LAVADO DE ACTIVOS</option>
-                                            <option value="P0335">LUCHA CONTRA LAS DROGAS / LUCHA CONTRA EL TRÁFICO ILÍCITO DE DROGAS</option>
-                                            <option value="P0336">SEGURIDAD CIUDADANA INTEGRAL</option>
-                                            <option value="P0337">SEGURIDAD E HIGIENE EN LA INDUSTRIA DE LA CONSTRUCCIÓN / SEGURIDAD E HIGIENE EN OBRAS CONSTRUCCIÓN</option>
-                                            <option value="P0338">SEGURIDAD INDUSTRIAL</option>
-                                            <option value="P0339">SEGURIDAD INTEGRAL</option>
-                                            <option value="P0340">SEGURIDAD MINERA</option>
-                                            <option value="P0341">SEGURIDAD MINERA Y SALUD OCUPACIONAL</option>
-                                            <option value="P0342">SEGURIDAD Y SALUD EN EL TRABAJO / SEGURIDAD Y SALUD LABORAL</option>
-                                            <option value="P0343">SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE/ GESTIÓN DE SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE</option>
-                                            <option value="P0344">TECNOLOGÍA DE LA INVESTIGACIÓN POLICIAL</option>
-                                            <option value="P0345">ADMINISTRACIÓN Y GESTIÓN SECRETARIAL / ASISTENTE ADMINISTRATIVO / ASISTENTE DE GERENCIA</option>
-                                            <option value="P0346">ARCHIVO CLÍNICO / DOCUMENTACIÓN CLÍNICA Y ARCHIVO</option>
-                                            <option value="P0347">GERENCIA DE BIBLIOTECAS / GESTIÓN BIBLIOTECARIA / ADMINISTRACIÓN DE BIBLIOTECAS / BIBLIOTECONOMÍA</option>
-                                            <option value="P0348">GESTIÓN DOCUMENTAL Y ARCHIVO / ADMINISTRACIÓN DE ARCHIVOS / ARCHIVÍSTICA / TECNOLOGÍA DE ARCHIVOS / DOCUMENTACIÓN Y ARCHIVO</option>
-                                            <option value="P0349">OFIMÁTICA</option>
-                                            <option value="P0350">SECRETARIADO BILINGÜE</option>
-                                            <option value="P0351">SECRETARIADO COMERCIAL</option>
-                                            <option value="P0352">SECRETARIADO COMPUTARIZADO</option>
-                                            <option value="P0353">SECRETARIADO EJECUTIVO / SECRETARIADO GERENCIAL</option>
-                                            <option value="P0354">SECRETARIADO EN GERENCIA EDUCATIVA</option>
-                                            <option value="P0355">SECRETARIADO JURÍDICO</option>
-                                            <option value="P0356">SECRETARIADO MÉDICO</option>
-                                            <option value="P0357">ADMINISTRACIÓN DE RESTAURANTES / GERENCIA DE RESTAURANTES / DIRECCIÓN Y GERENCIA DE RESTAURANTES</option>
-                                            <option value="P0358">ADMINISTRACIÓN DEL TURISMO / ADMINISTRACIÓN TURÍSTICA</option>
-                                            <option value="P0359">ADMINISTRACIÓN HOTELERA / GERENCIA HOTELERA</option>
-                                            <option value="P0360">ADMINISTRACIÓN Y GESTIÓN DE MUSEOS / MUSEOLOGÍA</option>
-                                            <option value="P0361">ARQUEOLOGÍA Y PATRIMONIO / GESTIÓN DEL PATRIMONIO ARQUEOLÓGICO / GESTIÓN DEL PATRIMONIO CULTURAL</option>
-                                            <option value="P0362">AGROFORESTACIÓN / REFORESTACIÓN</option>
-                                            <option value="P0363">ANÁLISIS, GESTIÓN Y RESOLUCIÓN DE CONFLICTOS SOCIOAMBIENTALES</option>
-                                            <option value="P0364">AUDITORÍA MEDIOAMBIENTAL</option>
-                                            <option value="P0365">GESTIÓN AMBIENTAL / INGENIERÍA AMBIENTAL / INGENIERÍA Y DESARROLLO SUSTENTABLE</option>
-                                            <option value="P0366">GESTIÓN DE RECURSOS HÍDRICOS / GESTIÓN INTEGRADA DE RECURSOS HÍDRICOS</option>
-                                            <option value="P0367">GESTIÓN DE RECURSOS NATURALES Y EVALUACIÓN DEL IMPACTO AMBIENTAL</option>
-                                            <option value="P0368">GESTIÓN DE RESIDUOS SÓLIDOS / GESTIÓN INTEGRADA DE RESIDUOS SÓLIDOS / RESIDUOS SÓLIDOS</option>
-                                            <option value="P0369">PLANTAS DE TRATAMIENTO DE AGUAS RESIDUALES</option>
-                                            <option value="P0370">SALUD AMBIENTAL / SANEAMIENTO AMBIENTAL</option>
-                                            <option value="P0371">DESASTRES Y EMERGENCIAS MÉDICAS</option>
-                                            <option value="P0372">GESTIÓN DE DESASTRES NATURALES Y ATENCIÓN BÁSICA DE EMERGENCIAS SANITARIAS / PRIMEROS AUXILIOS EN DESASTRES NATURALES, ACCIDENTES Y EMERGENCIAS</option>
-                                            <option value="P0373">GESTIÓN DE RIESGOS DE DESASTRES NATURALES</option>
-                                            <option value="P0374">ADMINISTRACIÓN DE LA SEGURIDAD SOCIAL</option>
-                                            <option value="P0375">ASISTENCIA SOCIAL / TECNOLOGÍA DE LA ASISTENCIA SOCIAL / TECNOLOGÍA DEL TRABAJO SOCIAL</option>
-                                            <option value="P0376">GERENCIA DE PROYECTOS SOCIALES / GERENCIA SOCIAL</option>
-                                            <option value="P0377">SERVICIO SOCIAL EN SALUD COMUNITARIA</option>
-                                            <option value="P0378">ACCIDENTOLOGÍA VIAL / INVESTIGACIÓN DE ACCIDENTES DE TRÁNSITO</option>
-                                            <option value="P0379">ADMINISTRACIÓN DE EMPRESAS DE TRANSPORTE / GESTIÓN DEL TRANSPORTE</option>
-                                            <option value="P0380">EDUCACIÓN VIAL / EDUCACIÓN Y SEGURIDAD VIAL</option>
-                                            <option value="P0381">DIRECCIÓN Y GERENCIA DE EMPRESAS MINERAS</option>
-                                            <option value="P0382">GESTIÓN DE LA HIGIENE OCUPACIONAL EN LA MINERÍA E INDUSTRIA EN GENERAL</option>
-                                            <option value="P0383">GESTIÓN DE SEGURIDAD, SALUD OCUPACIONAL Y MEDIOAMBIENTE (SSOMA)</option>
-                                            <option value="P0384">GESTIÓN INTEGRADA ISO 9001, ISO 14001, ISO 45001 Y OHSAS</option>
-                                            <option value="P0385">IDENTIFICACIÓN DE PELIGROS, EVALUACIÓN DE RIESGOS Y CONTROL - IPERC</option>
-                                            <option value="P0386">TÉCNICAS DE EXPLOTACIÓN MINERA</option>
-                                            <option value="P0387">DIRECCIÓN Y GERENCIA DE LOS SISTEMAS DE COMUNICACIÓN / GER. Y CALIDAD EN LOS SISTEMAS DE COMUNICACIÓN</option>
-                                            <option value="P0388">GERENCIA DE TELECOMUNICACIONES / ADMINISTRACIÓN DE LAS TELECOMUNICACIONES</option>
-                                            <option value="P0389">GESTIÓN DE MEDIOS DE COMUNICACIÓN / GESTIÓN DE LOS MEDIOS MASIVOS DE COMUNICACIÓN</option>
-                                            <option value="P0390">LOCUCIÓN RADIAL / PERIODISMO RADIAL</option>
-                                            <option value="P0391">PERIODISMO</option>
-                                            <option value="P0392">TÉCNICO EN TELECOMUNICACIONES</option>
-                                            <option value="P0393">AGENTE INMOBILIARIO / AGENTE DE BIENES RAÍCES</option>
-                                            <option value="P0394">COSMETOLOGÍA / COSMIATRÍA</option>
-                                            <option value="P0395">DIRECTOR TÉCNICO DE FÚTBOL</option>
-                                            <option value="P0396">ENTRENAMIENTO DEPORTIVO Y PREPARADOR FÍSICO/PREPARACIÓN FÍSICA Y ENTRENAMIENTO DEPORTIVO / PREPARADOR FÍSICO DEPORTIVO</option>
-                                            <option value="P0397">INGLÉS</option>
-                                            <option value="P0398">AVICULTURA</option>
-                                            <option value="P0399">CULTIVO DE FLORES Y PLANTAS ORNAMENTALES / TÉCNICAS DE JARDINERÍ</option>
-                                            <option value="P0400">MANEJO INTEGRADO DE CONTROL DE PLAGAS</option>
-                                            <option value="P0401">TÉCNICAS DE EXPLOTACIÓN AGRÍCOLA</option>
-                                            <option value="P0402">TÉCNICAS DE EXPLOTACIÓN AGRÍCOLA TROPICAL: CAFÉ, CACAO Y PALMA ACEITERA</option>
-                                            <option value="P0403">TÉCNICAS DE EXPLOTACIÓN GANADERA / TÉCNICO ZOOTECNISTA</option>
-                                            <option value="P0404">ALIMENTACIÓN Y NUTRICIÓN</option>
-                                            <option value="P0405">CONTROL DE CALIDAD, HIGIENE, CONSERVACIÓN Y MANIPULACIÓN DE ALIMENTOS / CONT. DE CAL. Y TECN. DE ALIMENTOS</option>
-                                            <option value="P0406">GESTIÓN DE LA INOCUIDAD ALIMENTARIA / INOCUIDAD DE LOS ALIMENTOS</option>
-                                            <option value="P0407">INDUSTRIA MANUFACTURERA EN LA PRODUCCIÓN DE ALIMENTOS / PRODUCCIÓN DE ALIMENTOS</option>
-                                            <option value="P0408">TOXICOLOGÍA DE LOS ALIMENTOS</option>
-                                            <option value="P0409">CATASTRO TERRITORIAL / CATASTRO</option>
-                                            <option value="P0410">CONSTRUCCIÓN CIVIL / TÉCNICAS DE CONSTRUC. CIVIL</option>
-                                            <option value="P0411">CONSTRUCCIONES VIALES</option>
-                                            <option value="P0412">GERENCIA DE LA CONSTRUCCIÓN</option>
-                                            <option value="P0413">INGENIERÍA EN REFRIGERACIÓN Y AIRE ACONDICIONADO</option>
-                                            <option value="P0414">INSTALACIONES SANITARIAS / GASFITERÍA / FONTANERÍA</option>
-                                            <option value="P0415">MECÁNICA DE SUELOS</option>
-                                            <option value="P0416">RESIDENTADO EN OBRAS CIVILES / SUPERVISIÓN DE OBRAS PRIVADAS Y PÚBLICAS</option>
-                                            <option value="P0417">TOPOGRAFÍA</option>
-                                            <option value="P0418">CRIANZA Y EXPLOTACIÓN DE CONEJOS Y CUYES</option>
-                                            <option value="P0419">CRIANZA Y EXPLOTACIÓN DE CAMÉLIDOS SUDAMERICANOS: LLAMA, ALPACA Y VICUÑA</option>
-                                            <option value="P0420">CRIANZA DE PERROS</option>
-                                            <option value="P0421">TÉCNICO VETERINARIO / AUXILIAR VETERINARIO</option>
-                                            <option value="P0422">TÉCNICO VETERINARIO EN PERROS Y GATOS / AUXILIAR VETERINARIO EN PERROS Y GATOS</option>
-                                            <option value="P0423">CIRCUITO CERRADO DE TELEVISIÓN Y SEGURIDAD ELECTRÓNICA – CCTV / DISEÑO E INSTALACIÓN DE SISTEMAS DE VIDEOVIGILANCIA CCTV DIGITALES</option>
-                                            <option value="P0424">ELECTRICIDAD</option>
-                                            <option value="P0425">ELECTRICIDAD AUTOMOTRIZ</option>
-                                            <option value="P0426">ELECTRICIDAD INDUSTRIAL</option>
-                                            <option value="P0427">ELECTRÓNICA</option>
-                                            <option value="P0428">INGENIERÍA DE ELECTRÓNICA DIGITAL</option>
-                                            <option value="P0429">INSTALACIONES DE TELEFONÍA Y CABLE TELEVISIÓN</option>
-                                            <option value="P0430">REPARACIÓN DE ARTEFACTOS ELECTRODOMÉSTICOS</option>
-                                            <option value="P0431">INDUSTRIA MANUFACTURERA DE LA CARPINTERÍA Y EBANISTERÍA</option>
-                                            <option value="P0432">INDUSTRIA MANUFACTURERA DE CORTE Y CONFECCIÓN / INDUSTRIA DEL VESTIDO / SASTRERÍA</option>
-                                            <option value="P0433">INDUSTRIA MANUFACTURERA DEL CALZADO / ZAPATERÍA</option>
-                                            <option value="P0434">INDUSTRIA MANUFACTURERA DE LA SOLDADURA</option>
-                                            <option value="P0435">TÉCNICAS DE PATRONAJE EN EL DISEÑO DE MODAS</option>
-                                            <option value="P0436">ORFEBRERÍA</option>
-                                            <option value="P0437">MECÁNICA AUTOMOTRIZ</option>
-                                            <option value="P0438">MECÁNICA DE AJUSTE / MECÁNICA DE BANCO</option>
-                                            <option value="P0439">MECÁNICA DE MOTOCICLETAS</option>
-                                            <option value="P0440">MECÁNICA HIDRÁULICA PARA CENTRALES HIDROELÉCTRICAS</option>
-                                            <option value="P0441">MECÁNICA INDUSTRIAL NIVEL AVANZADO</option>
-                                            <option value="P0442">MECÁNICA INDUSTRIAL NIVEL BÁSICO</option>
-                                            <option value="P0443">MECÁNICA INDUSTRIAL NIVEL INTERMEDIO</option>
-                                            <option value="P0444">MECATRÓNICA</option>
-                                            <option value="P0445">MONTAJE, MANTENIMIENTO Y REPARACIÓN DE COMPUTADORAS</option>
-                                            <option value="P0446">MOTORES DIESEL Y SISTEMAS DE INYECCIÓN</option>
-                                            <option value="P0447">OPERACIÓN Y MANTENIMIENTO DE MAQUINARIAS PESADAS</option>
-                                            <option value="P0448">REBOBINADO DE MOTORES</option>
-                                            <option value="P0449">SISTEMAS DE INYECCIÓN Y ENCENDIDO ELECTRÓNICO</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <hr> <!-- LINEA SEPARADORA -->
-                        <div class="row matricula__deposito">
-                            <div class="col-sm-8">
-                                <div class="form-group">
-                                    <label for="deposito" class="col-sm-4 control-label deposito">Depósito o
-                                        Trans.:</label>
-                                    <div class="col-sm-8 deposito__contenido">
-                                        <input class="form-control" name="deposito" type="text" id="deposito">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="fecha_dep" class="col-sm-4 control-label fecha">Fecha:</label>
-                                    <div class="col-sm-8 fecha_dep">
-                                        <input class="form-control" placeholder="(dd/mm/AAAA)" name="fecha_dep"
-                                            type="text" id="fecha_dep">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12 comentario">
-                                No se olvide de enviar el depósito escaneado al correo idept5@hotmail.com, gracias.
-                            </div>
-                        </div>
-
-                        <div class="row cuentas-corrientes">
-                            <div class="col-sm-12">
-                                <p>
-                                    <strong>Banco de Crédito del Perú - Cuenta en Soles</strong>
-                                    <br>
-                                    Nº 193-1939374-0-35 a nombre de Instituto de Desarrollo Profesional y Técnico<br>
-                                    Matrícula S/. 120.00<br>
-                                    Mensualidad S/. 120.00<br>
-                                    Certificación S/. 250.00<br>
-                                </p>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>
-                                    <strong>Western Union – para Participantes Extranjeros No-Peruanos</strong>
-                                    <br>
-                                    (giros a nombre de: EDGARDO ADRIAN MUÑOZ NUÑEZ, D.N.I.:45050022)<br>
-                                    Matrícula US $ 80.00<br>
-                                    Mensualidad US $ 80.00<br>
-                                    Certificación US $ 100.00<br>
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <strong>IMPORTANTE</strong>
-                        <br>
-                        <ol>
-                            <br>
-                            <li>La duración de los estudios es de acuerdo al Programa elegido, según lo especificado en
-                                el presente documento.</li>
-                            <br>
-                            <li>Al participante se le proporciona módulos de aprendizaje que incluyen exámenes de
-                                contenidos que deben ser entregados o enviados mensualmente.</li>
-                            <br>
-                            <li>Los materiales de estudio que se entregan al participante son para su uso personal y
-                                exclusivo.</li>
-                            <br>
-                            <li>El participante se compromete a verificar su código de matrícula en nuestra sede. Debe
-                                hacerlo en forma personal, por teléfono o e-mail.</li>
-                            <br>
-                            <li>El costo total establecido en la presente solicitud no incluye los gastos de
-                                Certificación y Diplomado, los mismos que deben ser abonados en nuestra dirección o al
-                                representante designado expresamente para tal fin.</li>
-                            <br>
-                            <li>El participante debe concluir todos sus exámenes para poder gestionar la certificación.
-                            </li>
-                            <br>
-                            <li>El participante debe leer cuidadosamente y entender este contrato de matricula. Una vez
-                                firmado no existen devoluciones monetarias.</li>
-                            <br>
-                            <li>Los Precios mostrados NO INCLUYEN gastos de ENVIO o ENCOMIENDA</li>
-                        </ol>
-                        <hr> <!-- LINEA SEPARADORA -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group text-center">
-                                    <button type="submit" title="Enviar Matrícula"
-                                        class="btn btn-danger enviar_matricula"><i
-                                            class="fa fa-envelope"></i>&nbsp;Enviar Matrícula</button>
-                                    <!--<input type="submit" value="enviar">-->
-                                </div>
-                            </div>
-                        </div>
+                        </table>
                     </form>
                 </div>
             </article>
@@ -1019,6 +1024,7 @@
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script><!-- Uso para Banner -->
 <script src="../js/bootstrap.min.js"></script><!-- Uso para navegador nav -->
 <script src="../js/codigo.js"></script><!-- Codigo de JavaScript -->
+<script src="../js/valida.js"></script><!-- Codigo de Validacion -->
 </body>
 
 </html>
