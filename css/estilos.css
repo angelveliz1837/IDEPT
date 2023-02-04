@@ -1021,10 +1021,32 @@ ul .circulo{
   font: normal 1em Hervetica, sans-serif;
 }
 
+/*-------------PARTE CELULAR-----------------*/
+@media (min-width: 500px) and (max-width: 1024px){
+  #navegador__logo{
+    width: 100%;
+  }
+}
 
 
-/*-------------------------------------------------*/
+@media only screen and (max-width: 500px){
 
+#navegador__logo{
+  width: 100%;
+}
+
+#barra h1 {
+  font-size: 1.2em;
+}
+
+#inscripcion {
+  float:right;
+  font-size:smaller;
+  margin-right: -10%;
+  margin-top: 1.5%;
+}
+
+}
 
 
 
