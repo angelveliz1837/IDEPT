@@ -152,10 +152,5 @@ function registrar(frm){
         window.event.preventDefault();
         alert("Ingrese la fecha correcta"); return;
     }
-
-    if(test.test(frm.tema.value)){
-        window.event.preventDefault();
-        alert("Ingrese el tema"); return;
-    }
     alert("Datos ingresados");
 }
