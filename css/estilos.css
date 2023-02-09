@@ -435,6 +435,10 @@ align-items:"center"
     box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
     }
 
+    .sobre_idept__contenido resoluciones {
+	font-size: 2em;
+    }
+
     #izquierda img {
       float: left;
       margin: 0em 2em 0em 0em;/*margen*/
