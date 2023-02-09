@@ -724,6 +724,10 @@ ul .circulo{
 
     /*------PROGRAMA INTEGRAL DE GERENCIA --------------------------------------------------------*/
 
+h5 {
+  font-size: 2em;
+}
+
 #int_ger {
   background-color:#F5CFD5;
   color: #000;
