@@ -1,4 +1,3 @@
-
 *{
     padding: 0px;
     margin: 0px;
@@ -435,10 +434,6 @@ align-items:"center"
     box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
     }
 
-    .sobre_idept__contenido .resoluciones {
-	font-size: 1.4em;
-    }
-
     #izquierda img {
       float: left;
       margin: 0em 2em 0em 0em;/*margen*/
@@ -505,7 +500,7 @@ align-items:"center"
   background: #FFFFFF; /*fondo blanco*/
   padding: 2em 2em 0em 2em; /*espacio del texto al borde*/
   border-radius: 2%; /*curva del borde*/
-  margin: 1em 0em 0em 0em;/*margen de arriba y abajo*/
+  margin: 1em 0em 1em 0em;/*margen de arriba y abajo*/
 }
 
     .organizacion__contenido {
@@ -611,7 +606,7 @@ align-items:"center"
 
 ul .cuadrado{
   list-style: square;
-}
+} 
 
 ul .circulo{
   list-style: circle;
@@ -656,6 +651,10 @@ ul .circulo{
 /*----------- TERMINO DEL QUINTO ITEM -------------------------------------------------------*/
 /*----------- INICIO DEL SEXTO ITEM -------------------------------------------------------*/
 /*--------------------------- PREGUNTAS FRECUENTES -------------------------------------------------*/
+
+#pregunta {
+  margin-bottom: 1em;
+}
 
 .respuesta__letra {
   font-size: 1.5em;
@@ -722,12 +721,11 @@ ul .circulo{
       margin-top: 1em;
     }
 
-    /*------PROGRAMA INTEGRAL DE GERENCIA --------------------------------------------------------*/
+    #resolucion .resolucion-imagenultima {
+      margin-bottom: 1em;
+    }
 
-h5 {
-  font-size: 2em;
-  font-family: sans-serif;
-}
+    /*------PROGRAMA INTEGRAL DE GERENCIA --------------------------------------------------------*/
 
 #int_ger {
   background-color:#F5CFD5;
@@ -747,7 +745,8 @@ h5 {
   color: #000;
   border-radius: 0.5%;
   border: 2px solid #000;
-  height: 96%;
+  height: 94%;
+  margin-bottom: 1%;
 }
     
     .programa__lista__conteo {
@@ -791,7 +790,7 @@ h5 {
 }
 
 #programa__excepcion-bajar {
-  height: 98% !important;
+  height: 97% !important;
 }
 
 /*------------------------- PSICOLOGIA --------------------------------------------------------------------------*/
@@ -804,7 +803,7 @@ h5 {
 }
 
 #programa__excepcion-subir {
-  height: 94% !important;
+  height: 91% !important;
 }
 
 /*------------------- ASUNTOS MEDICOS ------------------------------------------------------------------------*/
@@ -1056,6 +1055,3 @@ h5 {
 }
 
 }
-
-
-
