@@ -5,7 +5,8 @@
 }
 
 body{
-    background: url("../img/fondos/fondo_principal.jpg");
+    /*background: url("../img/fondos/fondo_principal.jpg");*/
+    background: #e0e0e0;
     background: norepeat;
     overflow-x: hidden;
 }
@@ -21,7 +22,7 @@ align-items:"center"
   float: left; /*Barra para la derecha*/
   width: 100%;/*Ancho de la barra al 100%*/
   background: #000; /*Fondo de la Barra*/
-  color: #fff; /*Color de letra*/
+  color: #e1e4e9; /*Color de letra*/
   padding: 0.4%;/*margen por dentro de la barra*/
 }
 
@@ -156,6 +157,7 @@ align-items:"center"
 
                             #menu .subitem {
                               text-align: justify;
+                              align-content: center;
                             }
 
                                 #menu ul a:hover, #menu ul a:focus{
@@ -171,7 +173,8 @@ align-items:"center"
 /*-----------------ARTICULO CONTENIDO--------------------------------------------------------------*/
 
 #titulo { /*titulo de PROGRAMAS DE ESPECIALIZACION PROFESIONAL Y DIPLOMADOS*/
-  background-color: #B04445;/*fondo para el titulo */
+  /*background-color: #B04445;/*fondo para el titulo */
+  background-color: #5e2129;/*fondo para el titulo */ 
   color: #fff; /*color de letra del titulo*/
   border: 0.05em solid #fff;/*borde de 1px solido y color blanco*/
   display: block;/*ocupa todo un bloque*/
@@ -190,6 +193,7 @@ align-items:"center"
       max-width: 100%;
       text-align: center;
       border: 0.3em solid #FFF;
+      border: 0.3em solid #a34747;
       box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);  
       border-radius: 5%;
       background-color: #e2e3db;
@@ -241,7 +245,7 @@ align-items:"center"
 
     #titulo-convenio > #titulo-convenio__titulo {
       color: #FFFFFF; /* color del titulo convenios */
-      background-color: #B04445;/*color de fondo del titulo*/
+      background-color: #5e2129;/*color de fondo del titulo*/
       border-color: #C9302C;/*color de borde del titulo*/
       font-size: 1.4em;/*tamaño de letra del titulo (convenios y auspicios)*/
       font-weight: bold;
@@ -406,7 +410,8 @@ align-items:"center"
 /*------------- CONTENIDO MISION, VISION Y QUIENES SOMOS --------------------------------------*/
 
 .sobre_idept__titulo {
-  background-color: #B04445;/*fondo para el titulo */
+  /*background-color: #B04445;/*fondo para el titulo */
+  background-color: #5e2129;
   color: #fff; /*color de letra del titulo*/
   border: 0.05em solid #fff;/*borde de 1px solido y color blanco*/
   display: block;/*ocupa todo un bloque*/
@@ -421,9 +426,10 @@ align-items:"center"
   overflow: auto;/*no deja que el contenido desborde a su contenedor*/
   text-align: justify;/*texto justificado*/
   font-size: 1.6em;
+  
 }
 
-    .sobre_idept__contenido img {
+    .sobre_idept__contenido img { 
       float: right;/*se posiciona a la derecha*/
       margin: 0em 0.5em 0em 2em;/*margen*/
       border: 0.4em solid;/*grosor del borde*/
@@ -432,7 +438,9 @@ align-items:"center"
       -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
     -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    align-content: center;
     }
+
 
     #izquierda img {
       float: left;
@@ -728,7 +736,7 @@ ul .circulo{
     /*------PROGRAMA INTEGRAL DE GERENCIA --------------------------------------------------------*/
 
 #int_ger {
-  background-color:#F5CFD5;
+  background-color:#E3B3B3;
   color: #000;
   font-weight: bold;
   border: 0.1em solid #000;
@@ -752,8 +760,8 @@ ul .circulo{
     .programa__lista__conteo {
       padding-top: 2%;
       font-weight: bold;
-      margin-left: 2%;
-      margin-right: 3%;
+      margin-left: 5%;
+      margin-right: 6%;
     }
 
     .programa__lista li {
@@ -770,7 +778,8 @@ ul .circulo{
 /*--------------------ADMINISTRACION GENERAL --------------------------------------------------------------*/
 
 #adm_gen {
-  background-color:#F5CFD5; /*ROSADO PASTEL*/
+  /*background-color:#F5CFD5; /*ROSADO PASTEL*/
+  background-color:#E3B3B3;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -783,7 +792,8 @@ ul .circulo{
 /*----------------------- GESTIÓN Y DESARROLLO DOCENTE -----------------------------------------------------*/
 
 #ges_doc {
-  background-color:#B8D679; /*VERDE PASTEL*/
+  /*background-color:#B8D679; /*VERDE PASTEL*/
+  background-color:#D5E4BD;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -796,7 +806,8 @@ ul .circulo{
 /*------------------------- PSICOLOGIA --------------------------------------------------------------------------*/
 
 #psicologia {
-  background-color:#B49FDF;/*MORADO PASTEL*/
+  /*background-color:#B49FDF;/*MORADO PASTEL*/
+  background-color:#CCC0D8;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -809,7 +820,8 @@ ul .circulo{
 /*------------------- ASUNTOS MEDICOS ------------------------------------------------------------------------*/
 
 #asun_med {
-  background-color:#5BF5F5; /*celeste pastel*/
+  /*background-color:#5BF5F5; /*celeste pastel*/
+  background-color:#B7DDE8;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -818,7 +830,8 @@ ul .circulo{
 /*------------------------------------ PROGRAMAS DE SEGURIDAD ----------------------------------------------*/
 
 #pro_seg {
-  background-color:#ECEA64;/*AMARILLO PASTEL*/
+  /*background-color:#ECEA64;/*AMARILLO PASTEL*/
+  background-color:#E0D47E;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -827,7 +840,8 @@ ul .circulo{
 /*----------------------------------- SECRETARIADO Y ARCHIVO -------------------------------------------------*/
 
 #sec_arc {
-  background-color:#8CC78C;
+  /*background-color:#8CC78C;*/
+  background-color:#8FD5B0;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -836,7 +850,8 @@ ul .circulo{
 /*---------------------------------- MEDIO AMBIENTE -------------------------------------------------------------*/
 
 #med_amb {
-  background-color:#CDC99C; /*MARRON PASTEL*/
+  /*background-color:#CDC99C; /*MARRON PASTEL*/
+  background-color:#C1B59B;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -845,7 +860,8 @@ ul .circulo{
 /*-------------------------------------- DERECHO -----------------------------------------------------------------------------*/
 
 #derecho {
-  background-color:#F5E4D1;/*DERECHO PASTEL*/
+  /*background-color:#F5E4D1;/*DERECHO PASTEL*/
+  background-color:#F9D5B3;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
@@ -854,7 +870,8 @@ ul .circulo{
 /*--------------------------------------- PROGRAMAS TECNICOS ------------------------------------------------------------------*/
 
 #pro_tec {
-  background-color:#B49FDF;/*MORADO PASTEL*/
+  /*background-color:#B49FDF;/*MORADO PASTEL*/
+  background-color:#CABDD7;
   color: #000;
   font-weight: bold;
   border:2px solid #000;
