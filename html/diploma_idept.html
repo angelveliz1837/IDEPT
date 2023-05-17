@@ -19,7 +19,7 @@
 	<form id="barra__buscador-inscripcion">
 		<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
 		<div id="buscador">
-			<a class="btn btn-danger" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
+			<a class="btn btn-warning" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
 		</div>
 		<div id="inscripcion">
 			<a href="formulario.html" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
@@ -116,10 +116,11 @@
                 </div>
                 <br>
                 <article id="resolucion">
-                    <img src="../img/certificados/diploma_idept.png" alt="diploma idept">
+                    <img src="../img/certificados/diploma_idept.png" alt="diploma idept" oncontextmenu='return false' ondragstart='return false'
+                    onmousedown='return false' onselectstart='return false'>
                 </article>
                 <br>
-                <a href="#barra"><button type="button" class="btn btn-danger">IR AL INICIO</button></a>
+                <a href="#barra"><button type="button" class="btn btn-warning">IR AL INICIO</button></a>
             </article>
 
             <!-- ENLACES PARA CONVENIOS Y PROGRAMAS -->
@@ -180,6 +181,7 @@
                                 document.getElementById("current_date").style.fontWeight = "bold";
                                 document.getElementById("current_date").style.textAlign = "center";
                                 document.getElementById("current_date").style.paddingTop = "3%";
+                                document.getElementById("aside_cal").style.background = "#a34747";
                             </script>
                         </li>
                     </ul>

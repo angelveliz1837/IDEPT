@@ -20,7 +20,7 @@
 		<form id="barra__buscador-inscripcion">
 			<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
 			<div id="buscador">
-				<a class="btn btn-danger" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
+				<a class="btn btn-warning" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
 			</div>
 			<div id="inscripcion">
 				<a href="formulario.html" class="btn btn-success"><i
@@ -117,7 +117,7 @@
 						MISION
 					</div>
 					<article class="sobre_idept__contenido">
-						<img src="../img/sobre_idept/imagen_mision.jpg" alt="mision">
+						<img src="../img/sobre_idept/imagen_mision.jpg" alt="mision"><br><br>
 						<p>"Brindar a todos los interesados la oportunidad de participar en los Programas de
 							Capacitación, Especialización y Diplomados, bajo el enfoque de calidad total que permite su
 							desenvolvimiento integral."</p>
@@ -126,7 +126,7 @@
 						VISION
 					</div>
 					<article id="izquierda" class="sobre_idept__contenido">
-						<img src="../img/sobre_idept/imagen_vision.jpg" alt="vision">
+						<img src="../img/sobre_idept/imagen_vision.jpg" alt="vision"><br><br>
 						<p>"Elevar el potencial del recurso humano y contribuir al desarrollo económico y social de las
 							Instituciones, organizando Programas de Especialización Profesional a nivel Nacional e
 							Internacional."</p>
@@ -135,14 +135,15 @@
 						¿QUIÉNES SOMOS?
 					</div>
 					<article id="abajo" class="sobre_idept__contenido">
-						<img src="../img/sobre_idept/imagen_fachada.jpg" alt="fachada_idept" width="400">
+						<img src="../img/sobre_idept/imagen_fachada.jpg" alt="fachada_idept" width="400" height="600">
 						<p>El Instituto de Desarrollo Profesional y Técnico IDEPT, es una Institución Educativa que
 							nació en Perú, el 28 de Octubre del año 1992 y fue reconocida oficialmente por el Ministerio
 							de Educación, según Resolución Directoral Nº 042-INTE-93-ED, actualizada por Resolución de
-							Secreataría General Nº 2314-2014-MINEDU y Resolución Ministerial.
+							Secreataría General Nº 2314-2014-MINEDU y Resolución Ministerial N° 002-2020-MINEDU.
 							<br>
 							<br>
-							El IDEPT planifica, organiza y desarrolla Programas de Especialización y Educación Continua
+							El IDEPT planifica, organiza y desarrolla Programas de Especialización y Diplomados a traves
+							de la Educación Continua
 							en la modalidad presencial, semipresencial y a distancia dirigidos al profesional,
 							ejecutivo, técnico y empleado que se encuentran laborando en las instituciones públicas y
 							empresas privadas.
@@ -161,10 +162,10 @@
 							nos permita alcanzar el Modelo de calidad trazado.
 							<br>
 							<br>
-							<a href="resolucion_idept.html">Resolución Directoral IDEPT</a>
+							<a href="resolucion_idept.html">RESOLUCIONES DEL IDEPT</a>
 						</p>
 					</article>
-					<a href="#barra"><button type="button" class="btn btn-danger">IR AL INICIO</button></a>
+					<a href="#barra"><button type="button" class="btn btn-warning">IR AL INICIO</button></a>
 				</article>
 
 				<!-- ENLACES PARA CONVENIOS Y PROGRAMAS -->
@@ -174,44 +175,46 @@
 							&nbsp;CONVENIOS Y AUSPICIOS VIGENTES
 						</div>
 						<!-- LOGOS DE CONVENIOS -->
-						<ul id="convenios">
+						<ul id="convenios"><br>
 							<li class="convenios__universidad news-item">
 								<table cellpadding="2">
 									<tbody>
 										<tr title="Universidad Nacional Mayor de San Marcos">
 											<td class="text-center">
-												<img src="../img/convenios/logo_unmsm_2022.jpg" width="230em" alt="logo_unmsm">
+												<img src="../img/convenios/logo_unmsm_2022.jpg" width="250em"
+													alt="logo_unmsm">
 											</td>
 										</tr>
 									</tbody>
 								</table>
-							</li>
+							</li><br>
 							<li class="convenios__universidad news-item">
 								<table cellpadding="2">
 									<tbody>
 										<tr title="Universidad Nacional de Educación Enrique Guzmán y Valle">
 											<td class="text-center">
-												<img src="../img/convenios/logo_une_2019.jpg" width="230em" alt="logo_une">
+												<img src="../img/convenios/logo_une_2019.jpg" width="250em"
+													alt="logo_une">
 											</td>
 										</tr>
 									</tbody>
 								</table>
-							</li>
+							</li><br>
 							<li class="convenios__universidad news-item">
 								<table cellpadding="2">
 									<tbody>
 										<tr title="Technical and Business Institute">
 											<td class="text-center">
-												<img src="../img/convenios/logo_tbi.jpg" width="230em" alt="logo_tbi">
+												<img src="../img/convenios/logo_tbi.jpg" width="250em" alt="logo_tbi">
 											</td>
 										</tr>
 									</tbody>
 								</table>
 							</li>
-							<li>
+							<li><br><br>
 								<!-- CALENDARIO -->
 								<div id="current_date">
-								</div>
+								</div><br><br>
 								<div id="aside_cal"></div>
 								<script>
 									var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre");
@@ -225,6 +228,7 @@
 									document.getElementById("current_date").style.fontWeight = "bold";
 									document.getElementById("current_date").style.textAlign = "center";
 									document.getElementById("current_date").style.paddingTop = "3%";
+                                document.getElementById("aside_cal").style.background = "#a34747";
 								</script>
 							</li>
 						</ul>

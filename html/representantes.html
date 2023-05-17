@@ -17,7 +17,7 @@
 	<form id="barra__buscador-inscripcion">
 		<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
 		<div id="buscador">
-			<a class="btn btn-danger" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
+			<a class="btn btn-warning" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
 		</div>
 		<div id="inscripcion">
 			<a href="formulario.html" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
@@ -486,7 +486,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#barra"><button type="button" class="btn btn-danger">IR AL INICIO</button></a>
+                    <a href="#barra"><button type="button" class="btn btn-warning">IR AL INICIO</button></a>
 				</article>
 
 				<!-- ENLACES PARA CONVENIOS Y PROGRAMAS -->
@@ -532,51 +532,51 @@
 							</li>
                            
                             <!-- ENLACES DE PROGRAMAS -->
-							<li id="titulo_enlace">ÁREAS DE DESARROLLO DE LOS PROGRAMAS DE ESTUDIO</li>
+                        <li id="titulo_enlace">ÁREAS DE DESARROLLO</li>
 
-							<li class="programa_enlace"><a href="area_integral_gerencia.html"
-									class="nombre_enlace">Integral de Gerencia</a></li>
-							<li class="programa_enlace"><a href="area_administracion_general.html"
-									class="nombre_enlace">Administración General</a></li>
-							<li class="programa_enlace"><a href="area_desarrollo_docente.html"
-									class="nombre_enlace">Desarrollo Docente</a></li>
-							<li class="programa_enlace"><a href="area_psicologia.html"
-									class="nombre_enlace">Psicología</a></li>
-							<li class="programa_enlace"><a href="area_asuntos_medicos.html"
-									class="nombre_enlace">Asuntos Médicos, Tecno. y Servicios de Salud</a>
-							</li>
-							<li class="programa_enlace"><a href="area_derecho.html" class="nombre_enlace">Derecho,
-									Jurídico, Civiles y Penitenciarios</a>
-							</li>
-							<li class="programa_enlace"><a href="area_programas_seguridad.html"
-									class="nombre_enlace">Programas de Seguridad</a></li>
-							<li class="programa_enlace"><a href="area_secretario_archico.html"
-									class="nombre_enlace">Secretariado y Archivo</a></li>
-							<li class="programa_enlace"><a href="area_gestion_ambiental.html"
-									class="nombre_enlace">Medio-Ambiente, Desastres Naturales, Sociales y
-									Otros</a></li>
-							<li class="programa_enlace"><a href="area_programas_tecnico.html"
-									class="nombre_enlace">Programas de Técnicos</a></li>
-                            
-                            <!-- CALENDARIO -->
-							<li>
-								<div id="current_date">
-								</div>
-								<div id="aside_cal"></div>
-								<script>
-									var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre");
-									date = new Date();
-									year = date.getFullYear();
-									month = meses[date.getMonth()];
-									/*month = date.getMonth() + 1;*/
-									day = date.getDate();
-									document.getElementById("current_date").innerHTML = day + " de " + month + " del " + year;
-									document.getElementById("current_date").style.fontSize = "1.8em";
-									document.getElementById("current_date").style.fontWeight = "bold";
-									document.getElementById("current_date").style.textAlign = "center";
-									document.getElementById("current_date").style.paddingTop = "3%";
-								</script>
-							</li>
+                        <li class="programa_enlace"><a href="area_integral_gerencia.html" class="nombre_enlace">INTEGRAL
+                                DE GERENCIA</a></li>
+                        <li class="programa_enlace"><a href="area_administracion_general.html"
+                                class="nombre_enlace">ADMINISTRACIÓN GENERAL</a></li>
+                        <li class="programa_enlace"><a href="area_desarrollo_docente.html"
+                                class="nombre_enlace">DESARROLLO DOCENTE</a></li>
+                        <li class="programa_enlace"><a href="area_psicologia.html" class="nombre_enlace">PSICOLOGÍA</a>
+                        </li>
+                        <li class="programa_enlace"><a href="area_asuntos_medicos.html" class="nombre_enlace">ASUNTOS
+                                MÉDICOS, TECN. Y SERVICIOS DE SALUD</a>
+                        </li>
+                        <li class="programa_enlace"><a href="area_derecho.html" class="nombre_enlace">DERECHO, JURÍDICO,
+                                CIVILES Y PENITENCIARIOS</a>
+                        </li>
+                        <li class="programa_enlace"><a href="area_programas_seguridad.html"
+                                class="nombre_enlace">PROGRAMAS DE SEGURIDAD</a></li>
+                        <li class="programa_enlace"><a href="area_secretario_archico.html"
+                                class="nombre_enlace">SECRETARIADO Y ARCHIVO</a></li>
+                        <li class="programa_enlace"><a href="area_gestion_ambiental.html"
+                                class="nombre_enlace">MEDIO-AMBIENTE, DESASTRES NATURALES, SOCIALES Y OTROS</a></li>
+                        <li class="programa_enlace"><a href="area_programas_tecnico.html"
+                                class="nombre_enlace">PROGRAMAS TÉCNICOS</a></li>
+
+                        <!-- CALENDARIO -->
+                        <li>
+                            <div id="current_date">
+                            </div>
+                            <div id="aside_cal"></div>
+                            <script>
+                                var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre");
+                                date = new Date();
+                                year = date.getFullYear();
+                                month = meses[date.getMonth()];
+                                /*month = date.getMonth() + 1;*/
+                                day = date.getDate();
+                                document.getElementById("current_date").innerHTML = day + " de " + month + " del " + year;
+                                document.getElementById("current_date").style.fontSize = "1.8em";
+                                document.getElementById("current_date").style.fontWeight = "bold";
+                                document.getElementById("current_date").style.textAlign = "center";
+                                document.getElementById("current_date").style.paddingTop = "3%";
+                                document.getElementById("aside_cal").style.background = "#a34747";
+                            </script>
+                        </li>
 						</ul>
 					</div>
 				</aside>
