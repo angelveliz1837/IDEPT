@@ -278,7 +278,7 @@ align-items:"center"
 
         .nombre_enlace {
           text-decoration: none;
-          font-size: 1.6em;
+          font-size: 100%;
           font-weight: bold;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           color: #973331;
@@ -302,7 +302,7 @@ align-items:"center"
 
             #aside_cal {
               text-align: center;
-              font-size: 200%;
+              font-size: 100%;
             }
 
                 table {
@@ -1046,15 +1046,35 @@ ul .circulo{
   font: normal 1em Hervetica, sans-serif;
 }
 
+
 /*-------------PARTE CELULAR-----------------*/
 @media (min-width: 500px) and (max-width: 1024px){
   #navegador__logo{
-    width: 100%;
+    width: 0%;
+  }
+
+  #barra h1 {
+    font-size: 1.2em;
+  }
+
+  #inscripcion {
+    float:right;
+    font-size:70%;
+    margin-right: -3.5%;
+    margin-top: 1.5%;
+  }
+  
+  #buscador{
+    font-size:70%;
   }
 }
 
 
 @media only screen and (max-width: 500px){
+
+#barra_buscador-inscripcion{
+  font-size: 80px;
+}
 
 #navegador__logo{
   width: 100%;
@@ -1066,9 +1086,13 @@ ul .circulo{
 
 #inscripcion {
   float:right;
-  font-size:smaller;
-  margin-right: -10%;
+  font-size:70%;
+  margin-right: -3.5%;
   margin-top: 1.5%;
+}
+
+#buscador{
+  font-size:70%;
 }
 
 }
