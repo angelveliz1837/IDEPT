@@ -573,7 +573,7 @@ table {
     }
 
     #izquierda .imagen-proceso {
-      margin-bottom: 2%;
+      margin-bottom: 2%; 
     }
 
 /*---------------------------------- REQUISITOS ---------------------------------------------------*/
@@ -726,7 +726,7 @@ ul .circulo{
 .programa__titulo {
   margin-top:1.5%;
   padding-left: 1%;
-  font: bold 2.7em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
+  font: bold 1.3rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
 }
     
 .programa__lista { 
@@ -734,19 +734,19 @@ ul .circulo{
   color: #000;
   border-radius: 0.5%;
   border: 2px solid #000;
-  height: 94%;
+  height: 95%;
   margin-bottom: 1%;
 }
     
     .programa__lista__conteo {
-      padding-top: 2%;
+      padding-top: 1.5%;
       font-weight: bold;
       margin-left: 5%;
       margin-right: 6%;
     }
 
     .programa__lista li {
-      font-size: 1.3em;
+      font-size: 1em;
       font-family: 'IBM Plex Sans Thai Looped', sans-serif;
       text-align: justify;
     }
@@ -754,6 +754,10 @@ ul .circulo{
     .programa__lista h5 {
       font-family: 'IBM Plex Sans Thai Looped', sans-serif;
       text-align: justify;
+    }
+
+    .subtitulo {
+      font-size: 120%;
     }
 
 /*--------------------ADMINISTRACION GENERAL --------------------------------------------------------------*/
@@ -781,7 +785,7 @@ ul .circulo{
 }
 
 #programa__excepcion-bajar {
-  height: 97% !important;
+  height: 97.5% !important;
 }
 
 /*------------------------- PSICOLOGIA --------------------------------------------------------------------------*/
@@ -864,7 +868,7 @@ ul .circulo{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  font: normal 1.5em Arial, sans-serif;
+  font: normal 1em Arial, sans-serif;
   margin: 2% 3% 2% 3%;
   padding: 3%;
   border: 2px solid #933939;
@@ -938,8 +942,9 @@ ul .circulo{
 /*----------------------------- MATRICULA ---------------------------------------------------*/
 
 .matricula__recomendacion {
-  font: normal 1.7em sans-serif;
+  font: normal 1em sans-serif;
   text-align: justify;
+  padding: 1% 0%;
 }
 
 .matricula__titulo {
@@ -959,7 +964,7 @@ ul .circulo{
 }
 
 .matricula__seleccionar {
-  padding-right: 0em;
+  padding-right: 9%;
 }
     .matricula__seleccionar label {
       float: right;
@@ -971,7 +976,7 @@ ul .circulo{
 
     #programa {
       width: 100%;
-      font-size: 0.8m;
+      font-size: 0.8em;
       padding: 0.5% 0% 0.5% 0.5%;
       border: #fff;
     }
