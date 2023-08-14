@@ -7,142 +7,145 @@
 	<title>IDEPT</title><!-- Titulo de la pagina -->
 	<meta name="description" content="IDEPT">
 	<link rel="icon" type="img/png" href="img/logos/logo_aniversarioXXX.png"><!-- Logo de la pagina -->
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> <!-- Permisos de Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- CSS de Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/estilos.css" rel="stylesheet"><!-- CSS de la pagina -->
 </head>
 
 <body>
 	<embed src="img/musica/musica.mp31" autostarty="true" loop="true" volume="80" width="0" height="0">
-
-<!-- BARRA BUSCADOR E INSCRIPCION -->
-<header id="barra">
-	<h1>Programas de Especialización</h1>
-	<form id="barra__buscador-inscripcion">
-		<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
-		<div id="buscador">
-			<a class="btn btn-warning" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
-		</div>
-		<div id="inscripcion">
-			<a href="html/formulario.html" class="btn btn-success"><i class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
-		</div>
-	</form>
-</header>
-
+	<!-- BARRA BUSCADOR E INSCRIPCION -->
+	<header id="barra">
+		<h1>Programas de Especialización</h1>
+		<form id="barra__buscador-inscripcion">
+			<input type="search" placeholder="Escribe el tema o campo" autocomplete="off">
+			<div id="buscador-inscripcion">
+				<div id="buscador">
+					<a class="btn btn-warning" type="submit"><span class="fas fa-search">&nbsp;Buscar</span></a>
+				</div>
+				<div id="inscripcion">
+					<a href="html/formulario.html" class="btn btn-success"><i
+							class="fa fa-graduation-cap"></i>&nbsp;INSCRÍBETE</a>
+				</div>
+			</div>
+		</form>
+	</header>
 	<!-- BARRA DE NAVEGADOR -->
-	<nav id="navegador" class="navbar navbar-expand-lg">
-		<div id="navegador__logo">
-			<a href="index.html"><img src="img/logos/logo_idept.png" alt="Logo_IDEPT" class="d-inline-block align-text-top"></a>
-		</div>
-		<div id="navbarNavDropdown navegador__barra" class="collapse navbar-collapse barra_item">
-			<ul id="menu" class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Sobre IDEPT
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item subitem" href="html/mision.html">Misión</a></li>
-						<li><a class="dropdown-item subitem" href="html/mision.html">Visión</a></li>
-						<li><a class="dropdown-item subitem" href="html/mision.html">Quienes Somos</a></li>
-						<li><a class="dropdown-item subitem" href="html/mensaje.html">Mensaje</a></li>
-						<li><a class="dropdown-item subitem" href="html/autoridades.html">Autoridades</a></li>
-						<li><a class="dropdown-item subitem" href="html/representantes.html">Representantes</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Programas de Especialización
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item subitem" href="html/organizacion_programas.html">Organizacion de los
-								Programas</a></li>
-						<li><a class="dropdown-item subitem" href="html/programas.html">Programas por Areas</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Metodología y Procesos
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item subitem" href="html/procesos.html">Procesos</a></li>
-						<li><a class="dropdown-item subitem" href="html/requisitos.html">Requisitos</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Convenios y Auspicios
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item subitem" href="html/convenio_cooperacion_academica.html">Cooperacion
-								Academica</a></li>
-						<li><a class="dropdown-item subitem"
-								href="html/convenio_capacitacion_interinstitucional.html">Cooperacion
-								Institucional</a></li>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="html/modelo_certificacion.html">
-						Modelos de Certificación
-					</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Noticias y Eventos
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item subitem" href="html/preguntas_frecuentes.html">Preguntas
-								Frecuentes</a>
-						</li>
-						<li><a class="dropdown-item subitem" href="html/evento.html">Noticias y Eventos</a></li>
-					</ul>
-				</li>
-			</ul>
+	<nav id="navegador" class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid navegador__fondo">
+			<div id="navegador__logo">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logos/logo_idept.png" alt="Logo_IDEPT" width="100" height="70"
+						class="d-inline-block align-text-top">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+				aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse barra_item" id="navbarScroll">
+				<ul id="menu" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+					style="--bs-scroll-height: 100px;">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Sobre IDEPT
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item subitem" href="html/mision.html">Misión</a></li>
+							<li><a class="dropdown-item subitem" href="html/mision.html">Visión</a></li>
+							<li><a class="dropdown-item subitem" href="html/mision.html">Quienes Somos</a></li>
+							<li><a class="dropdown-item subitem" href="html/mensaje.html">Mensaje</a></li>
+							<li><a class="dropdown-item subitem" href="html/autoridades.html">Autoridades</a></li>
+							<li><a class="dropdown-item subitem" href="html/representantes.html">Representantes</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Programas de Especialización
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item subitem" href="html/organizacion_programas.html">Organizacion de
+									los
+									Programas</a></li>
+							<li><a class="dropdown-item subitem" href="html/programas.html">Programas por Areas</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Metodología y Procesos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item subitem" href="html/procesos.html">Procesos</a></li>
+							<li><a class="dropdown-item subitem" href="html/requisitos.html">Requisitos</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Convenios y Auspicios
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item subitem"
+									href="html/convenio_cooperacion_academica.html">Cooperacion
+									Academica</a></li>
+							<li><a class="dropdown-item subitem"
+									href="html/convenio_capacitacion_interinstitucional.html">Cooperacion
+									Institucional</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="html/modelo_certificacion.html">
+							Modelos de Certificación
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Noticias y Eventos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item subitem" href="html/preguntas_frecuentes.html">Preguntas
+									Frecuentes</a>
+							</li>
+							<li><a class="dropdown-item subitem" href="html/evento.html">Noticias y Eventos</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
-
 	<!-- CARRUSEL -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<section class="awSlider">
-					<div class="carousel slide" data-ride="carousel">
-						<!-- INDICADORES -->
-						<ol class="carousel-indicators">
-							<li data-target=".carousel" data-slide-to="0" class="active"></li>
-							<li data-target=".carousel" data-slide-to="1"></li>
-							<li data-target=".carousel" data-slide-to="2"></li>
-						</ol>
-						<!-- FOTOS DE BANNER -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img id="baner" src="img/banners/imagen_banner1.jpg">
-							</div>
-							<div class="item">
-								<img id="baner" src="img/banners/imagen_banner2.jpg ">
-							</div>
-							<div class="item">
-								<img id="baner" src="img/banners/imagen_banner3.jpg">
-							</div>
+				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img id="baner" src="img/banners/imagen_banner1.jpg" class="d-block w-100" alt="Banner1">
 						</div>
-						<!-- CONTROLES -->
-						<a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
-						</a>
-						<a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						</a>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img id="baner" src="img/banners/imagen_banner2.jpg" class="d-block w-100" alt="Banner2">
+						</div>
+						<div class="carousel-item">
+							<img id="baner" src="img/banners/imagen_banner3.jpg" class="d-block w-100" alt="Banner3">
+						</div>
 					</div>
-				</section>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<!-- CONTENIDO -->
 	<section>
 		<div class="container">
@@ -249,7 +252,8 @@
 									<tbody>
 										<tr title="Universidad Nacional Mayor de San Marcos">
 											<td class="text-center">
-												<img src="img/convenios/logo_unmsm_2022.jpg" width="100%" alt="logo_unmsm">
+												<img src="img/convenios/logo_unmsm_2022.jpg" width="100%"
+													alt="logo_unmsm">
 											</td>
 										</tr>
 									</tbody>
@@ -281,26 +285,35 @@
 							<li id="titulo_enlace">ÁREAS DE DESARROLLO</li>
 
 							<li class="programa_enlace"><a href="html/area_integral_gerencia.html"
-									class="nombre_enlace">INTEGRAL DE GERENCIA</a></li>
+									class="nombre_enlace">INTEGRAL DE
+									GERENCIA</a></li>
 							<li class="programa_enlace"><a href="html/area_administracion_general.html"
-									class="nombre_enlace">ADMINISTRACIÓN GENERAL</a></li>
+									class="nombre_enlace">ADMINISTRACIÓN
+									GENERAL</a></li>
 							<li class="programa_enlace"><a href="html/area_desarrollo_docente.html"
-									class="nombre_enlace">DESARROLLO DOCENTE</a></li>
+									class="nombre_enlace">DESARROLLO
+									DOCENTE</a></li>
 							<li class="programa_enlace"><a href="html/area_psicologia.html"
 									class="nombre_enlace">PSICOLOGÍA</a></li>
 							<li class="programa_enlace"><a href="html/area_asuntos_medicos.html"
-									class="nombre_enlace">ASUNTOS MÉDICOS, TECN. Y SERVICIOS DE SALUD</a>
+									class="nombre_enlace">ASUNTOS MÉDICOS,
+									TECN. Y SERVICIOS DE SALUD</a>
 							</li>
-							<li class="programa_enlace"><a href="html/area_derecho.html" class="nombre_enlace">DERECHO, JURÍDICO, CIVILES Y PENITENCIARIOS</a>
+							<li class="programa_enlace"><a href="html/area_derecho.html" class="nombre_enlace">DERECHO,
+									JURÍDICO, CIVILES Y PENITENCIARIOS</a>
 							</li>
 							<li class="programa_enlace"><a href="html/area_programas_seguridad.html"
-									class="nombre_enlace">PROGRAMAS DE SEGURIDAD</a></li>
+									class="nombre_enlace">PROGRAMAS DE
+									SEGURIDAD</a></li>
 							<li class="programa_enlace"><a href="html/area_secretario_archico.html"
-									class="nombre_enlace">SECRETARIADO Y ARCHIVO</a></li>
+									class="nombre_enlace">SECRETARIADO Y
+									ARCHIVO</a></li>
 							<li class="programa_enlace"><a href="html/area_gestion_ambiental.html"
-									class="nombre_enlace">MEDIO-AMBIENTE, DESASTRES NATURALES, SOCIALES Y OTROS</a></li>
+									class="nombre_enlace">MEDIO-AMBIENTE,
+									DESASTRES NATURALES, SOCIALES Y OTROS</a></li>
 							<li class="programa_enlace"><a href="html/area_programas_tecnico.html"
-									class="nombre_enlace">PROGRAMAS TÉCNICOS</a></li>
+									class="nombre_enlace">PROGRAMAS
+									TÉCNICOS</a></li>
 							<li>
 								<!-- CALENDARIO -->
 								<div id="current_date">
@@ -314,7 +327,7 @@
 									/*month = date.getMonth() + 1;*/
 									day = date.getDate();
 									document.getElementById("current_date").innerHTML = day + " de " + month + " del " + year;
-									document.getElementById("current_date").style.fontSize = "1.8em";
+									document.getElementById("current_date").style.fontSize = "1.5rem";
 									document.getElementById("current_date").style.fontWeight = "bold";
 									document.getElementById("current_date").style.textAlign = "center";
 									document.getElementById("current_date").style.paddingTop = "3%";
@@ -327,7 +340,6 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- FOOTER -->
 	<footer id="referencia">
 		<div class="container">
@@ -411,42 +423,43 @@
 			</div>
 		</div>
 	</footer>
-
 	<!-- NAVEGADOR LATERAL -->
 	<div id="navegador_lateral">
 		<ul id="navegador_lateral__redes">
 			<li>
 				<a href="html/contactanos.html">
-					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_correo" src="img/redes/correo.png">
+					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_correo"
+						src="img/redes/correo.png">
 					<p class="navegador_lateral__redes-nombre">Contáctanos</p>
 				</a>
 			</li>
 			<li>
 				<a target="_blank" href="https://www.facebook.com/institutoIDEPT" target="_blank">
-					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_facebook" src="img/redes/facebook.png">
+					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono_facebook"
+						src="img/redes/facebook.png">
 					<p class="navegador_lateral__redes-nombre">Facebook</p>
 				</a>
 			</li>
 			<li>
 				<a aria-label="Chat on WhatsApp" href="https://wa.me/51945094204" target="_blank">
-					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono WhatsApp" src="img/redes/wsp.png">
+					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono WhatsApp"
+						src="img/redes/wsp.png">
 					<p class="navegador_lateral__redes-nombre">WhatsApp</p>
 				</a>
 			</li>
 			<li>
 				<a href="https://goo.gl/maps/Fi8RgquSGG4Hx5R68" target="_blank">
-					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono ubicacion" src="img/redes/ubicacion.png">
+					<img class="navegador_lateral__redes-imagen" width="32" height="32" alt="icono ubicacion"
+						src="img/redes/ubicacion.png">
 					<p class="navegador_lateral__redes-nombre">Ubícanos</p>
 				</a>
 			</li>
 		</ul>
 	</div>
-
 	<!-- Permisos Script -->
-	<script src="https://kit.fontawesome.com/33021f79a9.js" crossorigin="anonymous"></script><!-- Permisos para iconos -->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><!-- Uso para Banner -->
-	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script><!-- Uso para Banner -->
-	<script src="js/bootstrap.min.js"></script><!-- Uso para navegador nav -->
+	<script src="https://kit.fontawesome.com/33021f79a9.js" crossorigin="anonymous"></script>
+	<!-- Permisos para iconos -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="js/codigo.js"></script><!-- Codigo de JavaScript -->
 </body>
 
