@@ -156,6 +156,7 @@ body {
   border-radius: 0.3em;/*curva en las esquinas*/
   font: bold 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif/*tamaño de letra del titulo*/
 }
+ 
 
 .programa {
   position: relative;
@@ -694,11 +695,19 @@ ul .circulo{
           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           font-weight: bold;
           text-decoration: underline;
+          
         }
+
+        .noticia h2 .noticia__enlace{
+            text-decoration: none;
+            color: #940505;
+          }
 
     .excepcion {
       height: 99.97% !important;
     }
+
+
 
     /*--------------------- RESOLUCION ----------------------------------------------------*/
     #resolucion img {
@@ -1031,6 +1040,34 @@ ul .circulo{
   padding: 0.8em; 
   font: normal 1em Hervetica, sans-serif;
 }
+
+/*-------------------ENCUESTA----------------------*/
+#curso_maestra_sombra {
+  text-align: center;
+  align-content: center;
+  padding: 1em 0px;
+}
+
+  #curso_maestra_sombra img {
+    border: 4px solid #383838;
+  }
+  #texto  {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65vh;
+    }
+
+  #texto div{
+  text-align: justify;
+  align-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: 3.3em;
+  line-height: 1.5;
+  font-size: 6mm;
+  }
+  
+  
 
 
 /*-------------PARTE CELULAR-----------------*/
