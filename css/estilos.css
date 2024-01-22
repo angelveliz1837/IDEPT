@@ -1050,6 +1050,7 @@ ul .circulo{
 
   #curso_planificacion_curricular img {
     border: 4px solid #383838;
+    width: 30em;
   }
   #texto  {
     display: flex;
@@ -1090,6 +1091,27 @@ ul .circulo{
   #buscador{
     font-size:70%;
   }
+
+  #curso_planificacion_curricular{
+    display: block;
+  }
+
+    #curso_planificacion_curricular img{
+      width: 100%;
+    }
+
+  #texto{
+    display: block;
+    padding-top: 2em;
+    height: 10vh;
+  }
+
+    #texto div{
+      text-align: justify;
+      align-content: center;
+      padding-right: 1.5em;
+      font-size: 5mm;
+      }
 }
 
 
