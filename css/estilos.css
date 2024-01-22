@@ -1055,7 +1055,7 @@ ul .circulo{
     display: flex;
       justify-content: center;
       align-items: center;
-      height: 65vh;
+      height: 35vh;
     }
 
   #texto div{
