@@ -1042,6 +1042,18 @@ ul .circulo{
 }
 
 /*-------------------ENCUESTA----------------------*/
+
+#curso_auxiliar {
+  text-align: center;
+  align-content: center;
+  padding: 1em 0px;
+}
+
+  #curso_auxiliar img {
+    border: 4px solid #383838;
+    width: 15em;
+  }
+
 #curso_planificacion_curricular {
   text-align: center;
   align-content: center;
@@ -1052,6 +1064,7 @@ ul .circulo{
     border: 4px solid #383838;
     width: 30em;
   }
+
   #texto  {
     display: flex;
       justify-content: center;
@@ -1073,6 +1086,7 @@ ul .circulo{
 
 /*-------------PARTE CELULAR-----------------*/
 @media (min-width: 1024px) and (max-width: 1400px){
+
   #navegador__logo{
     width: 0%;
   }
@@ -1091,6 +1105,14 @@ ul .circulo{
   #buscador{
     font-size:70%;
   }
+
+  #curso_auxiliar{
+    display: block;
+  }
+
+    #curso_auxiliar img{
+      width: 100%;
+    }
 
   #curso_planificacion_curricular{
     display: block;
@@ -1134,6 +1156,14 @@ ul .circulo{
   #buscador{
     font-size:70%;
   }
+
+  #curso_auxiliar{
+    display: block;
+  }
+
+    #curso_auxiliar img{
+      width: 100%;
+    }
 
   #curso_planificacion_curricular{
     display: block;
@@ -1182,6 +1212,14 @@ ul .circulo{
 #buscador{
   font-size:70%;
 }
+
+#curso_auxiliar{
+  display: block;
+}
+
+  #curso_auxiliar img{
+    width: 100%;
+  }
 
 #curso_planificacion_curricular{
   display: block;
