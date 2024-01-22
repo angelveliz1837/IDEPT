@@ -1072,6 +1072,49 @@ ul .circulo{
 
 
 /*-------------PARTE CELULAR-----------------*/
+@media (min-width: 1024px) and (max-width: 1400px){
+  #navegador__logo{
+    width: 0%;
+  }
+
+  #barra h1 {
+    font-size: 1.2em;
+  }
+
+  #inscripcion {
+    float:right;
+    font-size:70%;
+    margin-right: -3.5%;
+    margin-top: 1.5%;
+  }
+  
+  #buscador{
+    font-size:70%;
+  }
+
+  #curso_planificacion_curricular{
+    display: block;
+  }
+
+    #curso_planificacion_curricular img{
+      width: 100%;
+    }
+
+  #texto{
+    display: block;
+    padding-top: 5em;
+    height: 10vh;
+  }
+
+    #texto div{
+      text-align: justify;
+      align-content: center;
+      padding-right: 1.5em;
+      font-size: 6mm;
+      }
+}
+
+
 @media (min-width: 500px) and (max-width: 1024px){
   #navegador__logo{
     width: 0%;
